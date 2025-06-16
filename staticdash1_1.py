@@ -28,8 +28,8 @@ progress=defaultdict(int)
 task_id_tracker=[]
 uph_tracker={}
 log_data = {"total_cases": 0}
-robot_fms_data = {f"Robot {i+1}": 0 for i in range(25)}
-robot_total_cases={f"Robot {i+1}" : 0 for i in range(25)}
+robot_fms_data = {f"Robot {i+1}": 0 for i in range(15)}
+robot_total_cases={f"Robot {i+1}" : 0 for i in range(15)}
 cases_per_hour = defaultdict(lambda: defaultdict(int))
 log_time_format = "%Y-%m-%d %H:%M:%S,%f"
 # ---------------- DESTRO Log Parser ----------------
@@ -199,7 +199,7 @@ st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
 total_time=dhrs+dmins/60
 print(total_time)
 st.metric(label="Total Cases Picked", value=log_data['total_cases'])
-st.metric(label="UPH", value=f"{avg_uph}")
+st.metric(label="UPH", value=f"{int(avg_uph)}")
 # chart_cases = alt.Chart(robot_cases_df).mark_bar().encode(
 #     x=alt.X('Robot:N', sort='ascending'),
 #     y='Case Num:Q'
@@ -225,7 +225,7 @@ chart_botuph = alt.Chart(robot_uph_df).mark_bar().encode(
 ).properties(width=2000, height=400, title="Robot vs Total Cases")
 
 # st.altair_chart(chart_cases, use_container_width=False)
-st.altair_chart(chart_dist, use_container_width=False)
+# st.altair_chart(chart_dist, use_container_width=False)
 st.title("Robot Unloading Cases per Hour")
 st.dataframe(cases_ph_df , use_container_width=True)
 st.altair_chart(chart_botuph, use_container_width=False)
