@@ -213,11 +213,11 @@ st.metric(label="UPH", value=f"{avg_uph}")
 #     x=alt.X('Robot:N', sort='ascending'),
 #     y='Total Cases:Q'
 # ).properties(width=2000, height=400, title="Robot vs Total Cases")
-chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
-    x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
-    y='Distance:Q'
-).properties(width=2000,height=400,
-    title="Robot vs Distance [m]")
+# chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
+#     x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
+#     y='Distance:Q'
+# ).properties(width=2000,height=400,
+#     title="Robot vs Distance [m]")
 
 chart_botuph = alt.Chart(robot_uph_df).mark_bar().encode(
     x=alt.X('Robot:N', sort=robot_uph_df["Robot"].tolist()),
