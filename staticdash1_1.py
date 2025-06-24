@@ -10,8 +10,8 @@ from datetime import datetime
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # DESTRO_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "yusen_2025-04-10.log")
 # FMS_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "FMS_2025-04-10.log")
-DESTRO_PATH = "log_bank/1_1/June 16_2025/yusen_2025-06-16.log"
-FMS_PATH = "log_bank/1_1/June 16_2025/FMS_2025-06-16.log"
+DESTRO_PATH = "log_bank/1_1/24 June_2025/yusen_2025-06-24.log"
+FMS_PATH = "log_bank/1_1/24 June_2025/FMS_2025-06-24.log"
 
 
 st.set_page_config(page_title="destro", layout="wide")
@@ -30,6 +30,7 @@ uph_tracker={}
 log_data = {"total_cases": 0}
 robot_fms_data = {f"Robot {i+1}": 0 for i in range(15)}
 robot_total_cases={f"Robot {i+1}" : 0 for i in range(15)}
+robot_dwell={f"Robot {i+1}" : 0 for i in range(15)}
 cases_per_hour = defaultdict(lambda: defaultdict(int))
 log_time_format = "%Y-%m-%d %H:%M:%S,%f"
 # ---------------- DESTRO Log Parser ----------------
@@ -80,6 +81,8 @@ def parse_destro_log(path):
                 if match:
                     cases = match.groups()
                     log_data["total_cases"] = int(cases[0])
+            
+
 
 # ---------------- FMS Log Parser ----------------
 def parse_fms_log(path):
@@ -121,11 +124,13 @@ def parse_fms_log(path):
                     #     uph_track[log_hr]=progress[hour]*60/log_hr
                 
             elif "CODE F02" in line:
+                    print(line)
                     pattern =re.compile(
                             r"CODE F02 at (\d+\.\d+) UPH is (\d+)"
 
 )
                     match=pattern.search(line)
+                    # print(match)
                     if match:
                         hour,uph=match.groups()
                         uph_tracker[hour]=uph
@@ -134,6 +139,14 @@ def parse_fms_log(path):
                 if match:
                     timestamp = match.group(1)
                     start_time=timestamp
+            elif "has dwelled" in line:
+                pattern = re.compile(r"Robot robot_(\d+) has dwelled for ([\d.]+) sec")
+                match=pattern.search(line)
+                if match:
+                    robot_id,dwell_time=match.groups()
+                    dwell_time=round(float(dwell_time),2)
+                    robot_key = f"Robot {int(robot_id)+1}"
+                    robot_dwell[robot_key]=dwell_time
             else:
                 pattern = re.compile(r"Robot robot_(\d+)\s+has travelled\s+([\d\.]+)\s+m")
                 match = pattern.search(line)
@@ -182,9 +195,18 @@ robot_uph_df=pd.DataFrame(list(robot_total_cases.items()), columns=["Robot", "To
 robot_uph_df["Robot_Num"] = robot_uph_df["Robot"].str.extract(r'(\d+)').astype(int)
 robot_uph_df = robot_uph_df.sort_values(by="Robot_Num")
 
+
+
+robot_dwell_df=pd.DataFrame(list(robot_dwell.items()),columns=['Robot','Time (sec)'])
+robot_dwell_df["Time (hrs)"] = robot_dwell_df["Time (sec)"] / 3600
+
+
 fmt = "%Y-%m-%d %H:%M:%S,%f"
-# 2025-06-16 10:46:45,096
-end_time='2025-06-16 10:46:45,000000'
+# 2025-06-17 14:29:59,162
+# 2025-06-18 15:40:40,196
+
+start_time='2025-06-24 08:34:28,000000'
+end_time='2025-06-24 13:55:06,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=end_time-start_time
@@ -192,12 +214,10 @@ dhrs, rem =divmod(dashboard_time.total_seconds(),3600)
 dmins,dsec =divmod(rem,60)
 
 avg_uph = sum(int(v) for v in uph_tracker.values()) / len(uph_tracker)
-
 # ---------------- Display Dashboard ----------------
 st.image("destro_logo.jpg", width=400)
 st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
 total_time=dhrs+dmins/60
-print(total_time)
 st.metric(label="Total Cases Picked", value=log_data['total_cases'])
 st.metric(label="UPH", value=f"{int(log_data['total_cases']/total_time)}")
 # chart_cases = alt.Chart(robot_cases_df).mark_bar().encode(
@@ -213,11 +233,11 @@ st.metric(label="UPH", value=f"{int(log_data['total_cases']/total_time)}")
 #     x=alt.X('Robot:N', sort='ascending'),
 #     y='Total Cases:Q'
 # ).properties(width=2000, height=400, title="Robot vs Total Cases")
-# chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
-#     x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
-#     y='Distance:Q'
-# ).properties(width=2000,height=400,
-#     title="Robot vs Distance [m]")
+chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
+    x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
+    y='Distance:Q'
+).properties(width=2000,height=400,
+    title="Robot vs Distance [m]")
 
 chart_botuph = alt.Chart(robot_uph_df).mark_bar().encode(
     x=alt.X('Robot:N', sort=robot_uph_df["Robot"].tolist()),
@@ -225,7 +245,7 @@ chart_botuph = alt.Chart(robot_uph_df).mark_bar().encode(
 ).properties(width=2000, height=400, title="Robot vs Total Cases")
 
 # st.altair_chart(chart_cases, use_container_width=False)
-# st.altair_chart(chart_dist, use_container_width=False)
+st.altair_chart(chart_dist, use_container_width=False)
 st.title("Robot Unloading Cases per Hour")
 st.dataframe(cases_ph_df , use_container_width=True)
 st.altair_chart(chart_botuph, use_container_width=False)
@@ -236,4 +256,8 @@ st.write("### Progress over time")
 st.dataframe(progress_df, use_container_width=True)
 st.write("### UPH break down")
 st.dataframe(uph_tracker_df, use_container_width=True)
+
+
+st.write('### Robot Dwell Times')
+st.dataframe(robot_dwell_df,use_container_width=True)
 
