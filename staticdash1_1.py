@@ -10,8 +10,8 @@ from datetime import datetime
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # DESTRO_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "yusen_2025-04-10.log")
 # FMS_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "FMS_2025-04-10.log")
-DESTRO_PATH = "log_bank/1_1/24 June_2025/yusen_2025-06-24.log"
-FMS_PATH = "log_bank/1_1/24 June_2025/FMS_2025-06-24.log"
+DESTRO_PATH = "log_bank/1_1/28 June_2025/yusen_2025-06-28.log"
+FMS_PATH = "log_bank/1_1/28 June_2025/FMS_2025-06-28.log"
 
 
 st.set_page_config(page_title="destro", layout="wide")
@@ -28,11 +28,16 @@ progress=defaultdict(int)
 task_id_tracker=[]
 uph_tracker={}
 log_data = {"total_cases": 0}
-robot_fms_data = {f"Robot {i+1}": 0 for i in range(15)}
-robot_total_cases={f"Robot {i+1}" : 0 for i in range(15)}
-robot_dwell={f"Robot {i+1}" : 0 for i in range(15)}
+robot_fms_data = {f"Robot {i+1}": 0 for i in range(2)}
+robot_total_cases={f"Robot {i+1}" : 0 for i in range(2)}
+robot_dwell={f"Robot {i+1}" : 0 for i in range(2)}
 cases_per_hour = defaultdict(lambda: defaultdict(int))
 log_time_format = "%Y-%m-%d %H:%M:%S,%f"
+robot_destro_data = defaultdict(lambda: defaultdict(dict))
+robot_total_cases = defaultdict(int)
+cases_per_hour = defaultdict(lambda: defaultdict(int))
+# robot_destro_data = defaultdict(lambda: defaultdict(lambda: {"loaded_cases": 0, "total_cases": 0}))
+
 # ---------------- DESTRO Log Parser ----------------
 
 def download_log(url):
@@ -56,24 +61,42 @@ def parse_destro_log(path):
 
                         # Round down to the hour
                         log_hour_str = log_time.strftime("%Y-%m-%d %H:00")
-                pattern = re.compile(
-                    r"CODE 201 \[Batch (\d+)] Robot (\d+) unloading case (\d+) of (\d+) for item (\d+)"
-                )
+                # pattern = re.compile(
+                #     r"CODE 201 \[Batch (\d+)] Robot (\d+) unloading case (\d+) of (\d+) for item (\d+)"
+                # )
+                # match = pattern.search(line)
+                # if match:
+                 
+                #     batch, robot_id, case_num, total_cases, item_id = match.groups()
+                #     robot_key = f"Robot {int(robot_id)+1}"
+                #     robot_destro_data[robot_key][item_id] = {
+                #         "batch": int(batch),
+                #         "case_num": int(case_num),
+                #         "total_cases": int(total_cases),
+                #     }
+                #     # if  item_id not in task_id_tracker:
+                #     #     task_id_tracker.append(item_id)
+                #     robot_total_cases[f'Robot {int(robot_id)+1}'] +=1
+                #     cases_per_hour[robot_key][log_hour_str] += 1
+         
+
+                pattern = re.compile(r"CODE 201 \[Cart (\w+)] Loading case (\d+) of (\d+) from cart \w+ for item (\d+)")
+
                 match = pattern.search(line)
                 if match:
-                 
-                    batch, robot_id, case_num, total_cases, item_id = match.groups()
-                    robot_key = f"Robot {int(robot_id)+1}"
-                    robot_destro_data[robot_key][item_id] = {
-                        "batch": int(batch),
-                        "case_num": int(case_num),
-                        "total_cases": int(total_cases),
-                    }
-                    # if  item_id not in task_id_tracker:
-                    #     task_id_tracker.append(item_id)
-                    robot_total_cases[f'Robot {int(robot_id)+1}'] +=1
-                    cases_per_hour[robot_key][log_hour_str] += 1
+                    cart_id, current_case, total_cases, item_id = match.groups()
+                    current_case = int(current_case)
+                    total_cases = int(total_cases)
                     
+                    robot_destro_data[cart_id][item_id] = {
+                        # "loaded_cases": current_case,
+                        "total_cases": total_cases
+                    }
+                    # robot_destro_data[cart_id][item_id]["loaded_cases"] += 1
+                    # robot_destro_data[cart_id][item_id]["total_cases"] = int(total_cases)
+                    robot_total_cases[cart_id] += 1
+
+                    cases_per_hour[cart_id][log_hour_str] += 1
 
             elif "CODE 101" in line:
                 pattern = re.compile(r"CODE 101 --------------- (\d+)")
@@ -81,7 +104,7 @@ def parse_destro_log(path):
                 if match:
                     cases = match.groups()
                     log_data["total_cases"] = int(cases[0])
-            
+
 
 
 # ---------------- FMS Log Parser ----------------
@@ -164,13 +187,13 @@ print(f"{start_time} ------- {type(start_time)}")
 print(f"{end_time} ------- {type(end_time)}")
 # ---------------- Prepare DataFrames ----------------
 rows = []
-for robot, items in robot_destro_data.items():
+for cart, items in robot_destro_data.items():
     for item_id, data in items.items():
         rows.append({
-            "Robot": robot,
+            "CART": cart,
             "Item ID": item_id,
-            "Batch": data["batch"],
-            "Case Num": data["case_num"],
+            
+            # "Case Num": data["loaded_cases"],
             "Total Cases": data["total_cases"]
         })
 
@@ -188,6 +211,7 @@ robot_dist_df = pd.DataFrame(list(robot_fms_data.items()), columns=["Robot", "Di
 
 robot_dist_df["Robot_Num"] = robot_dist_df["Robot"].str.extract(r'(\d+)').astype(int)
 robot_dist_df = robot_dist_df.sort_values(by="Robot_Num")
+
 progress_df=pd.DataFrame(list(progress.items()), columns=["Hour", "Cases"])
 uph_tracker_df=pd.DataFrame(list(uph_tracker.items()), columns=["Hour", "UPH"])
 
@@ -196,28 +220,35 @@ robot_uph_df["Robot_Num"] = robot_uph_df["Robot"].str.extract(r'(\d+)').astype(i
 robot_uph_df = robot_uph_df.sort_values(by="Robot_Num")
 
 
-
-robot_dwell_df=pd.DataFrame(list(robot_dwell.items()),columns=['Robot','Time (sec)'])
-robot_dwell_df["Time (hrs)"] = robot_dwell_df["Time (sec)"] / 3600
+# robot_dwell_df=pd.DataFrame(list(robot_distance_dict))
+# robot_dwell_df=pd.DataFrame(list(robot_dwell.items()),columns=['Robot','Time (sec)'])
+# robot_dwell_df["Time (hrs)"] = robot_dwell_df["Time (sec)"] / 3600
 
 
 fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-17 14:29:59,162
 # 2025-06-18 15:40:40,196
 
-start_time='2025-06-24 08:34:28,000000'
-end_time='2025-06-24 13:55:06,000000'
+# start_time='2025-06-24 08:34:28,000000'
+end_time='2025-06-28 15:22:23,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=end_time-start_time
 dhrs, rem =divmod(dashboard_time.total_seconds(),3600)
 dmins,dsec =divmod(rem,60)
-
+total_sec=dashboard_time.total_seconds()
 avg_uph = sum(int(v) for v in uph_tracker.values()) / len(uph_tracker)
 # ---------------- Display Dashboard ----------------
 st.image("destro_logo.jpg", width=400)
 st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
 total_time=dhrs+dmins/60
+robot_distance_dict = dict(zip(robot_dist_df["Robot"], total_sec-(robot_dist_df["Distance"]/1.5)))
+print(robot_distance_dict)
+
+
+#  robot_dwell_df=pd.DataFrame(list(robot_distance_dict))
+robot_dwell_df=pd.DataFrame(list(robot_distance_dict.items()),columns=['Robot','Time (sec)'])
+robot_dwell_df["Time (hrs)"] = robot_dwell_df["Time (sec)"] / 3600
 st.metric(label="Total Cases Picked", value=log_data['total_cases'])
 st.metric(label="UPH", value=f"{int(log_data['total_cases']/total_time)}")
 # chart_cases = alt.Chart(robot_cases_df).mark_bar().encode(
@@ -242,15 +273,15 @@ chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
 chart_botuph = alt.Chart(robot_uph_df).mark_bar().encode(
     x=alt.X('Robot:N', sort=robot_uph_df["Robot"].tolist()),
     y='Total Cases:Q'
-).properties(width=2000, height=400, title="Robot vs Total Cases")
+).properties(width=2000, height=400, title="Cart vs Total Cases")
 
 # st.altair_chart(chart_cases, use_container_width=False)
 st.altair_chart(chart_dist, use_container_width=False)
-st.title("Robot Unloading Cases per Hour")
+st.title("CART Unloading Cases per Hour")
 st.dataframe(cases_ph_df , use_container_width=True)
 st.altair_chart(chart_botuph, use_container_width=False)
 
-st.write("### Robot Unloading Status")
+st.write("### CART Unloading Status")
 st.dataframe(df, use_container_width=True)
 st.write("### Progress over time")
 st.dataframe(progress_df, use_container_width=True)
