@@ -1,0 +1,1138 @@
+2025-06-30 01:43:26,918 - INFO - CODE 401 Available carts: 6 remaining.
+2025-06-30 01:43:27,002 - INFO - [CORE] Found cart CART_1 at buffer RIU08a for Inbound_1
+2025-06-30 01:43:27,002 - INFO - CODE 401 Available carts: 5 remaining.
+2025-06-30 01:43:27,002 - INFO - CODE 501 Trips taken by Robot_0 is 0
+2025-06-30 01:43:27,003 - INFO - CODE 501 Trips taken by Robot_1 is 0
+2025-06-30 01:43:27,003 - INFO - CODE 101 --------------- 50
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_2 total idle time: 0.00 seconds
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_3 total idle time: 0.00 seconds
+2025-06-30 01:43:27,003 - INFO - [CORE] Found cart CART_2 at buffer RIU08b for Inbound_1
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_4 total idle time: 0.00 seconds
+2025-06-30 01:43:27,003 - INFO - CODE 401 Available carts: 4 remaining.
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_5 total idle time: 0.00 seconds
+2025-06-30 01:43:27,003 - INFO - CODE 501 Trips taken by Robot_0 is 0
+2025-06-30 01:43:27,003 - INFO - CODE 501 Trips taken by Robot_1 is 0
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_6 total idle time: 0.00 seconds
+2025-06-30 01:43:27,003 - INFO - CODE 101 --------------- 99
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:43:27,003 - INFO - [IDLE] Cart CART_3 total idle time: 0.00 seconds
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_4 total idle time: 0.00 seconds
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_5 total idle time: 0.00 seconds
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_6 total idle time: 0.00 seconds
+2025-06-30 01:43:27,004 - INFO - [CORE] Found cart CART_3 at buffer RIU08c for Inbound_1
+2025-06-30 01:43:27,004 - INFO - CODE 401 Available carts: 3 remaining.
+2025-06-30 01:43:27,004 - INFO - CODE 501 Trips taken by Robot_0 is 0
+2025-06-30 01:43:27,004 - INFO - CODE 501 Trips taken by Robot_1 is 0
+2025-06-30 01:43:27,004 - INFO - CODE 101 --------------- 106
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_4 total idle time: 0.00 seconds
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_5 total idle time: 0.00 seconds
+2025-06-30 01:43:27,004 - INFO - [IDLE] Cart CART_6 total idle time: 0.00 seconds
+2025-06-30 01:43:27,081 - INFO - [CORE] Found cart CART_5 at buffer RIU07b for Inbound_2
+2025-06-30 01:43:27,087 - INFO - CODE 401 Available carts: 2 remaining.
+2025-06-30 01:43:27,087 - INFO - CODE 501 Trips taken by Robot_0 is 0
+2025-06-30 01:43:27,087 - INFO - CODE 501 Trips taken by Robot_1 is 0
+2025-06-30 01:43:27,087 - INFO - CODE 101 --------------- 113
+2025-06-30 01:43:27,087 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:43:27,087 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:43:27,087 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:43:27,098 - INFO - [IDLE] Cart CART_4 total idle time: 0.00 seconds
+2025-06-30 01:43:27,108 - INFO - [IDLE] Cart CART_5 total idle time: 0.25 seconds
+2025-06-30 01:43:27,118 - INFO - [IDLE] Cart CART_6 total idle time: 0.00 seconds
+2025-06-30 01:43:27,139 - INFO - [CORE] Found cart CART_6 at buffer RIU07c for Inbound_2
+2025-06-30 01:43:27,150 - INFO - CODE 401 Available carts: 1 remaining.
+2025-06-30 01:43:27,150 - INFO - CODE 501 Trips taken by Robot_0 is 0
+2025-06-30 01:43:27,150 - INFO - CODE 501 Trips taken by Robot_1 is 0
+2025-06-30 01:43:27,150 - INFO - CODE 101 --------------- 116
+2025-06-30 01:43:27,150 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:43:27,150 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:43:27,150 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:43:27,160 - INFO - [IDLE] Cart CART_4 total idle time: 0.00 seconds
+2025-06-30 01:43:27,171 - INFO - [IDLE] Cart CART_5 total idle time: 0.25 seconds
+2025-06-30 01:43:27,181 - INFO - [IDLE] Cart CART_6 total idle time: 0.32 seconds
+2025-06-30 01:43:27,202 - INFO - [CORE] Found cart CART_4 at buffer RIU07a for Inbound_2
+2025-06-30 01:43:27,202 - INFO - CODE 401 Available carts: 0 remaining.
+2025-06-30 01:43:27,202 - INFO - CODE 501 Trips taken by Robot_0 is 0
+2025-06-30 01:43:27,202 - INFO - CODE 501 Trips taken by Robot_1 is 0
+2025-06-30 01:43:27,203 - INFO - CODE 101 --------------- 124
+2025-06-30 01:43:27,203 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:43:27,203 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:43:27,203 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:43:27,203 - INFO - [IDLE] Cart CART_4 total idle time: 0.37 seconds
+2025-06-30 01:43:27,203 - INFO - [IDLE] Cart CART_5 total idle time: 0.25 seconds
+2025-06-30 01:43:27,203 - INFO - [IDLE] Cart CART_6 total idle time: 0.32 seconds
+2025-06-30 01:43:36,096 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:43:37,012 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:43:40,100 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:43:43,018 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:43:48,023 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:43:48,108 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:43:52,113 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:43:58,034 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:01,122 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:44:05,040 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:07,128 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:44:15,051 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:17,138 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:44:17,138 - INFO - [Inbound_2 Worker] Finished loading cart CART_5
+2025-06-30 01:44:17,140 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_5 from RIU07b
+2025-06-30 01:44:19,053 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:23,145 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 01:44:28,062 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:32,154 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 01:44:36,068 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:38,160 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 01:44:38,160 - INFO - [Inbound_2 Worker] Finished loading cart CART_6
+2025-06-30 01:44:38,160 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_6 from RIU07c
+2025-06-30 01:44:40,071 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:46,168 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:44:47,079 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:56,088 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:44:56,179 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:45:03,186 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:45:06,097 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:45:09,192 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:45:10,101 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:45:16,107 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:45:17,200 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:45:23,207 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:45:26,117 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:45:28,212 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:45:31,147 - INFO - CODE 401 Available carts: 0 remaining.
+2025-06-30 01:45:31,147 - INFO - CODE 501 Trips taken by Robot_0 is 1
+2025-06-30 01:45:31,147 - INFO - CODE 501 Trips taken by Robot_1 is 1
+2025-06-30 01:45:31,147 - INFO - CODE 101 --------------- 131
+2025-06-30 01:45:31,147 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:45:31,147 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:45:31,147 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:45:31,147 - INFO - [IDLE] Cart CART_4 total idle time: 0.37 seconds
+2025-06-30 01:45:31,147 - INFO - [IDLE] Cart CART_5 total idle time: 0.25 seconds
+2025-06-30 01:45:31,147 - INFO - [IDLE] Cart CART_6 total idle time: 0.32 seconds
+2025-06-30 01:45:31,148 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 01:45:32,124 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:45:36,128 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:45:36,220 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:45:36,221 - INFO - [Inbound_2 Worker] Finished loading cart CART_4
+2025-06-30 01:45:39,155 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_2 for batch 1.
+2025-06-30 01:45:42,134 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:45:44,160 - INFO - [BUFFER] Allocated buffer RODL08a at door Outbound_26 to CART 0
+2025-06-30 01:45:52,144 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:45:58,953 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_2 for batch 1.
+2025-06-30 01:46:01,153 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:46:03,959 - INFO - [BUFFER] Allocated buffer RODR03a at door Outbound_36 to CART 1
+2025-06-30 01:46:11,162 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:46:16,168 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:46:25,177 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:46:32,180 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:46:37,185 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:46:37,983 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:46:44,192 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:46:46,992 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:46:54,202 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:46:56,001 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:46:59,206 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:02,006 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:47:06,306 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_4 from RIU07a
+2025-06-30 01:47:08,216 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:12,017 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:47:13,775 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 01:47:17,218 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:21,782 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 01:47:22,027 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:47:24,225 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:30,792 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 01:47:30,792 - INFO - [Outbound_36 Worker] Finished unloading cart CART_6
+2025-06-30 01:47:31,153 - INFO - CODE 401 Available carts: 1 remaining.
+2025-06-30 01:47:31,153 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 01:47:31,153 - INFO - CODE 501 Trips taken by Robot_0 is 3
+2025-06-30 01:47:31,153 - INFO - CODE 501 Trips taken by Robot_1 is 2
+2025-06-30 01:47:31,154 - INFO - CODE 101 --------------- 138
+2025-06-30 01:47:31,154 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:47:31,154 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:47:31,154 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:47:31,154 - INFO - [IDLE] Cart CART_4 total idle time: 0.37 seconds
+2025-06-30 01:47:31,154 - INFO - [IDLE] Cart CART_5 total idle time: 0.25 seconds
+2025-06-30 01:47:31,154 - INFO - [IDLE] Cart CART_6 total idle time: 0.32 seconds
+2025-06-30 01:47:32,037 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:47:32,038 - INFO - [Outbound_26 Worker] Finished unloading cart CART_5
+2025-06-30 01:47:33,234 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:41,241 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:49,249 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:53,719 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_2 for batch 1.
+2025-06-30 01:47:54,255 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:58,259 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:47:58,725 - INFO - [BUFFER] Allocated buffer ROUL01a at door Outbound_11 to CART 0
+2025-06-30 01:48:06,267 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:48:14,275 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:48:21,277 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:48:26,282 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:48:29,531 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:48:35,855 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_6 from RODR03a
+2025-06-30 01:48:36,292 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:48:38,541 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:48:44,299 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:48:46,549 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:48:50,306 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:48:52,555 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:48:56,311 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:48:58,560 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:49:00,881 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_5 from RODL08a
+2025-06-30 01:49:01,316 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:49:03,565 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:49:08,324 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:49:12,327 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:49:13,576 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:49:20,335 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:49:23,585 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:49:23,586 - INFO - [Outbound_11 Worker] Finished unloading cart CART_4
+2025-06-30 01:49:30,351 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:49:30,356 - INFO - [Inbound_1 Worker] Finished loading cart CART_1
+2025-06-30 01:49:31,154 - INFO - CODE 401 Available carts: 3 remaining.
+2025-06-30 01:49:31,154 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 01:49:31,154 - INFO - CODE 501 Trips taken by Robot_0 is 5
+2025-06-30 01:49:31,154 - INFO - CODE 501 Trips taken by Robot_1 is 3
+2025-06-30 01:49:31,154 - INFO - CODE 101 --------------- 146
+2025-06-30 01:49:31,155 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:49:31,155 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:49:31,155 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:49:31,155 - INFO - [IDLE] Cart CART_4 total idle time: 0.37 seconds
+2025-06-30 01:49:31,155 - INFO - [IDLE] Cart CART_5 total idle time: 0.25 seconds
+2025-06-30 01:49:31,155 - INFO - [IDLE] Cart CART_6 total idle time: 0.32 seconds
+2025-06-30 01:49:36,366 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:49:38,083 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_5 from RODL08a. Moving it now to Inbound_2
+2025-06-30 01:49:38,083 - INFO - [BUFFER] Allocated buffer RIU07a at door Inbound_2 to CART 0
+2025-06-30 01:49:46,377 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:49:55,385 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:05,395 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:09,868 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_6 from RODR03a. Moving it now to Inbound_2
+2025-06-30 01:50:09,868 - INFO - [BUFFER] Allocated buffer RIU07a at door Inbound_2 to CART 1
+2025-06-30 01:50:15,405 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:24,918 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_5 to RIU07a.
+2025-06-30 01:50:25,415 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:29,419 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:33,928 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:50:38,429 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:39,933 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:50:42,432 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:44,938 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:50:50,441 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:51,946 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:50:54,445 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:59,450 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:50:59,954 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:51:05,960 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:51:07,458 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:51:09,963 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:51:09,964 - INFO - [Inbound_2 Worker] Finished loading cart CART_5
+2025-06-30 01:51:10,482 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_1 from RIU08a
+2025-06-30 01:51:14,464 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:51:17,112 - INFO - [Inbound-Dispatcher] Robot 1 has dropped off cart CART_6 to RIU07a.
+2025-06-30 01:51:24,474 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:51:26,122 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:51:28,479 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:51:34,129 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:51:36,486 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:51:41,137 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:51:42,492 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:51:46,496 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:51:47,143 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:51:47,362 - INFO - CODE 401 Available carts: 2 remaining.
+2025-06-30 01:51:47,363 - INFO - CODE 501 Trips taken by Robot_0 is 7
+2025-06-30 01:51:47,363 - INFO - CODE 501 Trips taken by Robot_1 is 4
+2025-06-30 01:51:47,363 - INFO - CODE 101 --------------- 152
+2025-06-30 01:51:47,363 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 01:51:47,363 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:51:47,363 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:51:47,363 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:51:47,363 - INFO - [IDLE] Cart CART_4 total idle time: 0.37 seconds
+2025-06-30 01:51:47,363 - INFO - [IDLE] Cart CART_5 total idle time: 179.35 seconds
+2025-06-30 01:51:47,363 - INFO - [IDLE] Cart CART_6 total idle time: 159.39 seconds
+2025-06-30 01:51:52,148 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:51:52,503 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:51:55,370 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_1 for batch 1.
+2025-06-30 01:51:57,153 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:51:59,509 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:52:00,376 - INFO - [BUFFER] Allocated buffer ROUL06a at door Outbound_6 to CART 0
+2025-06-30 01:52:00,531 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_4 from ROUL01a
+2025-06-30 01:52:04,160 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:52:04,160 - INFO - [Inbound_2 Worker] Finished loading cart CART_6
+2025-06-30 01:52:06,516 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:52:14,524 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:52:19,529 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:52:28,538 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:52:36,547 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:52:42,553 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:52:43,030 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:52:45,847 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_4 from ROUL01a. Moving it now to Inbound_2
+2025-06-30 01:52:45,847 - INFO - [BUFFER] Allocated buffer RIU07b at door Inbound_2 to CART 1
+2025-06-30 01:52:48,035 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:52:51,562 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:52:52,039 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:00,591 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_5 from RIU07a
+2025-06-30 01:53:01,572 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:02,045 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:05,575 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:06,049 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:10,481 - INFO - [Inbound-Dispatcher] Robot 1 has dropped off cart CART_4 to RIU07b.
+2025-06-30 01:53:12,582 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:16,056 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:18,490 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:53:18,588 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:24,497 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:53:26,065 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:26,597 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:30,503 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:53:32,602 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:35,075 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:36,508 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:53:39,078 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:41,645 - INFO - CODE 401 Available carts: 1 remaining.
+2025-06-30 01:53:41,645 - INFO - CODE 501 Trips taken by Robot_0 is 9
+2025-06-30 01:53:41,645 - INFO - CODE 501 Trips taken by Robot_1 is 6
+2025-06-30 01:53:41,645 - INFO - CODE 101 --------------- 156
+2025-06-30 01:53:41,645 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:53:41,645 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:53:41,645 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:53:41,645 - INFO - [IDLE] Cart CART_4 total idle time: 202.63 seconds
+2025-06-30 01:53:41,645 - INFO - [IDLE] Cart CART_5 total idle time: 179.35 seconds
+2025-06-30 01:53:41,645 - INFO - [IDLE] Cart CART_6 total idle time: 214.45 seconds
+2025-06-30 01:53:41,645 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 01:53:42,612 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:43,082 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:45,517 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:53:46,617 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:49,653 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_2 for batch 1.
+2025-06-30 01:53:50,523 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:53:50,620 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:53:51,090 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:54,658 - INFO - [BUFFER] Allocated buffer ROUL06a at door Outbound_6 to CART 0
+2025-06-30 01:53:55,646 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_6 from RIU07a
+2025-06-30 01:53:57,097 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:53:59,629 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:54:00,533 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:54:04,104 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:54:05,537 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:54:05,538 - INFO - [Inbound_2 Worker] Finished loading cart CART_4
+2025-06-30 01:54:09,639 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:54:12,112 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:54:16,646 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:54:20,119 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:54:23,653 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:54:29,125 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:54:32,663 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:54:34,131 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:54:35,974 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:54:40,671 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:54:41,137 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:54:45,984 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:54:48,679 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:54:49,140 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:54:52,991 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:54:54,145 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:54:55,589 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_4 from RIU07b
+2025-06-30 01:54:58,689 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:55:01,152 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:55:02,000 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:55:08,698 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:55:10,161 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:55:11,009 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:55:16,013 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:55:18,714 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:55:19,170 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:55:24,021 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 7 from cart CART_5 for item 51053650 
+2025-06-30 01:55:24,022 - INFO - [Outbound_6 Worker] Finished unloading cart CART_5
+2025-06-30 01:55:25,176 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:55:27,723 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:55:33,729 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 01:55:33,730 - INFO - [Inbound_1 Worker] Finished loading cart CART_2
+2025-06-30 01:55:35,185 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:55:39,735 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 01:55:41,583 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_2 for batch 1.
+2025-06-30 01:55:41,651 - INFO - CODE 401 Available carts: 1 remaining.
+2025-06-30 01:55:41,651 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 01:55:41,651 - INFO - CODE 501 Trips taken by Robot_0 is 11
+2025-06-30 01:55:41,651 - INFO - CODE 501 Trips taken by Robot_1 is 7
+2025-06-30 01:55:41,651 - INFO - CODE 101 --------------- 163
+2025-06-30 01:55:41,651 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:55:41,651 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:55:41,651 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:55:41,651 - INFO - [IDLE] Cart CART_4 total idle time: 265.70 seconds
+2025-06-30 01:55:41,651 - INFO - [IDLE] Cart CART_5 total idle time: 179.35 seconds
+2025-06-30 01:55:41,651 - INFO - [IDLE] Cart CART_6 total idle time: 214.45 seconds
+2025-06-30 01:55:45,196 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:55:46,588 - INFO - [BUFFER] Allocated buffer ROUL03a at door Outbound_9 to CART 0
+2025-06-30 01:55:49,745 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 01:55:53,750 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 01:55:55,206 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:56:02,213 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:56:02,759 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 01:56:10,221 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:56:12,769 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 01:56:19,230 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:56:20,777 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 01:56:23,234 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:56:24,026 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:56:28,785 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 01:56:28,786 - INFO - [Inbound_1 Worker] Finished loading cart CART_3
+2025-06-30 01:56:31,242 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:56:32,034 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:56:38,250 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:56:42,043 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:56:42,253 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:56:49,104 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_5 from ROUL06a
+2025-06-30 01:56:50,052 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:56:52,264 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:00,062 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:57:00,271 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:07,279 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:09,065 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:57:16,071 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:57:16,287 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:22,475 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_5 from ROUL06a. Moving it now to Inbound_1
+2025-06-30 01:57:22,475 - INFO - [BUFFER] Allocated buffer RIU08a at door Inbound_1 to CART 0
+2025-06-30 01:57:23,079 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 8 from cart CART_4 for item 51053650 
+2025-06-30 01:57:23,079 - INFO - [Outbound_9 Worker] Finished unloading cart CART_4
+2025-06-30 01:57:24,295 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:33,305 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:39,311 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:48,320 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:54,325 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:57:55,943 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_5 to RIU08a.
+2025-06-30 01:58:00,332 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:58:05,953 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 01:58:06,338 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:58:11,342 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:58:13,959 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 01:58:15,347 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:58:18,357 - INFO - CODE 401 Available carts: 2 remaining.
+2025-06-30 01:58:18,357 - INFO - CODE 501 Trips taken by Robot_0 is 14
+2025-06-30 01:58:18,357 - INFO - CODE 501 Trips taken by Robot_1 is 7
+2025-06-30 01:58:18,357 - INFO - CODE 101 --------------- 169
+2025-06-30 01:58:18,357 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:58:18,357 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:58:18,357 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:58:18,357 - INFO - [IDLE] Cart CART_4 total idle time: 265.70 seconds
+2025-06-30 01:58:18,357 - INFO - [IDLE] Cart CART_5 total idle time: 297.81 seconds
+2025-06-30 01:58:18,357 - INFO - [IDLE] Cart CART_6 total idle time: 214.45 seconds
+2025-06-30 01:58:18,358 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 01:58:21,967 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 01:58:24,355 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:58:26,365 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_2 for batch 1.
+2025-06-30 01:58:29,975 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 01:58:31,370 - INFO - [BUFFER] Allocated buffer ROUL07a at door Outbound_5 to CART 1
+2025-06-30 01:58:34,365 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:58:34,980 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 01:58:39,212 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_2 from RIU08b
+2025-06-30 01:58:39,985 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 01:58:39,985 - INFO - [Inbound_1 Worker] Finished loading cart CART_5
+2025-06-30 01:58:40,371 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 50 from cart CART_1 for item 86088018 
+2025-06-30 01:58:40,371 - INFO - [Outbound_6 Worker] Finished unloading cart CART_1
+2025-06-30 01:59:13,980 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:59:17,008 - INFO - CODE 401 Available carts: 2 remaining.
+2025-06-30 01:59:17,008 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 01:59:17,008 - INFO - CODE 501 Trips taken by Robot_0 is 15
+2025-06-30 01:59:17,008 - INFO - CODE 501 Trips taken by Robot_1 is 8
+2025-06-30 01:59:17,009 - INFO - CODE 101 --------------- 176
+2025-06-30 01:59:17,009 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 01:59:17,009 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 01:59:17,009 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 01:59:17,009 - INFO - [IDLE] Cart CART_4 total idle time: 265.70 seconds
+2025-06-30 01:59:17,009 - INFO - [IDLE] Cart CART_5 total idle time: 349.86 seconds
+2025-06-30 01:59:17,009 - INFO - [IDLE] Cart CART_6 total idle time: 214.45 seconds
+2025-06-30 01:59:19,985 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:59:25,016 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_1 for batch 2.
+2025-06-30 01:59:28,994 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:59:30,021 - INFO - [BUFFER] Allocated buffer ROUL06a at door Outbound_6 to CART 0
+2025-06-30 01:59:34,267 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_3 from RIU08c
+2025-06-30 01:59:39,004 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:59:44,010 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 01:59:54,019 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 02:00:04,029 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 7 from cart CART_6 for item 51053650 
+2025-06-30 02:00:04,030 - INFO - [Outbound_5 Worker] Finished unloading cart CART_6
+2025-06-30 02:00:11,511 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:00:20,520 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:00:21,921 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_1 for batch 1.
+2025-06-30 02:00:26,926 - INFO - [BUFFER] Allocated buffer RODL04a at door Outbound_30 to CART 1
+2025-06-30 02:00:28,528 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:00:29,322 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_4 from ROUL03a
+2025-06-30 02:00:33,533 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:00:37,537 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:00:42,542 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:00:48,548 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:00:53,553 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:03,555 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:07,727 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:01:08,081 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_4 from ROUL03a. Moving it now to Inbound_2
+2025-06-30 02:01:08,081 - INFO - [BUFFER] Allocated buffer RIU07c at door Inbound_2 to CART 0
+2025-06-30 02:01:09,556 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:14,561 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:16,737 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:01:17,014 - INFO - CODE 401 Available carts: 2 remaining.
+2025-06-30 02:01:17,014 - INFO - CODE 501 Trips taken by Robot_0 is 18
+2025-06-30 02:01:17,014 - INFO - CODE 501 Trips taken by Robot_1 is 10
+2025-06-30 02:01:17,014 - INFO - CODE 101 --------------- 195
+2025-06-30 02:01:17,014 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 02:01:17,014 - INFO - [IDLE] Cart CART_1 total idle time: 0.17 seconds
+2025-06-30 02:01:17,014 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 02:01:17,014 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 02:01:17,014 - INFO - [IDLE] Cart CART_4 total idle time: 490.70 seconds
+2025-06-30 02:01:17,014 - INFO - [IDLE] Cart CART_5 total idle time: 349.86 seconds
+2025-06-30 02:01:17,014 - INFO - [IDLE] Cart CART_6 total idle time: 214.45 seconds
+2025-06-30 02:01:22,743 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:01:23,570 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:27,574 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:31,752 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:01:35,755 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:01:36,030 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_4 to RIU07c.
+2025-06-30 02:01:37,585 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:42,590 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:43,764 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:01:44,038 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 4 from cart CART_4 for item 51053650 
+2025-06-30 02:01:44,395 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_5 from RIU08a
+2025-06-30 02:01:47,595 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:01:49,043 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 4 from cart CART_4 for item 51053650 
+2025-06-30 02:01:52,773 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:01:52,773 - INFO - [Outbound_30 Worker] Finished unloading cart CART_3
+2025-06-30 02:01:57,051 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 4 from cart CART_4 for item 51053650 
+2025-06-30 02:01:57,605 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:02:01,610 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:02:03,058 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 4 from cart CART_4 for item 51053650 
+2025-06-30 02:02:03,058 - INFO - [Inbound_2 Worker] Finished loading cart CART_4
+2025-06-30 02:02:11,620 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:02:14,426 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_1 from ROUL06a
+2025-06-30 02:02:16,625 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:02:22,631 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:02:29,638 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:02:33,181 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_1 for batch 1.
+2025-06-30 02:02:35,644 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:02:38,187 - INFO - [BUFFER] Allocated buffer ROUR09a at door Outbound_20 to CART 1
+2025-06-30 02:02:44,654 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:02:47,744 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_1 from ROUL06a. Moving it now to Inbound_2
+2025-06-30 02:02:47,745 - INFO - [BUFFER] Allocated buffer RIU07c at door Inbound_2 to CART 0
+2025-06-30 02:02:54,664 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:04,674 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:10,679 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:15,685 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:17,019 - INFO - CODE 401 Available carts: 3 remaining.
+2025-06-30 02:03:17,020 - INFO - CODE 501 Trips taken by Robot_0 is 20
+2025-06-30 02:03:17,020 - INFO - CODE 501 Trips taken by Robot_1 is 12
+2025-06-30 02:03:17,020 - INFO - CODE 101 --------------- 201
+2025-06-30 02:03:17,020 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 02:03:17,020 - INFO - [IDLE] Cart CART_1 total idle time: 247.54 seconds
+2025-06-30 02:03:17,020 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 02:03:17,020 - INFO - [IDLE] Cart CART_3 total idle time: 0.17 seconds
+2025-06-30 02:03:17,020 - INFO - [IDLE] Cart CART_4 total idle time: 525.73 seconds
+2025-06-30 02:03:17,020 - INFO - [IDLE] Cart CART_5 total idle time: 349.86 seconds
+2025-06-30 02:03:17,020 - INFO - [IDLE] Cart CART_6 total idle time: 214.45 seconds
+2025-06-30 02:03:21,097 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_1 to RIU07c.
+2025-06-30 02:03:21,691 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:27,105 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:03:31,701 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:36,114 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:03:38,708 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:42,120 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:03:47,125 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:03:47,717 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:51,130 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:03:54,988 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 02:03:55,725 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:03:59,531 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_6 from ROUL07a
+2025-06-30 02:04:00,139 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:04:01,995 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 02:04:04,734 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:09,148 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:04:09,148 - INFO - [Inbound_2 Worker] Finished loading cart CART_1
+2025-06-30 02:04:10,003 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 02:04:13,743 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:16,009 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 02:04:17,748 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:21,752 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:26,019 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 02:04:26,757 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:30,761 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:31,154 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_6 from ROUL07a. Moving it now to Inbound_2
+2025-06-30 02:04:31,154 - INFO - [BUFFER] Allocated buffer RIU07c at door Inbound_2 to CART 0
+2025-06-30 02:04:34,765 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:36,029 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 6 from cart CART_5 for item 86088018 
+2025-06-30 02:04:36,029 - INFO - [Outbound_20 Worker] Finished unloading cart CART_5
+2025-06-30 02:04:41,773 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:46,778 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:04:56,781 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:05:04,789 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:05:07,082 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_6 to RIU07c.
+2025-06-30 02:05:13,790 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:05:17,092 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:05:19,610 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_3 from RODL04a
+2025-06-30 02:05:21,799 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:05:23,096 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:05:25,803 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:05:30,102 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:05:34,107 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:05:35,813 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:05:42,114 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:05:44,634 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_4 from RIU07c
+2025-06-30 02:05:45,823 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 49 from cart CART_2 for item 86088018 
+2025-06-30 02:05:45,823 - INFO - [Outbound_6 Worker] Finished unloading cart CART_2
+2025-06-30 02:05:52,125 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:05:52,125 - INFO - [Inbound_2 Worker] Finished loading cart CART_6
+2025-06-30 02:06:06,225 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_3 from RODL04a. Moving it now to Inbound_1
+2025-06-30 02:06:06,226 - INFO - [BUFFER] Allocated buffer RIU08a at door Inbound_1 to CART 1
+2025-06-30 02:06:21,464 - INFO - CODE 401 Available carts: 2 remaining.
+2025-06-30 02:06:21,464 - INFO - CODE 501 Trips taken by Robot_0 is 23
+2025-06-30 02:06:21,464 - INFO - CODE 501 Trips taken by Robot_1 is 14
+2025-06-30 02:06:21,464 - INFO - CODE 101 --------------- 207
+2025-06-30 02:06:21,464 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 02:06:21,464 - INFO - [IDLE] Cart CART_1 total idle time: 303.60 seconds
+2025-06-30 02:06:21,464 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 02:06:21,464 - INFO - [IDLE] Cart CART_3 total idle time: 253.62 seconds
+2025-06-30 02:06:21,465 - INFO - [IDLE] Cart CART_4 total idle time: 525.73 seconds
+2025-06-30 02:06:21,465 - INFO - [IDLE] Cart CART_5 total idle time: 349.86 seconds
+2025-06-30 02:06:21,465 - INFO - [IDLE] Cart CART_6 total idle time: 534.62 seconds
+2025-06-30 02:06:29,471 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_2 for batch 1.
+2025-06-30 02:06:34,477 - INFO - [BUFFER] Allocated buffer RODL05a at door Outbound_29 to CART 0
+2025-06-30 02:06:42,864 - INFO - [Inbound-Dispatcher] Robot 1 has dropped off cart CART_3 to RIU08a.
+2025-06-30 02:06:52,876 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:07:01,885 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:07:06,890 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:07:15,900 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:07:20,905 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:07:21,836 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 4 from cart CART_4 for item 51053650 
+2025-06-30 02:07:24,730 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_1 from RIU07c
+2025-06-30 02:07:24,908 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:07:27,842 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 4 from cart CART_4 for item 51053650 
+2025-06-30 02:07:34,919 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:07:34,919 - INFO - [Inbound_1 Worker] Finished loading cart CART_3
+2025-06-30 02:07:36,851 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 4 from cart CART_4 for item 51053650 
+2025-06-30 02:07:43,859 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 4 from cart CART_4 for item 51053650 
+2025-06-30 02:07:43,859 - INFO - [Outbound_29 Worker] Finished unloading cart CART_4
+2025-06-30 02:07:49,755 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_5 from ROUR09a
+2025-06-30 02:08:11,913 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_2 for batch 1.
+2025-06-30 02:08:16,918 - INFO - [BUFFER] Allocated buffer ROUR02a at door Outbound_13 to CART 1
+2025-06-30 02:08:21,469 - INFO - CODE 401 Available carts: 3 remaining.
+2025-06-30 02:08:21,469 - INFO - CODE 501 Trips taken by Robot_0 is 25
+2025-06-30 02:08:21,469 - INFO - CODE 501 Trips taken by Robot_1 is 16
+2025-06-30 02:08:21,469 - INFO - CODE 101 --------------- 213
+2025-06-30 02:08:21,469 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 02:08:21,469 - INFO - [IDLE] Cart CART_1 total idle time: 303.60 seconds
+2025-06-30 02:08:21,470 - INFO - [IDLE] Cart CART_2 total idle time: 0.17 seconds
+2025-06-30 02:08:21,470 - INFO - [IDLE] Cart CART_3 total idle time: 313.69 seconds
+2025-06-30 02:08:21,470 - INFO - [IDLE] Cart CART_4 total idle time: 525.73 seconds
+2025-06-30 02:08:21,470 - INFO - [IDLE] Cart CART_5 total idle time: 349.86 seconds
+2025-06-30 02:08:21,470 - INFO - [IDLE] Cart CART_6 total idle time: 534.62 seconds
+2025-06-30 02:09:16,792 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:09:22,799 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:09:25,234 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_5 from ROUR09a. Moving it now to Inbound_1
+2025-06-30 02:09:25,234 - INFO - [BUFFER] Allocated buffer RIU08b at door Inbound_1 to CART 0
+2025-06-30 02:09:26,802 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:09:35,810 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:09:45,819 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:09:51,825 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:09:57,832 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 7 from cart CART_1 for item 51053650 
+2025-06-30 02:09:57,832 - INFO - [Outbound_13 Worker] Finished unloading cart CART_1
+2025-06-30 02:10:24,912 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_2 from ROUL06a
+2025-06-30 02:10:36,588 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_5 to RIU08b.
+2025-06-30 02:10:45,599 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:10:53,607 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:10:59,785 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_2 from ROUL06a. Moving it now to Inbound_1
+2025-06-30 02:10:59,785 - INFO - [BUFFER] Allocated buffer RIU08b at door Inbound_1 to CART 1
+2025-06-30 02:11:00,614 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:11:06,619 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:11:13,626 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:11:14,961 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_6 from RIU07c
+2025-06-30 02:11:23,637 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:11:28,641 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:11:31,718 - INFO - [Inbound-Dispatcher] Robot 1 has dropped off cart CART_2 to RIU08b.
+2025-06-30 02:11:32,646 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:11:38,652 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:11:44,657 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:11:53,086 - INFO - CODE 401 Available carts: 4 remaining.
+2025-06-30 02:11:53,086 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 02:11:53,086 - INFO - CODE 501 Trips taken by Robot_0 is 27
+2025-06-30 02:11:53,086 - INFO - CODE 501 Trips taken by Robot_1 is 18
+2025-06-30 02:11:53,086 - INFO - CODE 101 --------------- 216
+2025-06-30 02:11:53,086 - INFO - [IDLE] Cart CART_1 total idle time: 303.60 seconds
+2025-06-30 02:11:53,086 - INFO - [IDLE] Cart CART_2 total idle time: 314.13 seconds
+2025-06-30 02:11:53,086 - INFO - [IDLE] Cart CART_3 total idle time: 313.69 seconds
+2025-06-30 02:11:53,086 - INFO - [IDLE] Cart CART_4 total idle time: 525.73 seconds
+2025-06-30 02:11:53,086 - INFO - [IDLE] Cart CART_5 total idle time: 639.06 seconds
+2025-06-30 02:11:53,086 - INFO - [IDLE] Cart CART_6 total idle time: 534.62 seconds
+2025-06-30 02:11:53,667 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:01,093 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_2 for batch 1.
+2025-06-30 02:12:03,676 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:06,099 - INFO - [BUFFER] Allocated buffer ROUL05a at door Outbound_7 to CART 0
+2025-06-30 02:12:13,686 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:15,020 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_3 from RIU08a
+2025-06-30 02:12:22,695 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:31,704 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:39,705 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:43,709 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:47,731 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:12:49,715 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:55,003 - INFO - CODE 401 Available carts: 4 remaining.
+2025-06-30 02:12:55,003 - INFO - CODE 501 Trips taken by Robot_0 is 28
+2025-06-30 02:12:55,003 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 02:12:55,003 - INFO - CODE 501 Trips taken by Robot_1 is 19
+2025-06-30 02:12:55,003 - INFO - CODE 101 --------------- 266
+2025-06-30 02:12:55,003 - INFO - [IDLE] Cart CART_1 total idle time: 303.60 seconds
+2025-06-30 02:12:55,003 - INFO - [IDLE] Cart CART_2 total idle time: 314.13 seconds
+2025-06-30 02:12:55,003 - INFO - [IDLE] Cart CART_3 total idle time: 313.69 seconds
+2025-06-30 02:12:55,003 - INFO - [IDLE] Cart CART_4 total idle time: 525.73 seconds
+2025-06-30 02:12:55,004 - INFO - [IDLE] Cart CART_5 total idle time: 639.06 seconds
+2025-06-30 02:12:55,004 - INFO - [IDLE] Cart CART_6 total idle time: 534.62 seconds
+2025-06-30 02:12:56,723 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:12:56,723 - INFO - [Inbound_1 Worker] Finished loading cart CART_5
+2025-06-30 02:12:56,740 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:13:03,010 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_1 for batch 1.
+2025-06-30 02:13:03,747 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:13:05,071 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_4 from RODL05a
+2025-06-30 02:13:05,732 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:13:08,016 - INFO - [BUFFER] Allocated buffer RODR06a at door Outbound_39 to CART 1
+2025-06-30 02:13:09,753 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:13:13,739 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:13:17,761 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:13:18,744 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:13:25,769 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 6 from cart CART_6 for item 51053650 
+2025-06-30 02:13:25,770 - INFO - [Outbound_7 Worker] Finished unloading cart CART_6
+2025-06-30 02:13:26,748 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:13:31,754 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:13:35,758 - INFO - CODE 201 [Cart CART_2] Loading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:13:35,758 - INFO - [Inbound_1 Worker] Finished loading cart CART_2
+2025-06-30 02:13:48,113 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_4 from RODL05a. Moving it now to Inbound_2
+2025-06-30 02:13:48,113 - INFO - [BUFFER] Allocated buffer RIU07c at door Inbound_2 to CART 0
+2025-06-30 02:14:26,859 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_4 to RIU07c.
+2025-06-30 02:14:27,523 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:14:31,865 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:14:33,529 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:14:38,872 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:14:40,536 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:14:48,882 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:14:49,542 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:14:58,892 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:14:59,552 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:15:03,898 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:15:05,188 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_1 from ROUR02a
+2025-06-30 02:15:05,557 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:15:11,901 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:15:11,905 - INFO - [Inbound_2 Worker] Finished loading cart CART_4
+2025-06-30 02:15:14,566 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 7 from cart CART_3 for item 86088018 
+2025-06-30 02:15:14,567 - INFO - [Outbound_39 Worker] Finished unloading cart CART_3
+2025-06-30 02:15:55,238 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_5 from RIU08b
+2025-06-30 02:16:26,233 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_1 from ROUR02a. Moving it now to Inbound_2
+2025-06-30 02:16:26,233 - INFO - [BUFFER] Allocated buffer RIU07c at door Inbound_2 to CART 0
+2025-06-30 02:16:33,315 - INFO - CODE 401 Available carts: 2 remaining.
+2025-06-30 02:16:33,315 - INFO - CODE 501 Trips taken by Robot_0 is 32
+2025-06-30 02:16:33,315 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 02:16:33,315 - INFO - CODE 501 Trips taken by Robot_1 is 21
+2025-06-30 02:16:33,315 - INFO - CODE 101 --------------- 316
+2025-06-30 02:16:33,315 - INFO - [IDLE] Cart CART_1 total idle time: 692.00 seconds
+2025-06-30 02:16:33,315 - INFO - [IDLE] Cart CART_2 total idle time: 446.18 seconds
+2025-06-30 02:16:33,315 - INFO - [IDLE] Cart CART_3 total idle time: 313.69 seconds
+2025-06-30 02:16:33,315 - INFO - [IDLE] Cart CART_4 total idle time: 943.04 seconds
+2025-06-30 02:16:33,316 - INFO - [IDLE] Cart CART_5 total idle time: 787.20 seconds
+2025-06-30 02:16:33,316 - INFO - [IDLE] Cart CART_6 total idle time: 534.62 seconds
+2025-06-30 02:16:41,322 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_1 for batch 1.
+2025-06-30 02:16:46,328 - INFO - [BUFFER] Allocated buffer ROUL03a at door Outbound_9 to CART 1
+2025-06-30 02:17:17,399 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:17:19,965 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_1 to RIU07c.
+2025-06-30 02:17:23,968 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:17:24,406 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:17:29,974 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:17:31,413 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:17:38,984 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:17:41,424 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:17:45,427 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:17:46,992 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:17:50,351 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_6 from ROUL05a
+2025-06-30 02:17:54,437 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:17:55,000 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:18:00,357 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_2 from RIU08b
+2025-06-30 02:18:00,442 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:18:03,008 - INFO - CODE 201 [Cart CART_1] Loading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:18:03,008 - INFO - [Inbound_2 Worker] Finished loading cart CART_1
+2025-06-30 02:18:10,452 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:18:16,458 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:18:24,466 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:18:27,166 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_6 from ROUL05a. Moving it now to Inbound_2
+2025-06-30 02:18:27,167 - INFO - [BUFFER] Allocated buffer RIU07c at door Inbound_2 to CART 1
+2025-06-30 02:18:29,471 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:18:34,476 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:18:37,567 - INFO - CODE 401 Available carts: 1 remaining.
+2025-06-30 02:18:37,567 - INFO - CODE 501 Trips taken by Robot_0 is 33
+2025-06-30 02:18:37,567 - INFO - CODE 501 Trips taken by Robot_1 is 24
+2025-06-30 02:18:37,567 - INFO - CODE 101 --------------- 366
+2025-06-30 02:18:37,567 - INFO - [IDLE] Cart CART_1 total idle time: 743.05 seconds
+2025-06-30 02:18:37,567 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 02:18:37,567 - INFO - [IDLE] Cart CART_2 total idle time: 446.18 seconds
+2025-06-30 02:18:37,567 - INFO - [IDLE] Cart CART_3 total idle time: 313.69 seconds
+2025-06-30 02:18:37,567 - INFO - [IDLE] Cart CART_4 total idle time: 943.04 seconds
+2025-06-30 02:18:37,567 - INFO - [IDLE] Cart CART_5 total idle time: 787.20 seconds
+2025-06-30 02:18:37,567 - INFO - [IDLE] Cart CART_6 total idle time: 836.02 seconds
+2025-06-30 02:18:44,487 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:18:45,575 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_1 for batch 1.
+2025-06-30 02:18:50,579 - INFO - [BUFFER] Allocated buffer ROUR04a at door Outbound_15 to CART 0
+2025-06-30 02:18:54,497 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:19:00,175 - INFO - [Inbound-Dispatcher] Robot 1 has dropped off cart CART_6 to RIU07c.
+2025-06-30 02:19:00,502 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:19:06,509 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:19:07,184 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 02:19:11,188 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 02:19:13,516 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:19:15,191 - INFO - CODE 201 [Cart CART_6] Loading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 02:19:15,192 - INFO - [Inbound_2 Worker] Finished loading cart CART_6
+2025-06-30 02:19:22,524 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:19:31,534 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 19 from cart CART_5 for item 86088018 
+2025-06-30 02:19:31,534 - INFO - [Outbound_9 Worker] Finished unloading cart CART_5
+2025-06-30 02:19:40,457 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_4 from RIU07c
+2025-06-30 02:19:55,457 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:20:05,467 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:20:11,473 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:20:19,480 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:20:19,635 - INFO - CODE 401 Available carts: 2 remaining.
+2025-06-30 02:20:19,635 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 02:20:19,635 - INFO - CODE 501 Trips taken by Robot_0 is 34
+2025-06-30 02:20:19,635 - INFO - CODE 501 Trips taken by Robot_1 is 25
+2025-06-30 02:20:19,635 - INFO - CODE 101 --------------- 371
+2025-06-30 02:20:19,635 - INFO - [IDLE] Cart CART_1 total idle time: 743.05 seconds
+2025-06-30 02:20:19,635 - INFO - [IDLE] Cart CART_2 total idle time: 446.18 seconds
+2025-06-30 02:20:19,635 - INFO - [IDLE] Cart CART_3 total idle time: 313.69 seconds
+2025-06-30 02:20:19,635 - INFO - [IDLE] Cart CART_4 total idle time: 943.04 seconds
+2025-06-30 02:20:19,635 - INFO - [IDLE] Cart CART_5 total idle time: 787.20 seconds
+2025-06-30 02:20:19,635 - INFO - [IDLE] Cart CART_6 total idle time: 859.05 seconds
+2025-06-30 02:20:26,488 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:20:27,642 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_2 for batch 1.
+2025-06-30 02:20:32,647 - INFO - [BUFFER] Allocated buffer ROUL02a at door Outbound_10 to CART 1
+2025-06-30 02:20:35,496 - INFO - CODE 301 [Cart CART_2] UnLoading case 1 of 6 from cart CART_2 for item 86088018 
+2025-06-30 02:20:35,497 - INFO - [Outbound_15 Worker] Finished unloading cart CART_2
+2025-06-30 02:21:04,829 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:21:10,548 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_3 from RODR06a
+2025-06-30 02:21:11,835 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:21:19,843 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:21:28,852 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:21:33,857 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:21:35,573 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_1 from RIU07c
+2025-06-30 02:21:39,864 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 6 from cart CART_4 for item 51053650 
+2025-06-30 02:21:39,864 - INFO - [Outbound_10 Worker] Finished unloading cart CART_4
+2025-06-30 02:22:19,640 - INFO - CODE 401 Available carts: 4 remaining.
+2025-06-30 02:22:19,640 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 02:22:19,640 - INFO - CODE 501 Trips taken by Robot_0 is 35
+2025-06-30 02:22:19,640 - INFO - CODE 501 Trips taken by Robot_1 is 27
+2025-06-30 02:22:19,640 - INFO - CODE 101 --------------- 376
+2025-06-30 02:22:19,641 - INFO - [IDLE] Cart CART_1 total idle time: 743.05 seconds
+2025-06-30 02:22:19,641 - INFO - [IDLE] Cart CART_2 total idle time: 446.18 seconds
+2025-06-30 02:22:19,641 - INFO - [IDLE] Cart CART_3 total idle time: 313.69 seconds
+2025-06-30 02:22:19,641 - INFO - [IDLE] Cart CART_4 total idle time: 943.04 seconds
+2025-06-30 02:22:19,641 - INFO - [IDLE] Cart CART_5 total idle time: 787.20 seconds
+2025-06-30 02:22:19,641 - INFO - [IDLE] Cart CART_6 total idle time: 859.05 seconds
+2025-06-30 02:22:23,307 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_2 for batch 1.
+2025-06-30 02:22:28,312 - INFO - [BUFFER-RELEASE] Released buffer RIU07c from CART 1
+2025-06-30 02:22:28,312 - INFO - [BUFFER] Allocated buffer ROUR03a at door Outbound_14 to CART 1
+2025-06-30 02:22:47,967 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_3 from RODR06a. Moving it now to Inbound_1
+2025-06-30 02:22:47,968 - INFO - [BUFFER] Allocated buffer RIU08c at door Inbound_1 to CART 0
+2025-06-30 02:23:31,374 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:23:38,380 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:23:43,385 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:23:49,391 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:23:53,395 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:23:58,778 - INFO - [Inbound-Dispatcher] Robot 0 has dropped off cart CART_3 to RIU08c.
+2025-06-30 02:24:02,404 - INFO - CODE 301 [Cart CART_1] UnLoading case 1 of 6 from cart CART_1 for item 51053650 
+2025-06-30 02:24:02,405 - INFO - [Outbound_14 Worker] Finished unloading cart CART_1
+2025-06-30 02:24:06,788 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:24:11,793 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:24:17,800 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:24:22,805 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:24:28,811 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:24:33,816 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:24:35,751 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_6 from RIU07c
+2025-06-30 02:24:40,757 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_5 from ROUL03a
+2025-06-30 02:24:42,826 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:24:52,835 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:01,844 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:10,853 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:12,752 - INFO - CODE 401 Available carts: 5 remaining.
+2025-06-30 02:25:12,752 - INFO - CODE 501 Trips taken by Robot_0 is 37
+2025-06-30 02:25:12,752 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 02:25:12,752 - INFO - CODE 501 Trips taken by Robot_1 is 29
+2025-06-30 02:25:12,752 - INFO - CODE 101 --------------- 379
+2025-06-30 02:25:12,752 - INFO - [IDLE] Cart CART_1 total idle time: 743.05 seconds
+2025-06-30 02:25:12,752 - INFO - [IDLE] Cart CART_2 total idle time: 446.18 seconds
+2025-06-30 02:25:12,752 - INFO - [IDLE] Cart CART_3 total idle time: 767.09 seconds
+2025-06-30 02:25:12,752 - INFO - [IDLE] Cart CART_4 total idle time: 943.04 seconds
+2025-06-30 02:25:12,752 - INFO - [IDLE] Cart CART_5 total idle time: 787.20 seconds
+2025-06-30 02:25:12,752 - INFO - [IDLE] Cart CART_6 total idle time: 859.05 seconds
+2025-06-30 02:25:18,862 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:20,760 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_2 for batch 1.
+2025-06-30 02:25:21,601 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_5 from ROUL03a. Moving it now to Inbound_1
+2025-06-30 02:25:21,602 - INFO - [BUFFER] Allocated buffer RIU08c at door Inbound_1 to CART 1
+2025-06-30 02:25:24,867 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:25,765 - INFO - [BUFFER] Allocated buffer RODR07a at door Outbound_40 to CART 0
+2025-06-30 02:25:31,875 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:36,879 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:46,889 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:47,475 - INFO - [Inbound-Dispatcher] Robot 1 has dropped off cart CART_5 to RIU08c.
+2025-06-30 02:25:50,894 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:25:57,901 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:05,909 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:09,913 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:18,921 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:25,858 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_2 from ROUR04a
+2025-06-30 02:26:26,930 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:35,938 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:44,948 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:46,207 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 02:26:48,951 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:53,957 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:26:54,215 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 02:27:00,220 - INFO - CODE 301 [Cart CART_6] UnLoading case 1 of 3 from cart CART_6 for item 51053650 
+2025-06-30 02:27:00,221 - INFO - [Outbound_40 Worker] Finished unloading cart CART_6
+2025-06-30 02:27:01,964 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:27:10,974 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:27:16,979 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:27:24,987 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:27:33,997 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:27:43,005 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:27:52,015 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:27:52,569 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_2 from ROUR04a. Moving it now to Inbound_1
+2025-06-30 02:27:55,947 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_4 from ROUL02a
+2025-06-30 02:27:57,019 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:28:03,026 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:28:10,033 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:28:10,960 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_1 from ROUR03a
+2025-06-30 02:28:20,042 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:28:27,049 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:28:31,053 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:28:41,054 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:28:50,062 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:28:57,069 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:29:00,898 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_4 from ROUL02a. Moving it now to Inbound_2
+2025-06-30 02:29:00,899 - INFO - [BUFFER] Allocated buffer RIU07c at door Inbound_2 to CART 1
+2025-06-30 02:29:05,078 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:29:14,086 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:29:19,092 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:29:26,713 - INFO - [Inbound-Dispatcher] Robot 1 has dropped off cart CART_4 to RIU07c.
+2025-06-30 02:29:29,101 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:29:35,034 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_1 from ROUR03a. Moving it now to Inbound_2
+2025-06-30 02:29:35,721 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:29:36,044 - INFO - [Inbound-Dispatcher] Assigning Robot 0 to pick empty cart CART_6 from RODR07a
+2025-06-30 02:29:37,109 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:29:39,726 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:29:44,116 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:29:48,736 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:29:51,124 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:29:58,746 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:30:01,133 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:30:03,751 - INFO - CODE 201 [Cart CART_4] Loading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:30:03,751 - INFO - [Inbound_2 Worker] Finished loading cart CART_4
+2025-06-30 02:30:08,757 - INFO - [Outbound-Dispatcher] Assigning Robot 1 to pick up filled cart CART_4 from RIU07c
+2025-06-30 02:30:11,143 - INFO - CODE 201 [Cart CART_3] Loading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:30:11,144 - INFO - [Inbound_1 Worker] Finished loading cart CART_3
+2025-06-30 02:30:12,593 - INFO - [Inbound-Dispatcher] Robot 0 has picked cart CART_6 from RODR07a. Moving it now to Inbound_2
+2025-06-30 02:30:16,149 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_3 from RIU08c
+2025-06-30 02:30:17,149 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:30:27,160 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:30:32,164 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:30:39,168 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:30:45,173 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:30:47,222 - INFO - CODE 401 Available carts: 4 remaining.
+2025-06-30 02:30:47,223 - INFO - CODE 501 Trips taken by Robot_0 is 41
+2025-06-30 02:30:47,223 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_2
+2025-06-30 02:30:47,223 - INFO - CODE 501 Trips taken by Robot_1 is 34
+2025-06-30 02:30:47,223 - INFO - CODE 101 --------------- 384
+2025-06-30 02:30:47,223 - INFO - [IDLE] Cart CART_1 total idle time: 1075.68 seconds
+2025-06-30 02:30:47,223 - INFO - [IDLE] Cart CART_2 total idle time: 883.25 seconds
+2025-06-30 02:30:47,223 - INFO - [IDLE] Cart CART_3 total idle time: 1147.46 seconds
+2025-06-30 02:30:47,223 - INFO - [IDLE] Cart CART_4 total idle time: 1429.12 seconds
+2025-06-30 02:30:47,223 - INFO - [IDLE] Cart CART_5 total idle time: 1137.27 seconds
+2025-06-30 02:30:47,223 - INFO - [IDLE] Cart CART_6 total idle time: 1051.42 seconds
+2025-06-30 02:30:52,180 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:30:55,229 - INFO - [Outbound-Dispatcher] Robot 1 reached dock Inbound_2 for batch 1.
+2025-06-30 02:31:00,235 - INFO - [BUFFER] Allocated buffer RODL09a at door Outbound_25 to CART 1
+2025-06-30 02:31:02,190 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:31:08,196 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:31:15,204 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:31:19,786 - INFO - CODE 401 Available carts: 4 remaining.
+2025-06-30 02:31:19,786 - INFO - CODE 501 Trips taken by Robot_0 is 41
+2025-06-30 02:31:19,786 - INFO - CODE 501 Trips taken by Robot_1 is 35
+2025-06-30 02:31:19,786 - INFO - CODE 101 --------------- 434
+2025-06-30 02:31:19,786 - INFO - [IDLE] Cart CART_1 total idle time: 1075.68 seconds
+2025-06-30 02:31:19,786 - INFO - [IDLE] Cart CART_2 total idle time: 883.25 seconds
+2025-06-30 02:31:19,786 - INFO - [IDLE] Cart CART_3 total idle time: 1147.46 seconds
+2025-06-30 02:31:19,786 - INFO - [IDLE] Cart CART_4 total idle time: 1429.12 seconds
+2025-06-30 02:31:19,786 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 02:31:19,786 - INFO - [IDLE] Cart CART_5 total idle time: 1137.27 seconds
+2025-06-30 02:31:19,786 - INFO - [IDLE] Cart CART_6 total idle time: 1051.42 seconds
+2025-06-30 02:31:22,210 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:31:27,794 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_1 for batch 1.
+2025-06-30 02:31:32,221 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:31:32,799 - INFO - [BUFFER] Allocated buffer ROUL09a at door Outbound_3 to CART 0
+2025-06-30 02:31:41,230 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:31:47,236 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:31:51,104 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:31:54,242 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:31:59,112 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:32:01,250 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:07,120 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:32:07,255 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:12,126 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:32:15,697 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:32:16,264 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:17,131 - INFO - CODE 301 [Cart CART_4] UnLoading case 1 of 5 from cart CART_4 for item 51053650 
+2025-06-30 02:32:17,131 - INFO - [Outbound_25 Worker] Finished unloading cart CART_4
+2025-06-30 02:32:17,131 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_4 from RODL09a
+2025-06-30 02:32:21,269 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:21,703 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:32:26,275 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:29,712 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:32:31,279 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:37,285 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:38,714 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:32:45,294 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:45,721 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:32:50,298 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:32:53,382 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_4 from RODL09a. Moving it now to Inbound_2
+2025-06-30 02:32:53,729 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:32:59,307 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:00,736 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:03,311 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:09,317 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:09,746 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:15,752 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:18,326 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:19,756 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:24,762 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:27,336 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:30,768 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:34,343 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:37,775 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:40,349 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:44,783 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:49,788 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:50,358 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:53,792 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:33:55,364 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:33:59,798 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:34:00,368 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:08,376 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:09,807 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:34:13,381 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:18,817 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:34:21,390 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:28,827 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:34:31,391 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:33,832 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:34:35,391 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:40,397 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:40,840 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:34:45,845 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:34:48,404 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:52,851 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:34:54,410 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:34:57,857 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:02,418 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:35:06,866 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:10,426 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:35:16,876 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:17,433 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:35:23,884 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:27,443 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:35:31,891 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:35,896 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:37,453 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:35:40,901 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:46,463 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:35:46,907 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:50,910 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:52,469 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:35:55,916 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:35:58,475 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:36:00,921 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:36:02,479 - INFO - CODE 201 [Cart CART_5] Loading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:36:02,479 - INFO - [Inbound_1 Worker] Finished loading cart CART_5
+2025-06-30 02:36:02,480 - INFO - [Outbound-Dispatcher] Assigning Robot 0 to pick up filled cart CART_5 from RIU08c
+2025-06-30 02:36:10,931 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:36:17,938 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:36:23,944 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:36:32,954 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:36:36,861 - INFO - CODE 401 Available carts: 4 remaining.
+2025-06-30 02:36:36,861 - INFO - CODE 501 Trips taken by Robot_0 is 43
+2025-06-30 02:36:36,861 - INFO - CODE 501 Trips taken by Robot_1 is 36
+2025-06-30 02:36:36,861 - INFO - CODE 101 --------------- 484
+2025-06-30 02:36:36,861 - INFO - [Inbound-Dispatcher]Requesting cart at Inbound_1
+2025-06-30 02:36:36,861 - INFO - [IDLE] Cart CART_1 total idle time: 1075.68 seconds
+2025-06-30 02:36:36,861 - INFO - [IDLE] Cart CART_2 total idle time: 883.25 seconds
+2025-06-30 02:36:36,861 - INFO - [IDLE] Cart CART_3 total idle time: 1147.46 seconds
+2025-06-30 02:36:36,861 - INFO - [IDLE] Cart CART_4 total idle time: 1465.37 seconds
+2025-06-30 02:36:36,861 - INFO - [IDLE] Cart CART_5 total idle time: 1760.28 seconds
+2025-06-30 02:36:36,861 - INFO - [IDLE] Cart CART_6 total idle time: 1051.42 seconds
+2025-06-30 02:36:37,959 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:36:43,965 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:36:44,869 - INFO - [Outbound-Dispatcher] Robot 0 reached dock Inbound_1 for batch 2.
+2025-06-30 02:36:49,874 - INFO - [BUFFER] Allocated buffer ROUL09a at door Outbound_3 to CART 0
+2025-06-30 02:36:49,971 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:36:55,976 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:37:03,984 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:37:09,990 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:37:18,999 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:37:23,003 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:37:28,009 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:37:35,832 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:37:36,016 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:37:42,840 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:37:43,023 - INFO - CODE 301 [Cart CART_3] UnLoading case 1 of 50 from cart CART_3 for item 86088018 
+2025-06-30 02:37:43,024 - INFO - [Outbound_3 Worker] Finished unloading cart CART_3
+2025-06-30 02:37:43,024 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_3 from ROUL09a
+2025-06-30 02:37:48,846 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:37:52,849 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:01,859 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:06,864 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:11,514 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_3 from ROUL09a. Moving it now to Inbound_1
+2025-06-30 02:38:16,873 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:20,877 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:24,881 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:34,891 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:41,898 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:45,903 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:50,907 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:38:58,915 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:39:07,925 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:39:14,931 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:39:24,941 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:39:34,952 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:39:44,962 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:39:51,968 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:39:56,974 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:00,978 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:09,987 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:14,992 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:22,000 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:31,009 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:35,013 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:42,020 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:50,027 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:40:55,032 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:41:04,042 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:41:11,048 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:41:18,055 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:41:27,058 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:41:36,068 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:41:44,076 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:41:51,082 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:42:01,093 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:42:11,102 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:42:20,112 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:42:28,119 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:42:38,130 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:42:44,135 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:42:49,140 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:42:56,148 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:43:03,154 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:43:07,159 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:43:16,168 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:43:26,177 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:43:31,183 - INFO - CODE 301 [Cart CART_5] UnLoading case 1 of 50 from cart CART_5 for item 86088018 
+2025-06-30 02:43:31,183 - INFO - [Outbound_3 Worker] Finished unloading cart CART_5
+2025-06-30 02:43:31,184 - INFO - [Inbound-Dispatcher] Assigning Robot 1 to pick empty cart CART_5 from ROUL09a
+2025-06-30 02:43:44,272 - INFO - [Inbound-Dispatcher] Robot 1 has picked cart CART_5 from ROUL09a. Moving it now to Inbound_1
