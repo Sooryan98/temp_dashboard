@@ -233,8 +233,10 @@ print(f"{start_time} ------- {type(start_time)}")
 print(f"{end_time} ------- {type(end_time)}")
 # ---------------- Prepare DataFrames ----------------
 rows = []
+code_101=00
 for cart, items in robot_destro_data.items():
     for item_id, data in items.items():
+        code_101+=int(data['total_cases'])
         rows.append({
             "CART": cart,
             "Item ID": item_id,
@@ -307,8 +309,8 @@ with col1:
     st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
     
     total_time=dhrs+dmins/60
-    st.metric(label="Total Cases Picked", value=log_data['total_cases'])
-    st.metric(label="UPH", value=f"{int(log_data['total_cases']/total_time)}")
+    st.metric(label="Total Cases Picked", value=code_101)
+    st.metric(label="UPH", value=f"{int(code_101/total_time)}")
 with col2:
     st.metric(label="Total Robots in Sim", value=f"{robot_count}")
     st.metric(label="Total Carts in Sim", value=f"{cart_count}")

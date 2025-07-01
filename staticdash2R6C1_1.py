@@ -233,8 +233,10 @@ print(f"{start_time} ------- {type(start_time)}")
 print(f"{end_time} ------- {type(end_time)}")
 # ---------------- Prepare DataFrames ----------------
 rows = []
+code_101=0
 for cart, items in robot_destro_data.items():
     for item_id, data in items.items():
+        
         rows.append({
             "CART": cart,
             "Item ID": item_id,
@@ -252,6 +254,7 @@ cases_ph_df = pd.DataFrame(cases_per_hour).T.fillna(0).astype(int)
 cases_ph_df= cases_ph_df.reindex(sorted(cases_ph_df.columns), axis=1)
 
 cases_ph_df["Total cases overall"] = cases_ph_df.sum(axis=1)
+code_101=cases_ph_df['Total cases overall'].sum()
 # robot_dist_df = pd.DataFrame(list(robot_fms_data.items()), columns=["Robot", "Distance"]).sort_values(by="Robot")
 robot_dist_df = pd.DataFrame(list(robot_fms_data.items()), columns=["Robot", "Distance"])
 
@@ -307,8 +310,8 @@ with col1:
     st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
     
     total_time=dhrs+dmins/60
-    st.metric(label="Total Cases Picked", value=log_data['total_cases'])
-    st.metric(label="UPH", value=f"{int(log_data['total_cases']/total_time)}")
+    st.metric(label="Total Cases Picked", value=code_101)
+    st.metric(label="UPH", value=f"{int(code_101/total_time)}")
 with col2:
     st.metric(label="Total Robots in Sim", value=f"{robot_count}")
     st.metric(label="Total Carts in Sim", value=f"{cart_count}")
@@ -338,7 +341,7 @@ robot_distance_dict = dict(zip(robot_dist_df["Robot"], total_sec-(robot_dist_df[
 chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
     x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
     y='Distance:Q'
-).properties(width=2000,height=400,
+).properties(width=400,height=400,
     title="Robot vs Distance [m]")
 
 chart_botuph = alt.Chart(robot_total_cases_df).mark_bar().encode(
@@ -406,9 +409,9 @@ chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar().encode(
 
 
 # st.altair_chart(chart_cases, use_container_width=False)
-st.altair_chart(chart_dist, use_container_width=False)
+st.altair_chart(chart_dist, use_container_width=True)
 st.title("CART Unloading Cases per Hour")
-st.dataframe(cases_ph_df , use_container_width=True)
+st.dataframe(cases_ph_df , use_container_width=False)
 st.altair_chart(chart_botuph, use_container_width=False)
 st.title("Full Cart Dwell Time")
 st.altair_chart(chart_full_idle,use_container_width=True)
