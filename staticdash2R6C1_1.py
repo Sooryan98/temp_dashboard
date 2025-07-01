@@ -338,13 +338,13 @@ robot_distance_dict = dict(zip(robot_dist_df["Robot"], total_sec-(robot_dist_df[
 #     x=alt.X('Robot:N', sort='ascending'),
 #     y='Total Cases:Q'
 # ).properties(width=2000, height=400, title="Robot vs Total Cases")
-chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
+chart_dist = alt.Chart(robot_dist_df).mark_bar(size=150).encode(
     x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
     y='Distance:Q'
-).properties(width=400,height=400,
+).properties(width=2000,height=400,
     title="Robot vs Distance [m]")
 
-chart_botuph = alt.Chart(robot_total_cases_df).mark_bar().encode(
+chart_botuph = alt.Chart(robot_total_cases_df).mark_bar(size=150).encode(
     x=alt.X('Cart:N'),
     y='Total Cases:Q'
 ).properties(width=2000, height=400, title="Cart vs Total Cases")
@@ -352,15 +352,15 @@ chart_botuph = alt.Chart(robot_total_cases_df).mark_bar().encode(
 
 
 # Bar chart using Altair
-chart_trips = alt.Chart(robot_trips_df).mark_bar().encode(
+chart_trips = alt.Chart(robot_trips_df).mark_bar(size=150).encode(
     x='Robot:N',
     y='Trips:Q',
     tooltip=['Robot', 'Trips']
 ).properties(
-    width=600,
+    width=2000,
     height=400 , title= 'Robot vs Trips Made'
 )
-chart_full_idle = alt.Chart(cart_full_idle_df).mark_bar().encode(
+chart_full_idle = alt.Chart(cart_full_idle_df).mark_bar(size=150).encode(
     x='Cart:N',
     y='Dwell Time:Q',
     tooltip=['Cart', 'Dwell Time']
@@ -368,7 +368,7 @@ chart_full_idle = alt.Chart(cart_full_idle_df).mark_bar().encode(
     width=2000,
     height=400 ,title='Cart vs Dwell Time [s]'
 )
-chart_empty_idle = alt.Chart(cart_empty_idle_df).mark_bar().encode(
+chart_empty_idle = alt.Chart(cart_empty_idle_df).mark_bar(size=150).encode(
     x='Cart:N',
     y='Dwell Time:Q',
     tooltip=['Cart', 'Dwell Time']
@@ -377,7 +377,7 @@ chart_empty_idle = alt.Chart(cart_empty_idle_df).mark_bar().encode(
     height=400 ,title='Cart vs Dwell Time [s]'
 )
 
-chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar().encode(
+chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar(size=150).encode(
     x='Robot:N',
     y='Dwell Time:Q',
     tooltip=['Robot', 'Dwell Time']
@@ -386,7 +386,7 @@ chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar().encode(
     height=400 ,title='Robot vs Dwell Time [s]'
 )
 
-chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar().encode(
+chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar(size=150).encode(
     x='Inbound ID:N',
     y='Dwell Time:Q',
     tooltip=['Inbound ID', 'Dwell Time']
@@ -396,7 +396,7 @@ chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar().encode(
 )
 
 
-chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar().encode(
+chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar(size=100).encode(
     x='Outbound ID:N',
     y='Dwell Time:Q',
     tooltip=['Outbound ID', 'Dwell Time']
@@ -409,20 +409,20 @@ chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar().encode(
 
 
 # st.altair_chart(chart_cases, use_container_width=False)
-st.altair_chart(chart_dist, use_container_width=True)
+st.altair_chart(chart_dist, use_container_width=False)
 st.title("CART Unloading Cases per Hour")
-st.dataframe(cases_ph_df , use_container_width=False)
+st.dataframe(cases_ph_df , use_container_width=True)
 st.altair_chart(chart_botuph, use_container_width=False)
 st.title("Full Cart Dwell Time")
-st.altair_chart(chart_full_idle,use_container_width=True)
+st.altair_chart(chart_full_idle,use_container_width=False)
 st.title("Empty Cart Dwell Time")
-st.altair_chart(chart_empty_idle,use_container_width=True)
+st.altair_chart(chart_empty_idle,use_container_width=False)
 st.title("Robot Dwell Time")
-st.altair_chart(chart_robot_idle,use_container_width=True)
+st.altair_chart(chart_robot_idle,use_container_width=False)
 st.title("Inbound Door Dwell Time")
-st.altair_chart(chart_inbound_idle,use_container_width=True)
+st.altair_chart(chart_inbound_idle,use_container_width=False)
 st.title("Outbound Door Dwell Time")
-st.altair_chart(chart_outbound_idle,use_container_width=True)
+st.altair_chart(chart_outbound_idle,use_container_width=False)
 
 
 st.title("Robot Trips")
