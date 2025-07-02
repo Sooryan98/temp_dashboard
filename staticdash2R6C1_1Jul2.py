@@ -288,7 +288,7 @@ fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-18 15:40:40,196
 
 # start_time='2025-06-24 08:34:28,000000'
-end_time='2025-07-02 11:18:16,000000'
+end_time='2025-07-02 02:01:51,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=end_time-start_time
@@ -370,7 +370,7 @@ chart_full_idle = alt.Chart(cart_full_idle_df).mark_bar(size=150).encode(
     tooltip=['Cart', 'Dwell Time']
 ).properties(
     width=2000,
-    height=400 ,title='Cart vs Dwell Time [s]'
+    height=400 ,title='Cart vs Dwell Time [min]'
 )
 chart_empty_idle = alt.Chart(cart_empty_idle_df).mark_bar(size=150).encode(
     x='Cart:N',
@@ -378,7 +378,7 @@ chart_empty_idle = alt.Chart(cart_empty_idle_df).mark_bar(size=150).encode(
     tooltip=['Cart', 'Dwell Time']
 ).properties(
     width=2000,
-    height=400 ,title='Cart vs Dwell Time [s]'
+    height=400 ,title='Cart vs Dwell Time [min]'
 )
 
 chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar(size=150).encode(
@@ -387,7 +387,7 @@ chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar(size=150).encode(
     tooltip=['Robot', 'Dwell Time']
 ).properties(
     width=2000,
-    height=400 ,title='Robot vs Dwell Time [s]'
+    height=400 ,title='Robot vs Dwell Time [min]'
 )
 
 chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar(size=150).encode(
@@ -396,7 +396,7 @@ chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar(size=150).encode(
     tooltip=['Inbound ID', 'Dwell Time']
 ).properties(
     width=2000,
-    height=400 ,title='Inbound ID vs Dwell Time [s]'
+    height=400 ,title='Inbound ID vs Dwell Time [min]'
 )
 
 
@@ -406,7 +406,7 @@ chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar(size=100).encode(
     tooltip=['Outbound ID', 'Dwell Time']
 ).properties(
     width=2000,
-    height=400 ,title='Outbound ID vs Dwell Time [s]'
+    height=400 ,title='Outbound ID vs Dwell Time [min]'
 )
 
 
