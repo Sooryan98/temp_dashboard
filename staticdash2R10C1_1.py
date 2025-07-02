@@ -258,6 +258,7 @@ cases_ph_df= cases_ph_df.reindex(sorted(cases_ph_df.columns), axis=1)
 
 cases_ph_df["Total cases overall"] = cases_ph_df.sum(axis=1)
 code_101=cases_ph_df['Total cases overall'].sum()
+cases_ph_df.loc["Total per hour"] = cases_ph_df.sum(axis=0)
 # robot_dist_df = pd.DataFrame(list(robot_fms_data.items()), columns=["Robot", "Distance"]).sort_values(by="Robot")
 robot_dist_df = pd.DataFrame(list(robot_fms_data.items()), columns=["Robot", "Distance"])
 
@@ -434,7 +435,7 @@ st.write("### CART Unloading Status")
 st.dataframe(df, use_container_width=True)
 st.write("### Progress over time")
 st.dataframe(progress_df, use_container_width=True)
-# st.write("### UPH break down")
-# st.dataframe(uph_tracker_df, use_container_width=True)
+st.write("### UPH break down")
+st.dataframe(uph_tracker_df, use_container_width=True)
 
 
