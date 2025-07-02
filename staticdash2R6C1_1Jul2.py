@@ -12,8 +12,8 @@ from datetime import datetime
 # FMS_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "FMS_2025-04-10.log")
 # DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
 # FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
-DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
-FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
+DESTRO_PATH = "log_bank/1_1/2 Jul_2025/yusen_2025-07-01.log"
+FMS_PATH = "log_bank/1_1/2 Jul_2025/FMS_2025-07-01.log"
 
 
 st.set_page_config(page_title="destro", layout="wide")
@@ -287,7 +287,7 @@ fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-18 15:40:40,196
 
 # start_time='2025-06-24 08:34:28,000000'
-end_time='2025-07-01 12:14:54,000000'
+end_time='2025-07-02 11:18:16,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=end_time-start_time
