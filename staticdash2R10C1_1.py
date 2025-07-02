@@ -230,9 +230,16 @@ def parse_fms_log(path):
 
 # ---------------- Run Parsers ----------------
 parse_destro_log(DESTRO_PATH)
+
 parse_fms_log(FMS_PATH)
 print(f"{start_time} ------- {type(start_time)}")
 print(f"{end_time} ------- {type(end_time)}")
+
+
+
+
+
+print(cases_per_hour)
 # ---------------- Prepare DataFrames ----------------
 rows = []
 code_101=0
@@ -288,7 +295,7 @@ fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-18 15:40:40,196
 
 # start_time='2025-06-24 08:34:28,000000'
-end_time='2025-07-02 07:46:14,000000'
+end_time='2025-07-02 01:59:58,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=end_time-start_time
@@ -433,8 +440,8 @@ st.title("Robot Trips")
 st.altair_chart(chart_trips,use_container_width=True)
 st.write("### CART Unloading Status")
 st.dataframe(df, use_container_width=True)
-st.write("### Progress over time")
-st.dataframe(progress_df, use_container_width=True)
+# st.write("### Progress over time")
+# st.dataframe(progress_df, use_container_width=True)
 st.write("### UPH break down")
 st.dataframe(uph_tracker_df, use_container_width=True)
 
