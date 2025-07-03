@@ -12,8 +12,8 @@ from datetime import datetime
 # FMS_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "FMS_2025-04-10.log")
 # DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
 # FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
-DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
-FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
+DESTRO_PATH = "log_bank/1_1/test/yusen_2025-07-02.log"
+FMS_PATH = "log_bank/1_1/test/FMS_2025-07-02.log"
 
 
 st.set_page_config(page_title="destro", layout="wide")
@@ -434,7 +434,7 @@ st.write("### CART Unloading Status")
 st.dataframe(df, use_container_width=True)
 st.write("### Progress over time")
 st.dataframe(progress_df, use_container_width=True)
-# st.write("### UPH break down")
-# st.dataframe(uph_tracker_df, use_container_width=True)
+st.write("### UPH break down")
+st.dataframe(uph_tracker_df, use_container_width=True)
 
 

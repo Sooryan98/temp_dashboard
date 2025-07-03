@@ -12,8 +12,8 @@ from datetime import datetime
 # FMS_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "FMS_2025-04-10.log")
 # DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
 # FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
-DESTRO_PATH = "log_bank/1_1/2 Jul_2025/yusen_2025-07-01.log"
-FMS_PATH = "log_bank/1_1/2 Jul_2025/FMS_2025-07-01.log"
+DESTRO_PATH = "log_bank/1_1/2 Jul_2025/yusen_2025-07-01-8hr.log"
+FMS_PATH = "log_bank/1_1/2 Jul_2025/FMS_2025-07-01-8hr.log"
 
 
 st.set_page_config(page_title="destro", layout="wide")
@@ -288,7 +288,7 @@ fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-18 15:40:40,196
 
 # start_time='2025-06-24 08:34:28,000000'
-end_time='2025-07-02 02:01:51,000000'
+end_time='2025-07-02 06:57:35,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=end_time-start_time
@@ -310,16 +310,42 @@ st.markdown(
 
 st.image("destro_logo_black.png", width=400)
 col1,col2=st.columns(2)
-with col1:
-    st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
+# with col1:
+#     st.metric(label="Time", value=f"{int(dhrs)} : {int(dmins)} : {int(dsec)}")
     
-    total_time=dhrs+dmins/60
-    st.metric(label="Total Cases Picked", value=code_101)
-    st.metric(label="UPH", value=f"{int(code_101/total_time)}")
-with col2:
-    st.metric(label="Total Robots in Sim", value=f"{robot_count}")
-    st.metric(label="Total Carts in Sim", value=f"{cart_count}")
+#     total_time=dhrs+dmins/60
+#     st.metric(label="Total Cases Picked", value=code_101)
+#     st.metric(label="UPH", value=f"{int(code_101/total_time)}")
+# with col2:
+#     st.metric(label="Total Robots in Sim", value=f"{robot_count}")
+#     st.metric(label="Total Carts in Sim", value=f"{cart_count}")
+with col1:
+    st.markdown(f"""
+        <div style='font-size:35px; font-weight:bold;'>Time<br>
+        <span style='font-size:30px;'>{int(dhrs):02d} : {int(dmins):02d} : {int(dsec):02d}</span></div>
+    """, unsafe_allow_html=True)
 
+    total_time = dhrs + dmins / 60
+    st.markdown(f"""
+        <div style='font-size:35px; font-weight:bold;'>Total Cases Picked<br>
+        <span style='font-size:30px;'>{code_101}</span></div>
+    """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+        <div style='font-size:35px; font-weight:bold;'>UPH<br>
+        <span style='font-size:30px;'>{int(code_101 / total_time)}</span></div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown(f"""
+        <div style='font-size:35px; font-weight:bold;'>Total Robots in Sim<br>
+        <span style='font-size:30px;'>{robot_count}</span></div>
+    """, unsafe_allow_html=True)
+
+    st.markdown(f"""
+        <div style='font-size:35px; font-weight:bold;'>Total Carts in Sim<br>
+        <span style='font-size:30px;'>{cart_count}</span></div>
+    """, unsafe_allow_html=True)
 
 robot_distance_dict = dict(zip(robot_dist_df["Robot"], total_sec-(robot_dist_df["Distance"]/1.5)))
 # print(robot_distance_dict)
@@ -409,7 +435,9 @@ chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar(size=100).encode(
     height=400 ,title='Outbound ID vs Dwell Time [min]'
 )
 
+st.header('')
 
+st.title("Distance Travelled by Robot")
 
 
 # st.altair_chart(chart_cases, use_container_width=False)
@@ -417,26 +445,56 @@ st.altair_chart(chart_dist, use_container_width=False)
 st.title("CART Unloading Cases per Hour")
 st.dataframe(cases_ph_df , use_container_width=True)
 st.altair_chart(chart_botuph, use_container_width=False)
-st.metric(label="Total Full Cart Dwell Time", value=)
-st.title("Full Cart Dwell Time")
+
+# st.metric( value=int(sum(cart_full_idle.values())))
+st.markdown(
+    f"<div style='font-size:40px; font-weight:bold;'>Total Full Cart Dwell Time : {int(sum(cart_full_idle.values()))} mins</div>",
+    unsafe_allow_html=True
+)
+st.header("Full Cart Dwell Time")
 st.altair_chart(chart_full_idle,use_container_width=False)
-st.title("Empty Cart Dwell Time")
+
+# st.metric(label="Total Empty Cart Dwell Time [min]", value=int(sum(cart_empty_idle.values())))
+
+st.markdown(
+    f"<div style='font-size:40px; font-weight:bold;'>Total Empty Cart Dwell Time : {int(sum(cart_empty_idle.values()))} mins</div>",
+    unsafe_allow_html=True
+)
+st.header("Empty Cart Dwell Time")
 st.altair_chart(chart_empty_idle,use_container_width=False)
-st.title("Robot Dwell Time")
+
+# st.metric(label="Total Robot Dwell Time [min]", value=int(sum(robot_dwell.values())))
+st.markdown(
+    f"<div style='font-size:40px; font-weight:bold;'>Total Robot Dwell Time : {int(sum(robot_dwell.values()))} mins</div>",
+    unsafe_allow_html=True
+)
+st.header("Robot Dwell Time")
 st.altair_chart(chart_robot_idle,use_container_width=False)
-st.title("Inbound Door Dwell Time")
+# st.metric(label="Total Inbound Door Dwell Time [min]", value=int(sum(indoor_idle.values())))
+st.markdown(
+    f"<div style='font-size:40px; font-weight:bold;'>Total Inbound Door Dwell Time : {int(sum(indoor_idle.values()))} mins</div>",
+    unsafe_allow_html=True
+)
+
+st.header("Inbound Door Dwell Time")
 st.altair_chart(chart_inbound_idle,use_container_width=False)
-st.title("Outbound Door Dwell Time")
-st.altair_chart(chart_outbound_idle,use_container_width=False)
+# st.metric(label="Total Outbound Door Dwell Time [min]", value=int(sum(outdoor_idle.values())))
+# st.markdown(
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Outbound Door Dwell Time : {int(sum(outdoor_idle.values()))} mins</div>",
+#     unsafe_allow_html=True
+# )
+
+# st.header("Outbound Door Dwell Time")
+# st.altair_chart(chart_outbound_idle,use_container_width=False)
 
 
 st.title("Robot Trips")
 st.altair_chart(chart_trips,use_container_width=True)
-st.write("### CART Unloading Status")
+st.title("CART Unloading Status")
 st.dataframe(df, use_container_width=True)
 # st.write("### Progress over time")
 # st.dataframe(progress_df, use_container_width=True)
-st.write("### UPH break down")
+st.title("UPH break down")
 st.dataframe(uph_tracker_df, use_container_width=True)
 
 
