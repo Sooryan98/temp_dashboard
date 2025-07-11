@@ -12,8 +12,8 @@ from datetime import datetime
 # FMS_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "FMS_2025-04-10.log")
 # DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
 # FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
-DESTRO_PATH = "log_bank/1_Many/11 July_2025/yusen_2025-07-11.log"
-FMS_PATH = "log_bank/1_Many/11 July_2025/FMS_2025-07-11.log"
+DESTRO_PATH = "log_bank/1_Many/10 July_2025/yusen_2025-07-11.log"
+FMS_PATH = "log_bank/1_Many/10 July_2025/FMS_2025-07-11.log"
 
 st.set_page_config(page_title="destro", layout="wide")
 
@@ -516,8 +516,8 @@ st.altair_chart(chart_inbound_idle,use_container_width=False)
 
 st.title("Robot Trips")
 st.altair_chart(chart_trips,use_container_width=True)
-# st.title("CART Unloading Status")
-# st.dataframe(df, use_container_width=True)
+st.title("CART Unloading Status")
+st.dataframe(df, use_container_width=True)
 # st.write("### Progress over time")
 # st.dataframe(progress_df, use_container_width=True)
 st.title("UPH break down")
