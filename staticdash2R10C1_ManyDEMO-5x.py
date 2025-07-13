@@ -13,8 +13,8 @@ from datetime import datetime
 # DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
 # FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
 
-DESTRO_PATH = "log_bank/1_Many/DEMO-5x/6C/yusen_2025-07-13.log"
-FMS_PATH = "log_bank/1_Many/DEMO-5x/6C/FMS_2025-07-13.log"
+DESTRO_PATH = "log_bank/1_Many/DEMO-5x/10C/yusen_2025-07-13.log"
+FMS_PATH = "log_bank/1_Many/DEMO-5x/10C/FMS_2025-07-13.log"
 
 st.set_page_config(page_title="destro", layout="wide")
 
@@ -22,7 +22,7 @@ st.set_page_config(page_title="destro", layout="wide")
 # ---------------- Data Structures ----------------dashboard_time=0
 sim_speed=5
 robot_count=2
-cart_count=6
+cart_count=10
 start_time=0
 end_time=0
 ptrack=0
@@ -295,7 +295,7 @@ fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-18 15:40:40,196
 
 # start_time='2025-06-24 08:34:28,000000'
-end_time='2025-07-13 14:35:25,000000'
+end_time='2025-07-13 15:09:44,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=(end_time-start_time)*sim_speed
