@@ -1,0 +1,986 @@
+2025-07-13 16:05:09,554 - INFO - Total calls to destro : 1
+2025-07-13 16:05:09,675 - INFO - Total calls to destro : 2
+2025-07-13 16:05:09,745 - INFO - Total calls to destro : 3
+2025-07-13 16:05:09,816 - INFO - Total calls to destro : 4
+2025-07-13 16:05:09,870 - INFO - Total calls to destro : 5
+2025-07-13 16:05:09,913 - INFO - Total calls to destro : 6
+2025-07-13 16:05:09,985 - INFO - Total calls to destro : 7
+2025-07-13 16:05:09,996 - INFO - Total calls to destro : 8
+2025-07-13 16:05:10,004 - INFO - Total calls to destro : 9
+2025-07-13 16:05:10,007 - INFO - Total calls to destro : 10
+2025-07-13 16:05:10,023 - INFO - CODE 000  ------------- Starting FMS -----------------
+2025-07-13 16:05:10,052 - INFO - Total calls to destro : 11
+2025-07-13 16:05:10,096 - INFO - Total calls to destro : 12
+2025-07-13 16:06:25,981 - INFO - Total calls to destro : 13
+2025-07-13 16:06:26,188 - INFO - Total calls to destro : 14
+2025-07-13 16:06:26,226 - INFO - Received Command for : robot_1 Location : RIU08a
+2025-07-13 16:06:32,715 - INFO - Total calls to destro : 15
+2025-07-13 16:06:32,962 - INFO - Total calls to destro : 16
+2025-07-13 16:06:32,981 - INFO - Received Command for : robot_0 Location : RIU07c
+2025-07-13 16:06:53,721 - INFO - Robot robot_1 has reached RIU08a
+2025-07-13 16:06:59,224 - INFO - Robot robot_0 has reached RIU07c
+2025-07-13 16:07:02,839 - INFO - Total calls to destro : 17
+2025-07-13 16:07:02,900 - INFO - Received Command for : robot_1 Location : RODL04a
+2025-07-13 16:07:03,314 - INFO - Total calls to destro : 18
+2025-07-13 16:07:08,321 - INFO - Total calls to destro : 19
+2025-07-13 16:07:08,420 - INFO - Received Command for : robot_0 Location : ROUR07a
+2025-07-13 16:07:09,482 - INFO - Total calls to destro : 20
+2025-07-13 16:07:09,605 - INFO - Robot robot_0 has travelled 123.07209999999999 m
+2025-07-13 16:07:09,606 - INFO - Robot robot_1 has travelled 151.5542 m
+2025-07-13 16:07:09,607 - INFO - Robot robot_0 has dwelled for 9.135402202606201 sec
+2025-07-13 16:07:09,607 - INFO - Robot robot_1 has dwelled for 9.145165920257568 sec
+2025-07-13 16:07:09,608 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:07:09,608 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:07:09,609 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:07:09,609 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:07:09,609 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:07:09,610 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:07:09,610 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:07:09,610 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:07:09,611 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:07:09,611 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:07:09,611 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:07:09,612 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:07:09,612 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:07:12,386 - INFO - Robot robot_1 has reached RODL04a
+2025-07-13 16:07:17,492 - INFO - Total calls to destro : 21
+2025-07-13 16:07:25,476 - INFO - Total calls to destro : 22
+2025-07-13 16:07:25,478 - INFO - Total calls to destro : 23
+2025-07-13 16:07:25,479 - INFO - Received Command for : robot_1 Location : ROUR06a
+2025-07-13 16:07:29,400 - INFO - Robot robot_0 has reached ROUR07a
+2025-07-13 16:07:34,449 - INFO - Total calls to destro : 24
+2025-07-13 16:07:40,186 - INFO - Total calls to destro : 25
+2025-07-13 16:07:40,230 - INFO - Received Command for : robot_0 Location : RIU06b
+2025-07-13 16:07:41,856 - INFO - Total calls to destro : 26
+2025-07-13 16:07:54,966 - INFO - Robot robot_1 has reached ROUR06a
+2025-07-13 16:07:57,045 - INFO - Total calls to destro : 27
+2025-07-13 16:08:00,023 - INFO - Total calls to destro : 28
+2025-07-13 16:08:01,523 - INFO - Robot robot_0 has reached RIU06b
+2025-07-13 16:08:08,041 - INFO - Total calls to destro : 29
+2025-07-13 16:08:08,056 - INFO - Total calls to destro : 30
+2025-07-13 16:08:08,059 - INFO - Received Command for : robot_1 Location : ROUL06a
+2025-07-13 16:08:10,642 - INFO - Total calls to destro : 31
+2025-07-13 16:08:10,675 - INFO - Total calls to destro : 32
+2025-07-13 16:08:10,735 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:08:16,152 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:08:25,227 - INFO - Total calls to destro : 33
+2025-07-13 16:08:30,222 - INFO - Total calls to destro : 34
+2025-07-13 16:08:30,336 - INFO - Received Command for : robot_0 Location : RIU06a
+2025-07-13 16:08:36,304 - INFO - Robot robot_1 has reached ROUL06a
+2025-07-13 16:08:36,600 - INFO - Robot robot_0 has reached RIU06a
+2025-07-13 16:08:41,397 - INFO - Total calls to destro : 35
+2025-07-13 16:08:45,751 - INFO - Total calls to destro : 36
+2025-07-13 16:08:45,822 - INFO - Received Command for : robot_0 Location : RIU07c
+2025-07-13 16:08:46,312 - INFO - Total calls to destro : 37
+2025-07-13 16:08:49,418 - INFO - Total calls to destro : 38
+2025-07-13 16:08:49,500 - INFO - Total calls to destro : 39
+2025-07-13 16:08:49,541 - INFO - Received Command for : robot_1 Location : RODL05a
+2025-07-13 16:08:51,351 - INFO - Robot robot_0 has reached RIU07c
+2025-07-13 16:08:57,834 - INFO - Robot robot_1 has reached RODL05a
+2025-07-13 16:09:00,413 - INFO - Total calls to destro : 40
+2025-07-13 16:09:00,574 - INFO - Total calls to destro : 41
+2025-07-13 16:09:02,918 - INFO - Total calls to destro : 42
+2025-07-13 16:09:05,264 - INFO - Total calls to destro : 43
+2025-07-13 16:09:05,318 - INFO - Received Command for : robot_0 Location : RIU08b
+2025-07-13 16:09:09,812 - INFO - Robot robot_0 has travelled 395.8066 m
+2025-07-13 16:09:09,813 - INFO - Robot robot_1 has travelled 453.0861 m
+2025-07-13 16:09:09,813 - INFO - Robot robot_0 has dwelled for 66.412353515625 sec
+2025-07-13 16:09:09,814 - INFO - Robot robot_1 has dwelled for 48.53456377983093 sec
+2025-07-13 16:09:09,814 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:09:09,815 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:09:09,815 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:09:09,816 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:09:09,816 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:09:09,816 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:09:09,817 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:09:09,817 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:09:09,818 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:09:09,819 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:09:09,819 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:09:09,820 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:09:09,820 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:09:10,080 - INFO - Robot robot_0 has reached RIU08b
+2025-07-13 16:09:10,251 - INFO - Total calls to destro : 44
+2025-07-13 16:09:10,294 - INFO - Received Command for : robot_1 Location : RIU07b
+2025-07-13 16:09:15,090 - INFO - Total calls to destro : 45
+2025-07-13 16:09:19,253 - INFO - Total calls to destro : 46
+2025-07-13 16:09:19,256 - INFO - Total calls to destro : 47
+2025-07-13 16:09:19,261 - INFO - Received Command for : robot_0 Location : RODR06a
+2025-07-13 16:09:21,502 - INFO - Robot robot_1 has reached RIU07b
+2025-07-13 16:09:30,561 - INFO - Total calls to destro : 48
+2025-07-13 16:09:30,622 - INFO - Received Command for : robot_1 Location : ROUR07b
+2025-07-13 16:09:31,484 - INFO - Total calls to destro : 49
+2025-07-13 16:09:43,399 - INFO - Total calls to destro : 50
+2025-07-13 16:09:43,855 - INFO - Robot robot_0 has reached RODR06a
+2025-07-13 16:09:48,907 - INFO - Total calls to destro : 51
+2025-07-13 16:09:51,015 - INFO - Robot robot_1 has reached ROUR07b
+2025-07-13 16:09:56,069 - INFO - Total calls to destro : 52
+2025-07-13 16:09:56,904 - INFO - Total calls to destro : 53
+2025-07-13 16:09:56,940 - INFO - Total calls to destro : 54
+2025-07-13 16:09:56,952 - INFO - Received Command for : robot_0 Location : RODR04a
+2025-07-13 16:09:57,491 - INFO - Total calls to destro : 55
+2025-07-13 16:10:00,326 - INFO - Total calls to destro : 56
+2025-07-13 16:10:00,363 - INFO - Received Command for : robot_1 Location : RIU08c
+2025-07-13 16:10:02,939 - INFO - Robot robot_0 has reached RODR04a
+2025-07-13 16:10:08,021 - INFO - Total calls to destro : 57
+2025-07-13 16:10:16,057 - INFO - Total calls to destro : 58
+2025-07-13 16:10:16,122 - INFO - Received Command for : robot_0 Location : RODR06a
+2025-07-13 16:10:16,593 - INFO - Total calls to destro : 59
+2025-07-13 16:10:20,871 - INFO - Robot robot_1 has reached RIU08c
+2025-07-13 16:10:22,118 - INFO - Robot robot_0 has reached RODR06a
+2025-07-13 16:10:22,854 - INFO - Total calls to destro : 60
+2025-07-13 16:10:27,243 - INFO - Total calls to destro : 61
+2025-07-13 16:10:30,025 - INFO - Total calls to destro : 62
+2025-07-13 16:10:30,057 - INFO - Total calls to destro : 63
+2025-07-13 16:10:30,062 - INFO - Received Command for : robot_1 Location : RODR06b
+2025-07-13 16:10:32,029 - INFO - Total calls to destro : 64
+2025-07-13 16:10:35,327 - INFO - Total calls to destro : 65
+2025-07-13 16:10:35,331 - INFO - Received Command for : robot_0 Location : RODL05b
+2025-07-13 16:10:35,786 - INFO - Total calls to destro : 66
+2025-07-13 16:10:54,961 - INFO - Robot robot_1 has reached RODR06b
+2025-07-13 16:10:59,364 - INFO - Robot robot_0 has reached RODL05b
+2025-07-13 16:11:00,028 - INFO - Total calls to destro : 67
+2025-07-13 16:11:04,468 - INFO - Total calls to destro : 68
+2025-07-13 16:11:08,045 - INFO - Total calls to destro : 69
+2025-07-13 16:11:08,102 - INFO - Received Command for : robot_1 Location : RODR04a
+2025-07-13 16:11:08,539 - INFO - Total calls to destro : 70
+2025-07-13 16:11:09,703 - INFO - Robot robot_0 has travelled 679.2613 m
+2025-07-13 16:11:09,703 - INFO - Robot robot_1 has travelled 824.4044 m
+2025-07-13 16:11:09,703 - INFO - Robot robot_0 has dwelled for 115.03965163230896 sec
+2025-07-13 16:11:09,703 - INFO - Robot robot_1 has dwelled for 101.68480062484741 sec
+2025-07-13 16:11:09,703 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:11:09,704 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:11:09,704 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:11:09,704 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:11:09,704 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:11:09,704 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:11:09,704 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:11:09,704 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:11:09,704 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:11:09,705 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:11:09,705 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:11:09,705 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:11:09,705 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:11:10,374 - INFO - Total calls to destro : 71
+2025-07-13 16:11:10,379 - INFO - Received Command for : robot_0 Location : RODL05a
+2025-07-13 16:11:11,297 - INFO - Robot robot_0 has reached RODL05a
+2025-07-13 16:11:13,413 - INFO - Robot robot_1 has reached RODR04a
+2025-07-13 16:11:18,432 - INFO - Total calls to destro : 72
+2025-07-13 16:11:20,436 - INFO - Total calls to destro : 73
+2025-07-13 16:11:20,520 - INFO - Received Command for : robot_0 Location : RIU08b
+2025-07-13 16:11:21,293 - INFO - Total calls to destro : 74
+2025-07-13 16:11:26,481 - INFO - Total calls to destro : 75
+2025-07-13 16:11:26,505 - INFO - Total calls to destro : 76
+2025-07-13 16:11:26,555 - INFO - Received Command for : robot_1 Location : RODL05a
+2025-07-13 16:11:31,421 - INFO - Robot robot_0 has reached RIU08b
+2025-07-13 16:11:40,513 - INFO - Total calls to destro : 77
+2025-07-13 16:11:45,406 - INFO - Total calls to destro : 78
+2025-07-13 16:11:45,411 - INFO - Received Command for : robot_0 Location : RIU05a
+2025-07-13 16:11:48,378 - INFO - Robot robot_1 has reached RODL05a
+2025-07-13 16:11:52,298 - INFO - Robot robot_0 has reached RIU05a
+2025-07-13 16:11:53,458 - INFO - Total calls to destro : 79
+2025-07-13 16:11:59,098 - INFO - Total calls to destro : 80
+2025-07-13 16:12:00,435 - INFO - Total calls to destro : 81
+2025-07-13 16:12:00,541 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:12:01,411 - INFO - Total calls to destro : 82
+2025-07-13 16:12:01,483 - INFO - Total calls to destro : 83
+2025-07-13 16:12:01,556 - INFO - Received Command for : robot_0 Location : RIU07b
+2025-07-13 16:12:04,433 - INFO - Total calls to destro : 84
+2025-07-13 16:12:06,642 - INFO - Robot robot_0 has reached RIU07b
+2025-07-13 16:12:11,287 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:12:15,743 - INFO - Total calls to destro : 85
+2025-07-13 16:12:20,416 - INFO - Total calls to destro : 86
+2025-07-13 16:12:20,467 - INFO - Total calls to destro : 87
+2025-07-13 16:12:20,487 - INFO - Received Command for : robot_1 Location : ROUR07c
+2025-07-13 16:12:21,194 - INFO - Total calls to destro : 88
+2025-07-13 16:12:21,197 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:12:26,881 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:12:36,012 - INFO - Total calls to destro : 89
+2025-07-13 16:12:36,016 - INFO - Total calls to destro : 90
+2025-07-13 16:12:36,019 - INFO - Received Command for : robot_0 Location : ROUR09a
+2025-07-13 16:12:39,758 - INFO - Robot robot_1 has reached ROUR07c
+2025-07-13 16:12:44,834 - INFO - Total calls to destro : 91
+2025-07-13 16:12:50,533 - INFO - Total calls to destro : 92
+2025-07-13 16:12:50,591 - INFO - Received Command for : robot_1 Location : RIU07c
+2025-07-13 16:12:51,769 - INFO - Total calls to destro : 93
+2025-07-13 16:12:56,171 - INFO - Total calls to destro : 94
+2025-07-13 16:13:00,227 - INFO - Robot robot_0 has reached ROUR09a
+2025-07-13 16:13:05,292 - INFO - Total calls to destro : 95
+2025-07-13 16:13:09,718 - INFO - Robot robot_0 has travelled 910.2711 m
+2025-07-13 16:13:09,718 - INFO - Robot robot_1 has travelled 1202.7644 m
+2025-07-13 16:13:09,719 - INFO - Robot robot_0 has dwelled for 182.11413717269897 sec
+2025-07-13 16:13:09,719 - INFO - Robot robot_1 has dwelled for 146.8995487689972 sec
+2025-07-13 16:13:09,720 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:13:09,720 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:13:09,721 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:13:09,723 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:13:09,724 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:13:10,868 - INFO - Robot robot_1 has reached RIU07c
+2025-07-13 16:13:13,345 - INFO - Total calls to destro : 96
+2025-07-13 16:13:13,357 - INFO - Received Command for : robot_0 Location : RODL06a
+2025-07-13 16:13:13,815 - INFO - Total calls to destro : 97
+2025-07-13 16:13:19,990 - INFO - Total calls to destro : 98
+2025-07-13 16:13:20,073 - INFO - Received Command for : robot_1 Location : ROUR07b
+2025-07-13 16:13:34,008 - INFO - Total calls to destro : 99
+2025-07-13 16:13:41,448 - INFO - Robot robot_1 has reached ROUR07b
+2025-07-13 16:13:41,883 - INFO - Robot robot_0 has reached RODL06a
+2025-07-13 16:13:46,607 - INFO - Total calls to destro : 100
+2025-07-13 16:13:46,711 - INFO - Received Command for : robot_1 Location : CD5
+2025-07-13 16:13:47,187 - INFO - Total calls to destro : 101
+2025-07-13 16:13:47,261 - INFO - Total calls to destro : 102
+2025-07-13 16:13:55,583 - INFO - Total calls to destro : 103
+2025-07-13 16:13:55,666 - INFO - Received Command for : robot_0 Location : RODL05a
+2025-07-13 16:14:02,483 - INFO - Robot robot_0 has reached RODL05a
+2025-07-13 16:14:11,588 - INFO - Total calls to destro : 104
+2025-07-13 16:14:11,640 - INFO - Total calls to destro : 105
+2025-07-13 16:14:11,714 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:14:19,325 - INFO - Robot robot_1 has reached CD5
+2025-07-13 16:14:23,166 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:14:24,448 - INFO - Total calls to destro : 106
+2025-07-13 16:14:24,517 - INFO - Total calls to destro : 107
+2025-07-13 16:14:24,609 - INFO - Received Command for : robot_1 Location : RIU07c
+2025-07-13 16:14:32,271 - INFO - Total calls to destro : 108
+2025-07-13 16:14:35,641 - INFO - Total calls to destro : 109
+2025-07-13 16:14:35,742 - INFO - Received Command for : robot_0 Location : ROUR07a
+2025-07-13 16:14:40,053 - INFO - Robot robot_1 has reached RIU07c
+2025-07-13 16:14:50,193 - INFO - Total calls to destro : 110
+2025-07-13 16:14:50,199 - INFO - Total calls to destro : 111
+2025-07-13 16:14:50,204 - INFO - Received Command for : robot_1 Location : ROUR07b
+2025-07-13 16:14:52,585 - INFO - Total calls to destro : 112
+2025-07-13 16:14:55,187 - INFO - Robot robot_0 has reached ROUR07a
+2025-07-13 16:15:04,298 - INFO - Total calls to destro : 113
+2025-07-13 16:15:04,367 - INFO - Total calls to destro : 114
+2025-07-13 16:15:04,428 - INFO - Received Command for : robot_0 Location : RIU07a
+2025-07-13 16:15:09,682 - INFO - Robot robot_0 has travelled 1263.5122 m
+2025-07-13 16:15:09,682 - INFO - Robot robot_1 has travelled 1647.4424999999999 m
+2025-07-13 16:15:09,682 - INFO - Robot robot_0 has dwelled for 239.95239853858948 sec
+2025-07-13 16:15:09,682 - INFO - Robot robot_1 has dwelled for 176.66008281707764 sec
+2025-07-13 16:15:09,683 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:15:09,683 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:15:09,683 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:15:09,683 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:15:09,684 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:15:09,684 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:15:09,684 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:15:09,684 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:15:09,685 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:15:09,685 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:15:09,686 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:15:09,687 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:15:09,687 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:15:11,280 - INFO - Robot robot_1 has reached ROUR07b
+2025-07-13 16:15:16,406 - INFO - Total calls to destro : 115
+2025-07-13 16:15:20,651 - INFO - Total calls to destro : 116
+2025-07-13 16:15:20,783 - INFO - Received Command for : robot_1 Location : RIU08b
+2025-07-13 16:15:21,824 - INFO - Total calls to destro : 117
+2025-07-13 16:15:23,562 - INFO - Robot robot_0 has reached RIU07a
+2025-07-13 16:15:32,696 - INFO - Total calls to destro : 118
+2025-07-13 16:15:35,677 - INFO - Total calls to destro : 119
+2025-07-13 16:15:35,681 - INFO - Received Command for : robot_0 Location : RIU07b
+2025-07-13 16:15:36,843 - INFO - Robot robot_0 has reached RIU07b
+2025-07-13 16:15:41,567 - INFO - Robot robot_1 has reached RIU08b
+2025-07-13 16:15:45,958 - INFO - Total calls to destro : 120
+2025-07-13 16:15:46,013 - INFO - Total calls to destro : 121
+2025-07-13 16:15:46,022 - INFO - Received Command for : robot_0 Location : ROUR07a
+2025-07-13 16:15:50,630 - INFO - Total calls to destro : 122
+2025-07-13 16:15:50,633 - INFO - Received Command for : robot_1 Location : RODL06b
+2025-07-13 16:15:50,996 - INFO - Total calls to destro : 123
+2025-07-13 16:15:55,740 - INFO - Total calls to destro : 124
+2025-07-13 16:15:59,702 - INFO - Robot robot_1 has reached RODL06b
+2025-07-13 16:16:04,857 - INFO - Total calls to destro : 125
+2025-07-13 16:16:05,368 - INFO - Robot robot_0 has reached ROUR07a
+2025-07-13 16:16:10,507 - INFO - Total calls to destro : 126
+2025-07-13 16:16:12,878 - INFO - Total calls to destro : 127
+2025-07-13 16:16:13,010 - INFO - Received Command for : robot_1 Location : RODR06a
+2025-07-13 16:16:14,090 - INFO - Total calls to destro : 128
+2025-07-13 16:16:15,680 - INFO - Total calls to destro : 129
+2025-07-13 16:16:15,693 - INFO - Received Command for : robot_0 Location : RODL05b
+2025-07-13 16:16:36,170 - INFO - Robot robot_1 has reached RODR06a
+2025-07-13 16:16:41,218 - INFO - Total calls to destro : 130
+2025-07-13 16:16:42,190 - INFO - Robot robot_0 has reached RODL05b
+2025-07-13 16:16:45,746 - INFO - Total calls to destro : 131
+2025-07-13 16:16:45,804 - INFO - Received Command for : robot_1 Location : CD5
+2025-07-13 16:16:51,368 - INFO - Total calls to destro : 132
+2025-07-13 16:16:51,484 - INFO - Received Command for : robot_0 Location : RIU08b
+2025-07-13 16:16:52,221 - INFO - Total calls to destro : 133
+2025-07-13 16:16:52,247 - INFO - Total calls to destro : 134
+2025-07-13 16:17:02,064 - INFO - Robot robot_0 has reached RIU08b
+2025-07-13 16:17:09,697 - INFO - CODE F01 at 1.0 number of cases finished is 800
+2025-07-13 16:17:09,697 - INFO - CODE F02 at 1.0 UPH is 599
+2025-07-13 16:17:11,105 - INFO - Total calls to destro : 135
+2025-07-13 16:17:15,784 - INFO - Total calls to destro : 136
+2025-07-13 16:17:15,858 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:17:16,830 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:17:17,893 - INFO - Robot robot_1 has reached CD5
+2025-07-13 16:17:25,951 - INFO - Total calls to destro : 137
+2025-07-13 16:17:25,955 - INFO - Received Command for : robot_0 Location : RODL06b
+2025-07-13 16:17:26,318 - INFO - Total calls to destro : 138
+2025-07-13 16:17:27,018 - INFO - Total calls to destro : 139
+2025-07-13 16:17:27,022 - INFO - Total calls to destro : 140
+2025-07-13 16:17:27,026 - INFO - Received Command for : robot_1 Location : RIU07b
+2025-07-13 16:17:28,889 - INFO - Total calls to destro : 141
+2025-07-13 16:17:31,688 - INFO - Total calls to destro : 142
+2025-07-13 16:17:35,789 - INFO - Robot robot_0 has reached RODL06b
+2025-07-13 16:17:40,865 - INFO - Total calls to destro : 143
+2025-07-13 16:17:43,280 - INFO - Robot robot_1 has reached RIU07b
+2025-07-13 16:17:48,900 - INFO - Total calls to destro : 144
+2025-07-13 16:17:48,989 - INFO - Received Command for : robot_0 Location : RODR07a
+2025-07-13 16:17:50,126 - INFO - Total calls to destro : 145
+2025-07-13 16:17:52,334 - INFO - Total calls to destro : 146
+2025-07-13 16:17:55,786 - INFO - Total calls to destro : 147
+2025-07-13 16:17:55,792 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:17:57,072 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:18:06,213 - INFO - Total calls to destro : 148
+2025-07-13 16:18:06,273 - INFO - Received Command for : robot_1 Location : ROUR07c
+2025-07-13 16:18:14,335 - INFO - Robot robot_0 has reached RODR07a
+2025-07-13 16:18:19,446 - INFO - Total calls to destro : 149
+2025-07-13 16:18:24,966 - INFO - Robot robot_1 has reached ROUR07c
+2025-07-13 16:18:25,834 - INFO - Total calls to destro : 150
+2025-07-13 16:18:25,841 - INFO - Received Command for : robot_0 Location : RODL06a
+2025-07-13 16:18:30,086 - INFO - Total calls to destro : 151
+2025-07-13 16:18:30,092 - INFO - Total calls to destro : 152
+2025-07-13 16:18:30,098 - INFO - Received Command for : robot_1 Location : CD4
+2025-07-13 16:18:32,602 - INFO - Total calls to destro : 153
+2025-07-13 16:18:52,016 - INFO - Robot robot_0 has reached RODL06a
+2025-07-13 16:19:01,202 - INFO - Total calls to destro : 154
+2025-07-13 16:19:01,208 - INFO - Total calls to destro : 155
+2025-07-13 16:19:01,211 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:19:02,861 - INFO - Robot robot_1 has reached CD4
+2025-07-13 16:19:06,374 - INFO - Total calls to destro : 156
+2025-07-13 16:19:07,260 - INFO - Total calls to destro : 157
+2025-07-13 16:19:08,098 - INFO - Total calls to destro : 158
+2025-07-13 16:19:08,145 - INFO - Total calls to destro : 159
+2025-07-13 16:19:08,205 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:19:09,715 - INFO - Robot robot_0 has travelled 1984.0778 m
+2025-07-13 16:19:09,716 - INFO - Robot robot_1 has travelled 2459.9706 m
+2025-07-13 16:19:09,717 - INFO - Robot robot_0 has dwelled for 337.5400185585022 sec
+2025-07-13 16:19:09,718 - INFO - Robot robot_1 has dwelled for 259.2344298362732 sec
+2025-07-13 16:19:09,718 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:19:09,718 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:19:09,719 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:19:09,719 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:19:09,720 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:19:09,721 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:19:09,721 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:19:09,722 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:19:09,722 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:19:09,723 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:19:09,723 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:19:09,723 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:19:09,724 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:19:11,799 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:19:20,878 - INFO - Total calls to destro : 160
+2025-07-13 16:19:24,385 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:19:25,891 - INFO - Total calls to destro : 161
+2025-07-13 16:19:25,895 - INFO - Received Command for : robot_0 Location : ROUR07b
+2025-07-13 16:19:34,262 - INFO - Total calls to destro : 162
+2025-07-13 16:19:34,421 - INFO - Total calls to destro : 163
+2025-07-13 16:19:34,485 - INFO - Total calls to destro : 164
+2025-07-13 16:19:34,555 - INFO - Received Command for : robot_1 Location : ROUR07c
+2025-07-13 16:19:47,954 - INFO - Robot robot_0 has reached ROUR07b
+2025-07-13 16:19:52,764 - INFO - Robot robot_1 has reached ROUR07c
+2025-07-13 16:19:57,040 - INFO - Total calls to destro : 165
+2025-07-13 16:19:57,087 - INFO - Total calls to destro : 166
+2025-07-13 16:19:57,198 - INFO - Received Command for : robot_0 Location : RIU07a
+2025-07-13 16:19:57,913 - INFO - Total calls to destro : 167
+2025-07-13 16:20:05,914 - INFO - Total calls to destro : 168
+2025-07-13 16:20:06,018 - INFO - Received Command for : robot_1 Location : RIU08b
+2025-07-13 16:20:15,468 - INFO - Robot robot_0 has reached RIU07a
+2025-07-13 16:20:24,559 - INFO - Total calls to destro : 169
+2025-07-13 16:20:25,904 - INFO - Robot robot_1 has reached RIU08b
+2025-07-13 16:20:25,963 - INFO - Total calls to destro : 170
+2025-07-13 16:20:26,067 - INFO - Received Command for : robot_0 Location : RIU07b
+2025-07-13 16:20:26,941 - INFO - Robot robot_0 has reached RIU07b
+2025-07-13 16:20:35,524 - INFO - Total calls to destro : 171
+2025-07-13 16:20:35,640 - INFO - Received Command for : robot_1 Location : RODL03a
+2025-07-13 16:20:36,013 - INFO - Total calls to destro : 172
+2025-07-13 16:20:36,015 - INFO - Total calls to destro : 173
+2025-07-13 16:20:36,017 - INFO - Received Command for : robot_0 Location : ROUR07b
+2025-07-13 16:20:36,876 - INFO - Total calls to destro : 174
+2025-07-13 16:20:44,385 - INFO - Robot robot_1 has reached RODL03a
+2025-07-13 16:20:44,993 - INFO - Total calls to destro : 175
+2025-07-13 16:20:49,452 - INFO - Total calls to destro : 176
+2025-07-13 16:20:55,107 - INFO - Robot robot_0 has reached ROUR07b
+2025-07-13 16:20:57,438 - INFO - Total calls to destro : 177
+2025-07-13 16:20:57,520 - INFO - Received Command for : robot_1 Location : RODL06a
+2025-07-13 16:20:57,924 - INFO - Total calls to destro : 178
+2025-07-13 16:21:00,155 - INFO - Total calls to destro : 179
+2025-07-13 16:21:05,972 - INFO - Total calls to destro : 180
+2025-07-13 16:21:06,007 - INFO - Received Command for : robot_0 Location : RIU06c
+2025-07-13 16:21:06,073 - INFO - Robot robot_1 has reached RODL06a
+2025-07-13 16:21:09,572 - INFO - Robot robot_0 has travelled 2316.2989 m
+2025-07-13 16:21:09,573 - INFO - Robot robot_1 has travelled 2812.1607 m
+2025-07-13 16:21:09,574 - INFO - Robot robot_0 has dwelled for 391.32685446739197 sec
+2025-07-13 16:21:09,574 - INFO - Robot robot_1 has dwelled for 305.31614232063293 sec
+2025-07-13 16:21:09,575 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:21:09,575 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:21:09,576 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:21:09,576 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:21:09,576 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:21:09,577 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:21:09,577 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:21:09,577 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:21:09,578 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:21:09,579 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:21:09,579 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:21:09,579 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:21:09,580 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:21:11,433 - INFO - Total calls to destro : 181
+2025-07-13 16:21:15,979 - INFO - Total calls to destro : 182
+2025-07-13 16:21:15,980 - INFO - Received Command for : robot_1 Location : CD4
+2025-07-13 16:21:24,581 - INFO - Robot robot_0 has reached RIU06c
+2025-07-13 16:21:29,357 - INFO - Robot robot_1 has reached CD4
+2025-07-13 16:21:33,718 - INFO - Total calls to destro : 183
+2025-07-13 16:21:33,758 - INFO - Total calls to destro : 184
+2025-07-13 16:21:33,826 - INFO - Received Command for : robot_0 Location : RIU08b
+2025-07-13 16:21:38,458 - INFO - Total calls to destro : 185
+2025-07-13 16:21:38,543 - INFO - Received Command for : robot_1 Location : RIU07b
+2025-07-13 16:21:39,329 - INFO - Total calls to destro : 186
+2025-07-13 16:21:41,154 - INFO - Robot robot_0 has reached RIU08b
+2025-07-13 16:21:43,241 - INFO - Total calls to destro : 187
+2025-07-13 16:21:50,261 - INFO - Total calls to destro : 188
+2025-07-13 16:21:51,042 - INFO - Total calls to destro : 189
+2025-07-13 16:21:51,171 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:21:51,997 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:21:55,693 - INFO - Robot robot_1 has reached RIU07b
+2025-07-13 16:22:01,090 - INFO - Total calls to destro : 190
+2025-07-13 16:22:01,116 - INFO - Received Command for : robot_0 Location : RODL06b
+2025-07-13 16:22:01,535 - INFO - Total calls to destro : 191
+2025-07-13 16:22:04,823 - INFO - Total calls to destro : 192
+2025-07-13 16:22:06,034 - INFO - Total calls to destro : 193
+2025-07-13 16:22:06,038 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:22:07,122 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:22:09,668 - INFO - Total calls to destro : 194
+2025-07-13 16:22:10,980 - INFO - Robot robot_0 has reached RODL06b
+2025-07-13 16:22:16,010 - INFO - Total calls to destro : 195
+2025-07-13 16:22:16,226 - INFO - Total calls to destro : 196
+2025-07-13 16:22:16,228 - INFO - Received Command for : robot_1 Location : ROUR07c
+2025-07-13 16:22:24,034 - INFO - Total calls to destro : 197
+2025-07-13 16:22:24,100 - INFO - Total calls to destro : 198
+2025-07-13 16:22:24,202 - INFO - Received Command for : robot_0 Location : RODR05a
+2025-07-13 16:22:34,985 - INFO - Robot robot_1 has reached ROUR07c
+2025-07-13 16:22:40,055 - INFO - Total calls to destro : 199
+2025-07-13 16:22:40,120 - INFO - Total calls to destro : 200
+2025-07-13 16:22:40,178 - INFO - Received Command for : robot_1 Location : CD6
+2025-07-13 16:22:46,772 - INFO - Total calls to destro : 201
+2025-07-13 16:22:48,230 - INFO - Robot robot_0 has reached RODR05a
+2025-07-13 16:22:53,307 - INFO - Total calls to destro : 202
+2025-07-13 16:23:01,127 - INFO - Total calls to destro : 203
+2025-07-13 16:23:01,212 - INFO - Received Command for : robot_0 Location : ROUR07a
+2025-07-13 16:23:07,600 - INFO - Total calls to destro : 204
+2025-07-13 16:23:09,626 - INFO - Robot robot_0 has travelled 2620.8786999999998 m
+2025-07-13 16:23:09,627 - INFO - Robot robot_1 has travelled 3232.1403 m
+2025-07-13 16:23:09,627 - INFO - Robot robot_0 has dwelled for 445.7089104652405 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_1 has dwelled for 348.97383880615234 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:23:09,627 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:23:09,628 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:23:09,628 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:23:09,628 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:23:09,629 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:23:09,630 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:23:11,276 - INFO - Robot robot_0 has reached ROUR07a
+2025-07-13 16:23:11,761 - INFO - Robot robot_1 has reached CD6
+2025-07-13 16:23:16,820 - INFO - Total calls to destro : 205
+2025-07-13 16:23:16,879 - INFO - Total calls to destro : 206
+2025-07-13 16:23:16,882 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:23:20,424 - INFO - Total calls to destro : 207
+2025-07-13 16:23:20,428 - INFO - Total calls to destro : 208
+2025-07-13 16:23:20,434 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:23:25,952 - INFO - Total calls to destro : 209
+2025-07-13 16:23:32,942 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:23:38,690 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:23:41,774 - INFO - Total calls to destro : 210
+2025-07-13 16:23:43,084 - INFO - Total calls to destro : 211
+2025-07-13 16:23:43,147 - INFO - Total calls to destro : 212
+2025-07-13 16:23:43,181 - INFO - Received Command for : robot_1 Location : ROUR07a
+2025-07-13 16:23:47,738 - INFO - Total calls to destro : 213
+2025-07-13 16:23:51,158 - INFO - Total calls to destro : 214
+2025-07-13 16:23:51,202 - INFO - Received Command for : robot_0 Location : RODR06a
+2025-07-13 16:24:02,957 - INFO - Robot robot_1 has reached ROUR07a
+2025-07-13 16:24:08,113 - INFO - Total calls to destro : 215
+2025-07-13 16:24:12,998 - INFO - Total calls to destro : 216
+2025-07-13 16:24:13,597 - INFO - Robot robot_0 has reached RODR06a
+2025-07-13 16:24:16,183 - INFO - Total calls to destro : 217
+2025-07-13 16:24:16,259 - INFO - Received Command for : robot_1 Location : RIU08b
+2025-07-13 16:24:22,706 - INFO - Total calls to destro : 218
+2025-07-13 16:24:22,818 - INFO - Received Command for : robot_0 Location : RIU07a
+2025-07-13 16:24:23,259 - INFO - Total calls to destro : 219
+2025-07-13 16:24:37,983 - INFO - Robot robot_1 has reached RIU08b
+2025-07-13 16:24:45,063 - INFO - Robot robot_0 has reached RIU07a
+2025-07-13 16:24:47,136 - INFO - Total calls to destro : 220
+2025-07-13 16:24:47,174 - INFO - Received Command for : robot_1 Location : RODR02a
+2025-07-13 16:24:48,888 - INFO - Total calls to destro : 221
+2025-07-13 16:24:54,145 - INFO - Total calls to destro : 222
+2025-07-13 16:24:56,231 - INFO - Total calls to destro : 223
+2025-07-13 16:24:56,315 - INFO - Received Command for : robot_0 Location : RIU07b
+2025-07-13 16:24:57,358 - INFO - Robot robot_0 has reached RIU07b
+2025-07-13 16:25:06,467 - INFO - Total calls to destro : 224
+2025-07-13 16:25:06,472 - INFO - Total calls to destro : 225
+2025-07-13 16:25:06,475 - INFO - Received Command for : robot_0 Location : ROUR07c
+2025-07-13 16:25:08,088 - INFO - Robot robot_1 has reached RODR02a
+2025-07-13 16:25:09,692 - INFO - Robot robot_0 has travelled 2974.5402 m
+2025-07-13 16:25:09,693 - INFO - Robot robot_1 has travelled 3620.9052 m
+2025-07-13 16:25:09,693 - INFO - Robot robot_0 has dwelled for 496.85365295410156 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_1 has dwelled for 386.74500942230225 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:25:09,693 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:25:09,694 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:25:09,694 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:25:09,694 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:25:10,014 - INFO - Total calls to destro : 226
+2025-07-13 16:25:13,169 - INFO - Total calls to destro : 227
+2025-07-13 16:25:21,214 - INFO - Total calls to destro : 228
+2025-07-13 16:25:21,219 - INFO - Total calls to destro : 229
+2025-07-13 16:25:21,222 - INFO - Received Command for : robot_1 Location : RODL06b
+2025-07-13 16:25:24,775 - INFO - Robot robot_0 has reached ROUR07c
+2025-07-13 16:25:29,835 - INFO - Total calls to destro : 230
+2025-07-13 16:25:36,262 - INFO - Total calls to destro : 231
+2025-07-13 16:25:36,338 - INFO - Received Command for : robot_0 Location : RODL06a
+2025-07-13 16:25:42,895 - INFO - Robot robot_1 has reached RODL06b
+2025-07-13 16:25:48,012 - INFO - Total calls to destro : 232
+2025-07-13 16:25:56,287 - INFO - Total calls to destro : 233
+2025-07-13 16:25:56,292 - INFO - Received Command for : robot_1 Location : CD6
+2025-07-13 16:26:00,129 - INFO - Robot robot_0 has reached RODL06a
+2025-07-13 16:26:09,234 - INFO - Total calls to destro : 234
+2025-07-13 16:26:09,259 - INFO - Received Command for : robot_0 Location : RIU08b
+2025-07-13 16:26:10,092 - INFO - Total calls to destro : 235
+2025-07-13 16:26:10,190 - INFO - Total calls to destro : 236
+2025-07-13 16:26:11,243 - INFO - Robot robot_1 has reached CD6
+2025-07-13 16:26:15,939 - INFO - Total calls to destro : 237
+2025-07-13 16:26:19,637 - INFO - Robot robot_0 has reached RIU08b
+2025-07-13 16:26:20,294 - INFO - Total calls to destro : 238
+2025-07-13 16:26:20,295 - INFO - Received Command for : robot_1 Location : RIU07b
+2025-07-13 16:26:21,016 - INFO - Total calls to destro : 239
+2025-07-13 16:26:28,709 - INFO - Total calls to destro : 240
+2025-07-13 16:26:31,336 - INFO - Total calls to destro : 241
+2025-07-13 16:26:31,436 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:26:32,260 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:26:35,507 - INFO - Robot robot_1 has reached RIU07b
+2025-07-13 16:26:41,452 - INFO - Total calls to destro : 242
+2025-07-13 16:26:41,493 - INFO - Received Command for : robot_0 Location : RODR07b
+2025-07-13 16:26:43,531 - INFO - Total calls to destro : 243
+2025-07-13 16:26:44,575 - INFO - Total calls to destro : 244
+2025-07-13 16:26:46,316 - INFO - Total calls to destro : 245
+2025-07-13 16:26:46,320 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:26:47,270 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:26:56,354 - INFO - Total calls to destro : 246
+2025-07-13 16:26:56,456 - INFO - Received Command for : robot_1 Location : ROUR07b
+2025-07-13 16:27:06,818 - INFO - Robot robot_0 has reached RODR07b
+2025-07-13 16:27:09,581 - INFO - Robot robot_0 has travelled 3367.9295 m
+2025-07-13 16:27:09,581 - INFO - Robot robot_1 has travelled 3949.4478 m
+2025-07-13 16:27:09,582 - INFO - Robot robot_0 has dwelled for 538.4550819396973 sec
+2025-07-13 16:27:09,583 - INFO - Robot robot_1 has dwelled for 442.24388909339905 sec
+2025-07-13 16:27:09,583 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:27:09,584 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:27:09,584 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:27:09,584 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:27:09,585 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:27:09,585 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:27:09,585 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:27:09,586 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:27:09,586 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:27:09,586 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:27:09,587 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:27:09,587 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:27:09,587 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:27:11,864 - INFO - Total calls to destro : 247
+2025-07-13 16:27:15,949 - INFO - Robot robot_1 has reached ROUR07b
+2025-07-13 16:27:19,880 - INFO - Total calls to destro : 248
+2025-07-13 16:27:19,882 - INFO - Received Command for : robot_0 Location : RODL06a
+2025-07-13 16:27:20,335 - INFO - Total calls to destro : 249
+2025-07-13 16:27:21,058 - INFO - Total calls to destro : 250
+2025-07-13 16:27:21,101 - INFO - Total calls to destro : 251
+2025-07-13 16:27:21,105 - INFO - Received Command for : robot_1 Location : CD5
+2025-07-13 16:27:22,377 - INFO - Total calls to destro : 252
+2025-07-13 16:27:44,516 - INFO - Robot robot_0 has reached RODL06a
+2025-07-13 16:27:48,439 - INFO - Total calls to destro : 253
+2025-07-13 16:27:49,589 - INFO - Total calls to destro : 254
+2025-07-13 16:27:52,970 - INFO - Robot robot_1 has reached CD5
+2025-07-13 16:27:56,447 - INFO - Total calls to destro : 255
+2025-07-13 16:27:56,508 - INFO - Received Command for : robot_0 Location : RODR07a
+2025-07-13 16:27:58,133 - INFO - Total calls to destro : 256
+2025-07-13 16:27:58,184 - INFO - Total calls to destro : 257
+2025-07-13 16:27:58,186 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:28:02,053 - INFO - Total calls to destro : 258
+2025-07-13 16:28:15,227 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:28:23,165 - INFO - Robot robot_0 has reached RODR07a
+2025-07-13 16:28:25,257 - INFO - Total calls to destro : 259
+2025-07-13 16:28:25,326 - INFO - Total calls to destro : 260
+2025-07-13 16:28:25,326 - INFO - Received Command for : robot_1 Location : ROUR07b
+2025-07-13 16:28:26,127 - INFO - Total calls to destro : 261
+2025-07-13 16:28:32,248 - INFO - Total calls to destro : 262
+2025-07-13 16:28:32,249 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:28:32,676 - INFO - Total calls to destro : 263
+2025-07-13 16:28:45,581 - INFO - Robot robot_1 has reached ROUR07b
+2025-07-13 16:28:50,630 - INFO - Total calls to destro : 264
+2025-07-13 16:28:56,485 - INFO - Total calls to destro : 265
+2025-07-13 16:28:56,535 - INFO - Received Command for : robot_1 Location : CD5
+2025-07-13 16:28:56,625 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:29:06,032 - INFO - Total calls to destro : 266
+2025-07-13 16:29:06,485 - INFO - Total calls to destro : 267
+2025-07-13 16:29:06,546 - INFO - Received Command for : robot_0 Location : RIU08b
+2025-07-13 16:29:07,323 - INFO - Robot robot_0 has reached RIU08b
+2025-07-13 16:29:09,570 - INFO - CODE F01 at 2.0 number of cases finished is 1400
+2025-07-13 16:29:09,570 - INFO - CODE F02 at 2.0 UPH is 549
+2025-07-13 16:29:16,485 - INFO - Total calls to destro : 268
+2025-07-13 16:29:16,532 - INFO - Total calls to destro : 269
+2025-07-13 16:29:16,618 - INFO - Received Command for : robot_0 Location : RODR06a
+2025-07-13 16:29:20,882 - INFO - Total calls to destro : 270
+2025-07-13 16:29:29,064 - INFO - Robot robot_1 has reached CD5
+2025-07-13 16:29:38,163 - INFO - Total calls to destro : 271
+2025-07-13 16:29:38,243 - INFO - Total calls to destro : 272
+2025-07-13 16:29:38,313 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:29:39,347 - INFO - Robot robot_0 has reached RODR06a
+2025-07-13 16:29:44,475 - INFO - Total calls to destro : 273
+2025-07-13 16:29:52,471 - INFO - Total calls to destro : 274
+2025-07-13 16:29:52,477 - INFO - Received Command for : robot_0 Location : RODL06c
+2025-07-13 16:29:52,949 - INFO - Total calls to destro : 275
+2025-07-13 16:29:54,682 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:30:03,768 - INFO - Total calls to destro : 276
+2025-07-13 16:30:06,523 - INFO - Total calls to destro : 277
+2025-07-13 16:30:06,531 - INFO - Received Command for : robot_1 Location : RIU07b
+2025-07-13 16:30:07,709 - INFO - Robot robot_1 has reached RIU07b
+2025-07-13 16:30:14,584 - INFO - Robot robot_0 has reached RODL06c
+2025-07-13 16:30:16,798 - INFO - Total calls to destro : 278
+2025-07-13 16:30:16,827 - INFO - Received Command for : robot_1 Location : ROUR07c
+2025-07-13 16:30:19,693 - INFO - Total calls to destro : 279
+2025-07-13 16:30:21,672 - INFO - Total calls to destro : 280
+2025-07-13 16:30:26,571 - INFO - Total calls to destro : 281
+2025-07-13 16:30:26,582 - INFO - Received Command for : robot_0 Location : RODL06b
+2025-07-13 16:30:27,426 - INFO - Robot robot_0 has reached RODL06b
+2025-07-13 16:30:34,758 - INFO - Robot robot_1 has reached ROUR07c
+2025-07-13 16:30:36,551 - INFO - Total calls to destro : 282
+2025-07-13 16:30:36,555 - INFO - Total calls to destro : 283
+2025-07-13 16:30:36,558 - INFO - Received Command for : robot_0 Location : RIU08b
+2025-07-13 16:30:39,904 - INFO - Total calls to destro : 284
+2025-07-13 16:30:39,969 - INFO - Total calls to destro : 285
+2025-07-13 16:30:39,985 - INFO - Received Command for : robot_1 Location : CD4
+2025-07-13 16:30:46,591 - INFO - Robot robot_0 has reached RIU08b
+2025-07-13 16:30:55,752 - INFO - Total calls to destro : 286
+2025-07-13 16:30:56,590 - INFO - Total calls to destro : 287
+2025-07-13 16:30:56,593 - INFO - Received Command for : robot_0 Location : RODL06a
+2025-07-13 16:31:04,990 - INFO - Total calls to destro : 288
+2025-07-13 16:31:06,372 - INFO - Robot robot_0 has reached RODL06a
+2025-07-13 16:31:09,707 - INFO - Robot robot_0 has travelled 4087.5492 m
+2025-07-13 16:31:09,708 - INFO - Robot robot_1 has travelled 4847.4222 m
+2025-07-13 16:31:09,709 - INFO - Robot robot_0 has dwelled for 635.9199550151825 sec
+2025-07-13 16:31:09,710 - INFO - Robot robot_1 has dwelled for 509.05075669288635 sec
+2025-07-13 16:31:09,711 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:31:09,711 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:31:09,712 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:31:09,713 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:31:09,715 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:31:09,715 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:31:09,716 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:31:09,716 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:31:09,716 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:31:09,717 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:31:09,717 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:31:09,717 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:31:09,717 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:31:12,251 - INFO - Robot robot_1 has reached CD4
+2025-07-13 16:31:15,492 - INFO - Total calls to destro : 289
+2025-07-13 16:31:15,608 - INFO - Total calls to destro : 290
+2025-07-13 16:31:15,717 - INFO - Received Command for : robot_0 Location : RIU07c
+2025-07-13 16:31:17,038 - INFO - Total calls to destro : 291
+2025-07-13 16:31:17,344 - INFO - Total calls to destro : 292
+2025-07-13 16:31:17,470 - INFO - Received Command for : robot_1 Location : RIU07b
+2025-07-13 16:31:18,225 - INFO - Total calls to destro : 293
+2025-07-13 16:31:28,387 - INFO - Robot robot_0 has reached RIU07c
+2025-07-13 16:31:33,977 - INFO - Robot robot_1 has reached RIU07b
+2025-07-13 16:31:37,506 - INFO - Total calls to destro : 294
+2025-07-13 16:31:41,667 - INFO - Total calls to destro : 295
+2025-07-13 16:31:41,754 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:31:44,108 - INFO - Total calls to destro : 296
+2025-07-13 16:31:44,109 - INFO - Received Command for : robot_1 Location : ROUR07c
+2025-07-13 16:31:44,844 - INFO - Total calls to destro : 297
+2025-07-13 16:31:46,572 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:31:54,605 - INFO - Total calls to destro : 298
+2025-07-13 16:31:55,703 - INFO - Total calls to destro : 299
+2025-07-13 16:31:55,711 - INFO - Total calls to destro : 300
+2025-07-13 16:31:55,715 - INFO - Received Command for : robot_0 Location : RODR05b
+2025-07-13 16:32:02,707 - INFO - Robot robot_1 has reached ROUR07c
+2025-07-13 16:32:07,817 - INFO - Total calls to destro : 301
+2025-07-13 16:32:16,690 - INFO - Total calls to destro : 302
+2025-07-13 16:32:16,726 - INFO - Received Command for : robot_1 Location : ROUR07a
+2025-07-13 16:32:18,028 - INFO - Robot robot_0 has reached RODR05b
+2025-07-13 16:32:18,029 - INFO - Robot robot_1 has reached ROUR07a
+2025-07-13 16:32:19,634 - INFO - Total calls to destro : 303
+2025-07-13 16:32:23,149 - INFO - Total calls to destro : 304
+2025-07-13 16:32:27,169 - INFO - Total calls to destro : 305
+2025-07-13 16:32:27,258 - INFO - Total calls to destro : 306
+2025-07-13 16:32:27,309 - INFO - Received Command for : robot_1 Location : RIU08a
+2025-07-13 16:32:31,191 - INFO - Total calls to destro : 307
+2025-07-13 16:32:31,201 - INFO - Total calls to destro : 308
+2025-07-13 16:32:31,205 - INFO - Received Command for : robot_0 Location : RODL06a
+2025-07-13 16:32:46,297 - INFO - Robot robot_1 has reached RIU08a
+2025-07-13 16:32:54,701 - INFO - Robot robot_0 has reached RODL06a
+2025-07-13 16:32:55,338 - INFO - Total calls to destro : 309
+2025-07-13 16:32:56,704 - INFO - Total calls to destro : 310
+2025-07-13 16:32:56,708 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:32:59,783 - INFO - Total calls to destro : 311
+2025-07-13 16:33:01,817 - INFO - Total calls to destro : 312
+2025-07-13 16:33:02,680 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:33:06,722 - INFO - Total calls to destro : 313
+2025-07-13 16:33:06,845 - INFO - Received Command for : robot_0 Location : RODR05a
+2025-07-13 16:33:09,639 - INFO - Robot robot_0 has travelled 4399.9064 m
+2025-07-13 16:33:09,640 - INFO - Robot robot_1 has travelled 5158.308 m
+2025-07-13 16:33:09,642 - INFO - Robot robot_0 has dwelled for 692.9231712818146 sec
+2025-07-13 16:33:09,643 - INFO - Robot robot_1 has dwelled for 558.0372138023376 sec
+2025-07-13 16:33:09,643 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:33:09,644 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:33:09,644 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:33:09,645 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:33:09,646 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:33:09,646 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:33:09,647 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:33:09,648 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:33:09,648 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:33:09,649 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:33:09,649 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:33:09,649 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:33:09,650 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:33:11,742 - INFO - Total calls to destro : 314
+2025-07-13 16:33:11,801 - INFO - Total calls to destro : 315
+2025-07-13 16:33:11,875 - INFO - Received Command for : robot_1 Location : ROUR07a
+2025-07-13 16:33:31,186 - INFO - Robot robot_0 has reached RODR05a
+2025-07-13 16:33:32,017 - INFO - Robot robot_1 has reached ROUR07a
+2025-07-13 16:33:37,185 - INFO - Total calls to destro : 316
+2025-07-13 16:33:40,301 - INFO - Total calls to destro : 317
+2025-07-13 16:33:40,387 - INFO - Total calls to destro : 318
+2025-07-13 16:33:40,496 - INFO - Received Command for : robot_0 Location : RIU07a
+2025-07-13 16:33:41,805 - INFO - Total calls to destro : 319
+2025-07-13 16:33:41,835 - INFO - Received Command for : robot_1 Location : RIU08b
+2025-07-13 16:33:59,913 - INFO - Robot robot_0 has reached RIU07a
+2025-07-13 16:34:03,708 - INFO - Robot robot_1 has reached RIU08b
+2025-07-13 16:34:08,234 - INFO - Total calls to destro : 320
+2025-07-13 16:34:09,028 - INFO - Total calls to destro : 321
+2025-07-13 16:34:11,809 - INFO - Total calls to destro : 322
+2025-07-13 16:34:11,852 - INFO - Received Command for : robot_0 Location : ROUR07b
+2025-07-13 16:34:12,846 - INFO - Total calls to destro : 323
+2025-07-13 16:34:12,934 - INFO - Received Command for : robot_1 Location : RODL06b
+2025-07-13 16:34:13,297 - INFO - Total calls to destro : 324
+2025-07-13 16:34:18,751 - INFO - Total calls to destro : 325
+2025-07-13 16:34:22,115 - INFO - Robot robot_1 has reached RODL06b
+2025-07-13 16:34:27,205 - INFO - Total calls to destro : 326
+2025-07-13 16:34:31,501 - INFO - Robot robot_0 has reached ROUR07b
+2025-07-13 16:34:33,676 - INFO - Total calls to destro : 327
+2025-07-13 16:34:35,206 - INFO - Total calls to destro : 328
+2025-07-13 16:34:35,279 - INFO - Total calls to destro : 329
+2025-07-13 16:34:35,357 - INFO - Received Command for : robot_1 Location : RODL01a
+2025-07-13 16:34:40,627 - INFO - Total calls to destro : 330
+2025-07-13 16:34:40,678 - INFO - Total calls to destro : 331
+2025-07-13 16:34:40,682 - INFO - Received Command for : robot_0 Location : RIU08b
+2025-07-13 16:34:42,289 - INFO - Robot robot_1 has reached RODL01a
+2025-07-13 16:34:47,390 - INFO - Total calls to destro : 332
+2025-07-13 16:34:51,824 - INFO - Total calls to destro : 333
+2025-07-13 16:34:51,828 - INFO - Received Command for : robot_1 Location : RIU07c
+2025-07-13 16:35:00,847 - INFO - Robot robot_1 has reached RIU07c
+2025-07-13 16:35:01,964 - INFO - Robot robot_0 has reached RIU08b
+2025-07-13 16:35:09,567 - INFO - Robot robot_0 has travelled 4823.8798 m
+2025-07-13 16:35:09,568 - INFO - Robot robot_1 has travelled 5484.118 m
+2025-07-13 16:35:09,569 - INFO - Robot robot_0 has dwelled for 723.2533459663391 sec
+2025-07-13 16:35:09,569 - INFO - Robot robot_1 has dwelled for 608.9645607471466 sec
+2025-07-13 16:35:09,570 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:35:09,571 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:35:09,571 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:35:09,571 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:35:09,572 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:35:09,572 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:35:09,572 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:35:09,573 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:35:09,573 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:35:09,573 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:35:09,574 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:35:09,574 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:35:09,574 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:35:09,937 - INFO - Total calls to destro : 334
+2025-07-13 16:35:10,029 - INFO - Received Command for : robot_1 Location : ROUR07b
+2025-07-13 16:35:10,864 - INFO - Total calls to destro : 335
+2025-07-13 16:35:11,101 - INFO - Total calls to destro : 336
+2025-07-13 16:35:11,884 - INFO - Total calls to destro : 337
+2025-07-13 16:35:11,920 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:35:12,869 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:35:21,941 - INFO - Total calls to destro : 338
+2025-07-13 16:35:22,088 - INFO - Received Command for : robot_0 Location : RODL06b
+2025-07-13 16:35:22,504 - INFO - Total calls to destro : 339
+2025-07-13 16:35:25,470 - INFO - Total calls to destro : 340
+2025-07-13 16:35:28,772 - INFO - Robot robot_1 has reached ROUR07b
+2025-07-13 16:35:31,686 - INFO - Robot robot_0 has reached RODL06b
+2025-07-13 16:35:33,865 - INFO - Total calls to destro : 341
+2025-07-13 16:35:35,028 - INFO - Total calls to destro : 342
+2025-07-13 16:35:36,721 - INFO - Total calls to destro : 343
+2025-07-13 16:35:41,896 - INFO - Total calls to destro : 344
+2025-07-13 16:35:41,982 - INFO - Received Command for : robot_1 Location : ROUR07c
+2025-07-13 16:35:42,974 - INFO - Robot robot_1 has reached ROUR07c
+2025-07-13 16:35:44,751 - INFO - Total calls to destro : 345
+2025-07-13 16:35:44,815 - INFO - Received Command for : robot_0 Location : RODR06a
+2025-07-13 16:35:45,950 - INFO - Total calls to destro : 346
+2025-07-13 16:35:52,124 - INFO - Total calls to destro : 347
+2025-07-13 16:35:52,138 - INFO - Received Command for : robot_1 Location : RIU07b
+2025-07-13 16:35:52,562 - INFO - Total calls to destro : 348
+2025-07-13 16:36:06,136 - INFO - Total calls to destro : 349
+2025-07-13 16:36:08,190 - INFO - Robot robot_0 has reached RODR06a
+2025-07-13 16:36:10,568 - INFO - Robot robot_1 has reached RIU07b
+2025-07-13 16:36:13,344 - INFO - Total calls to destro : 350
+2025-07-13 16:36:19,705 - INFO - Total calls to destro : 351
+2025-07-13 16:36:21,925 - INFO - Total calls to destro : 352
+2025-07-13 16:36:21,950 - INFO - Received Command for : robot_0 Location : RIU07a
+2025-07-13 16:36:22,308 - INFO - Total calls to destro : 353
+2025-07-13 16:36:22,310 - INFO - Received Command for : robot_1 Location : RODL01a
+2025-07-13 16:36:31,465 - INFO - Robot robot_1 has reached RODL01a
+2025-07-13 16:36:32,366 - INFO - Total calls to destro : 354
+2025-07-13 16:36:40,561 - INFO - Total calls to destro : 355
+2025-07-13 16:36:40,648 - INFO - Received Command for : robot_1 Location : RIU08a
+2025-07-13 16:36:41,176 - INFO - Total calls to destro : 356
+2025-07-13 16:36:44,046 - INFO - Robot robot_0 has reached RIU07a
+2025-07-13 16:36:48,181 - INFO - Robot robot_1 has reached RIU08a
+2025-07-13 16:36:53,097 - INFO - Total calls to destro : 357
+2025-07-13 16:36:53,102 - INFO - Received Command for : robot_0 Location : ROUR07c
+2025-07-13 16:36:53,862 - INFO - Total calls to destro : 358
+2025-07-13 16:36:57,261 - INFO - Total calls to destro : 359
+2025-07-13 16:37:01,967 - INFO - Total calls to destro : 360
+2025-07-13 16:37:01,973 - INFO - Received Command for : robot_1 Location : RIU08b
+2025-07-13 16:37:03,066 - INFO - Robot robot_1 has reached RIU08b
+2025-07-13 16:37:03,167 - INFO - Total calls to destro : 361
+2025-07-13 16:37:09,680 - INFO - Robot robot_0 has travelled 5208.0203 m
+2025-07-13 16:37:09,681 - INFO - Robot robot_1 has travelled 5753.0689 m
+2025-07-13 16:37:09,682 - INFO - Robot robot_0 has dwelled for 778.2479202747345 sec
+2025-07-13 16:37:09,682 - INFO - Robot robot_1 has dwelled for 675.0604257583618 sec
+2025-07-13 16:37:09,682 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:37:09,683 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:37:09,683 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:37:09,683 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:37:09,683 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:37:09,683 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:37:09,683 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:37:09,683 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:37:09,684 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:37:09,685 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:37:09,685 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:37:09,686 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:37:09,687 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:37:11,950 - INFO - Robot robot_0 has reached ROUR07c
+2025-07-13 16:37:12,126 - INFO - Total calls to destro : 362
+2025-07-13 16:37:12,186 - INFO - Received Command for : robot_1 Location : RODL06b
+2025-07-13 16:37:12,626 - INFO - Total calls to destro : 363
+2025-07-13 16:37:17,103 - INFO - Total calls to destro : 364
+2025-07-13 16:37:21,649 - INFO - Robot robot_1 has reached RODL06b
+2025-07-13 16:37:21,991 - INFO - Total calls to destro : 365
+2025-07-13 16:37:22,100 - INFO - Received Command for : robot_0 Location : ROUR07a
+2025-07-13 16:37:23,740 - INFO - Robot robot_0 has reached ROUR07a
+2025-07-13 16:37:26,697 - INFO - Total calls to destro : 366
+2025-07-13 16:37:32,870 - INFO - Total calls to destro : 367
+2025-07-13 16:37:32,879 - INFO - Received Command for : robot_0 Location : RIU07a
+2025-07-13 16:37:33,275 - INFO - Total calls to destro : 368
+2025-07-13 16:37:34,714 - INFO - Total calls to destro : 369
+2025-07-13 16:37:34,719 - INFO - Total calls to destro : 370
+2025-07-13 16:37:34,723 - INFO - Received Command for : robot_1 Location : RODL03a
+2025-07-13 16:37:37,182 - INFO - Total calls to destro : 371
+2025-07-13 16:37:42,589 - INFO - Robot robot_1 has reached RODL03a
+2025-07-13 16:37:47,771 - INFO - Total calls to destro : 372
+2025-07-13 16:37:52,027 - INFO - Total calls to destro : 373
+2025-07-13 16:37:52,082 - INFO - Received Command for : robot_1 Location : RODL06c
+2025-07-13 16:37:52,445 - INFO - Robot robot_0 has reached RIU07a
+2025-07-13 16:37:59,352 - INFO - Robot robot_1 has reached RODL06c
+2025-07-13 16:38:01,518 - INFO - Total calls to destro : 374
+2025-07-13 16:38:02,022 - INFO - Total calls to destro : 375
+2025-07-13 16:38:02,080 - INFO - Received Command for : robot_0 Location : RIU07b
+2025-07-13 16:38:02,950 - INFO - Robot robot_0 has reached RIU07b
+2025-07-13 16:38:08,442 - INFO - Total calls to destro : 376
+2025-07-13 16:38:08,531 - INFO - Total calls to destro : 377
+2025-07-13 16:38:08,585 - INFO - Received Command for : robot_1 Location : RIU08b
+2025-07-13 16:38:12,025 - INFO - Total calls to destro : 378
+2025-07-13 16:38:12,111 - INFO - Received Command for : robot_0 Location : ROUR07a
+2025-07-13 16:38:13,170 - INFO - Total calls to destro : 379
+2025-07-13 16:38:13,174 - INFO - Total calls to destro : 380
+2025-07-13 16:38:21,244 - INFO - Robot robot_1 has reached RIU08b
+2025-07-13 16:38:30,325 - INFO - Total calls to destro : 381
+2025-07-13 16:38:31,701 - INFO - Robot robot_0 has reached ROUR07a
+2025-07-13 16:38:32,046 - INFO - Total calls to destro : 382
+2025-07-13 16:38:32,151 - INFO - Received Command for : robot_1 Location : CD4
+2025-07-13 16:38:35,780 - INFO - Total calls to destro : 383
+2025-07-13 16:38:36,792 - INFO - Total calls to destro : 384
+2025-07-13 16:38:38,435 - INFO - Total calls to destro : 385
+2025-07-13 16:38:42,064 - INFO - Total calls to destro : 386
+2025-07-13 16:38:42,071 - INFO - Received Command for : robot_0 Location : RIU08a
+2025-07-13 16:38:49,844 - INFO - Robot robot_1 has reached CD4
+2025-07-13 16:38:58,975 - INFO - Total calls to destro : 387
+2025-07-13 16:38:59,076 - INFO - Total calls to destro : 388
+2025-07-13 16:38:59,116 - INFO - Received Command for : robot_1 Location : RIU07b
+2025-07-13 16:39:01,710 - INFO - Robot robot_0 has reached RIU08a
+2025-07-13 16:39:09,648 - INFO - Robot robot_0 has travelled 5526.6835 m
+2025-07-13 16:39:09,648 - INFO - Robot robot_1 has travelled 6041.148 m
+2025-07-13 16:39:09,649 - INFO - Robot robot_0 has dwelled for 826.552538394928 sec
+2025-07-13 16:39:09,649 - INFO - Robot robot_1 has dwelled for 735.9910016059875 sec
+2025-07-13 16:39:09,650 - INFO - Robot robot_2 has dwelled for 0 sec
+2025-07-13 16:39:09,650 - INFO - Robot robot_3 has dwelled for 0 sec
+2025-07-13 16:39:09,650 - INFO - Robot robot_4 has dwelled for 0 sec
+2025-07-13 16:39:09,650 - INFO - Robot robot_5 has dwelled for 0 sec
+2025-07-13 16:39:09,650 - INFO - Robot robot_6 has dwelled for 0 sec
+2025-07-13 16:39:09,651 - INFO - Robot robot_7 has dwelled for 0 sec
+2025-07-13 16:39:09,651 - INFO - Robot robot_8 has dwelled for 0 sec
+2025-07-13 16:39:09,651 - INFO - Robot robot_9 has dwelled for 0 sec
+2025-07-13 16:39:09,651 - INFO - Robot robot_10 has dwelled for 0 sec
+2025-07-13 16:39:09,651 - INFO - Robot robot_11 has dwelled for 0 sec
+2025-07-13 16:39:09,651 - INFO - Robot robot_12 has dwelled for 0 sec
+2025-07-13 16:39:09,652 - INFO - Robot robot_13 has dwelled for 0 sec
+2025-07-13 16:39:09,653 - INFO - Robot robot_14 has dwelled for 0 sec
+2025-07-13 16:39:10,859 - INFO - Total calls to destro : 389
+2025-07-13 16:39:10,915 - INFO - Received Command for : robot_0 Location : RODR06b
+2025-07-13 16:39:12,959 - INFO - Total calls to destro : 390
+2025-07-13 16:39:15,638 - INFO - Robot robot_1 has reached RIU07b
+2025-07-13 16:39:22,829 - INFO - Total calls to destro : 391
+2025-07-13 16:39:24,738 - INFO - Total calls to destro : 392
+2025-07-13 16:39:27,097 - INFO - Total calls to destro : 393
+2025-07-13 16:39:27,101 - INFO - Received Command for : robot_1 Location : RODL06a
+2025-07-13 16:39:33,220 - INFO - Robot robot_0 has reached RODR06b
+2025-07-13 16:39:38,277 - INFO - Total calls to destro : 394
+2025-07-13 16:39:39,401 - INFO - Robot robot_1 has reached RODL06a
+2025-07-13 16:39:44,980 - INFO - Total calls to destro : 395
+2025-07-13 16:39:46,274 - INFO - Total calls to destro : 396
+2025-07-13 16:39:46,324 - INFO - Received Command for : robot_0 Location : ROUR07b
+2025-07-13 16:39:48,562 - INFO - Total calls to destro : 397
+2025-07-13 16:39:48,625 - INFO - Total calls to destro : 398
+2025-07-13 16:39:48,698 - INFO - Received Command for : robot_1 Location : RIU08a
+2025-07-13 16:39:52,482 - INFO - Robot robot_0 has reached ROUR07b
+2025-07-13 16:39:57,596 - INFO - Total calls to destro : 399
+2025-07-13 16:39:57,602 - INFO - Total calls to destro : 400
+2025-07-13 16:39:57,604 - INFO - Received Command for : robot_0 Location : CD10
+2025-07-13 16:39:59,332 - INFO - Robot robot_1 has reached RIU08a
+2025-07-13 16:40:08,426 - INFO - Total calls to destro : 401
+2025-07-13 16:40:12,147 - INFO - Total calls to destro : 402
+2025-07-13 16:40:12,234 - INFO - Received Command for : robot_1 Location : RIU07a
+2025-07-13 16:40:17,977 - INFO - Robot robot_1 has reached RIU07a
+2025-07-13 16:40:29,222 - INFO - Robot robot_0 has reached CD10
+2025-07-13 16:40:34,336 - INFO - Total calls to destro : 403
+2025-07-13 16:40:34,342 - INFO - Total calls to destro : 404
+2025-07-13 16:40:34,347 - INFO - Received Command for : robot_0 Location : RODR06b
+2025-07-13 16:40:42,623 - INFO - Total calls to destro : 405
+2025-07-13 16:40:46,166 - INFO - Total calls to destro : 406
+2025-07-13 16:41:09,709 - INFO - CODE F01 at 3.0 number of cases finished is 1944
+2025-07-13 16:41:09,709 - INFO - CODE F02 at 3.0 UPH is 575
+

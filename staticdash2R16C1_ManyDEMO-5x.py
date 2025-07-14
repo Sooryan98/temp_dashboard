@@ -13,8 +13,8 @@ from datetime import datetime
 # DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
 # FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
 
-DESTRO_PATH = "log_bank/1_Many/DEMO-5x/16C/yusen_2025-07-13-16.log"
-FMS_PATH = "log_bank/1_Many/DEMO-5x/16C/FMS_2025-07-13-16.log"
+DESTRO_PATH = "log_bank/1_Many/DEMO-5x/16C/Fixed Runs/yusen_2025-07-13.log"
+FMS_PATH = "log_bank/1_Many/DEMO-5x/16C/Fixed Runs/FMS_2025-07-13.log"
 
 st.set_page_config(page_title="destro", layout="wide")
 
@@ -295,7 +295,7 @@ fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-18 15:40:40,196
 
 # start_time='2025-06-24 08:34:28,000000'
-end_time='2025-07-13 15:13:52,000000'
+end_time='2025-07-13 17:37:26,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=(end_time-start_time)*sim_speed
@@ -369,7 +369,7 @@ robot_distance_dict = dict(zip(robot_dist_df["Robot"], total_sec-(robot_dist_df[
 #     x=alt.X('Robot:N', sort='ascending'),
 #     y='Total Cases:Q'
 # ).properties(width=2000, height=400, title="Robot vs Total Cases")
-chart_dist = alt.Chart(robot_dist_df).mark_bar(size=150).encode(
+chart_dist = alt.Chart(robot_dist_df).mark_bar(size=50).encode(
     x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
     y='Distance:Q'
 ).properties(width=2000,height=400,
@@ -383,7 +383,7 @@ chart_botuph = alt.Chart(robot_total_cases_df).mark_bar(size=50).encode(
 
 
 # Bar chart using Altair
-chart_trips = alt.Chart(robot_trips_df).mark_bar(size=150).encode(
+chart_trips = alt.Chart(robot_trips_df).mark_bar(size=50).encode(
     x='Robot:N',
     y='Trips:Q',
     tooltip=['Robot', 'Trips']
@@ -408,7 +408,7 @@ chart_empty_idle = alt.Chart(cart_empty_idle_df).mark_bar(size=50).encode(
     height=400 ,title='Cart vs Dwell Time [min]'
 )
 
-chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar(size=150).encode(
+chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar(size=50).encode(
     x='Robot:N',
     y='Dwell Time:Q',
     tooltip=['Robot', 'Dwell Time']
@@ -417,7 +417,7 @@ chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar(size=150).encode(
     height=400 ,title='Robot vs Dwell Time [min]'
 )
 
-chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar(size=150).encode(
+chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar(size=50).encode(
     x='Inbound ID:N',
     y='Dwell Time:Q',
     tooltip=['Inbound ID', 'Dwell Time']
