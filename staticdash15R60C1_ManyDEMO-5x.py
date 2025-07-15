@@ -5,7 +5,7 @@ import re
 import os
 from collections import defaultdict
 from datetime import datetime
-
+from collections import Counter
 
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # DESTRO_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "yusen_2025-04-10.log")
@@ -13,16 +13,16 @@ from datetime import datetime
 # DESTRO_PATH = "log_bank/1_1/1 Jul_2025/yusen_2025-07-01.log"
 # FMS_PATH = "log_bank/1_1/1 Jul_2025/FMS_2025-07-01.log"
 
-DESTRO_PATH = "log_bank/1_Many/DEMO-5x/16C/Fixed Runs/yusen_2025-07-13.log"
-FMS_PATH = "log_bank/1_Many/DEMO-5x/16C/Fixed Runs/FMS_2025-07-13.log"
+DESTRO_PATH = "log_bank/1_Many/DEMO-5x/60C/yusen_2025-07-15.log"
+FMS_PATH = "log_bank/1_Many/DEMO-5x/60C/FMS_2025-07-15.log"
 
-st.set_page_config(page_title="destro", layout="wide")
+# st.set_page_config(page_title="destro", layout="wide")
 
 
 # ---------------- Data Structures ----------------dashboard_time=0
 sim_speed=5
-robot_count=2
-cart_count=16
+robot_count=15
+cart_count=60
 start_time=0
 end_time=0
 ptrack=0
@@ -33,9 +33,9 @@ progress=defaultdict(int)
 task_id_tracker=[]
 uph_tracker={}
 log_data = {"total_cases": 0}
-robot_fms_data = {f"Robot {i+1}": 0 for i in range(2)}
-robot_total_cases={f"Robot {i+1}" : 0 for i in range(2)}
-robot_dwell={f"Robot {i+1}" : 0 for i in range(2)}
+robot_fms_data = {f"Robot {i+1}": 0 for i in range(15)}
+robot_total_cases={f"Robot {i+1}" : 0 for i in range(15)}
+robot_dwell={f"Robot {i+1}" : 0 for i in range(15)}
 cases_per_hour = defaultdict(lambda: defaultdict(int))
 log_time_format = "%Y-%m-%d %H:%M:%S,%f"
 robot_destro_data = defaultdict(lambda: defaultdict(dict))
@@ -46,10 +46,63 @@ cart_empty_idle={}
 cart_full_idle={}
 indoor_idle={}
 outdoor_idle={}
+
+outbound_counter = Counter()
 # robot_destro_data = defaultdict(lambda: defaultdict(lambda: {"loaded_cases": 0, "total_cases": 0}))
 
 # ---------------- DESTRO Log Parser ----------------
+destination_mapping = {
+    # ── Group 1 ── (positions 1, 5, 9, … in the sorted list)
+    "0555 - Woodland":           "Outbound_11",
+    "0588 - Phoenix":            "Outbound_10",
+    "3803 - Topeka":             "Outbound_9",
+    "0600 - Lacey":              "Outbound_8",
+    "0590 - Cedarfalls":         "Outbound_7",
+    "3811 - Newton":             "Outbound_6",
+    "0579 - New York":           "Outbound_5",
+    "0556 - Tifton":             "Outbound_4",
+    "3680 - NFI CHICAGO":        "Outbound_3",
+    "Dest - Destroy":            "Outbound_2",
+    "3681 - NFI Mount Pocono":   "Outbound_1",
 
+    # ── Group 2 ── (positions 2, 6, 10, …)
+    "0578 - Texas DC":           "Outbound_12",
+    "0593 - Shaffer":            "Outbound_13",
+    "0587 - Galesburg":          "Outbound_14",
+    "3801 - Midlothian":         "Outbound_15",
+    "3842 - DeKalb":             "Outbound_16",
+    "0594 - Lugoff DC":          "Outbound_17",
+    "3804 - West Jefferson":     "Outbound_18",
+    "3865 - Chicago":            "Outbound_19",
+    "3868 - Hampton":            "Outbound_20",
+    "9156 - Burlington":         "Outbound_21",
+    "9253 - Joliet":             "Outbound_22",
+
+    # ── Group 3 ── (positions 3, 7, 11, …)
+    "3806 - Rialto":             "Outbound_23",
+    "3841 - Suffolk":            "Outbound_24",
+    "0554 - Pueblo":             "Outbound_25",
+    "0559 - Indianapolis":       "Outbound_26",
+    "0551 - Minneapolis":        "Outbound_27",
+    "3808 - Midway":             "Outbound_28",
+    "0560 - Stuart's Draft VA":  "Outbound_29",
+    "0580 - Alabama":            "Outbound_30",
+    "OVERAGE":                   "Outbound_31",
+    "9417 Savannah":             "Outbound_32",
+    "9479 Ontario":              "Outbound_33",
+
+    # ── Group 4 ── (positions 4, 8, 12, …)
+    "0558 - Albany OR":          "Outbound_34",
+    "0553 - Los Angeles":        "Outbound_35",
+    "0557 - Oconomowoc":         "Outbound_36",
+    "3840 - Rialto":             "Outbound_37",
+    "3802 - Amsterdam":          "Outbound_38",
+    "0589 - Chambersburg":       "Outbound_39",
+    "3856 - Riverside":          "Outbound_40",
+    "3857 - Logan Township":     "Outbound_41",
+    "Salvage- Longbeach":        "Outbound_42",
+}
+outbound_destinations={v:k for k,v in destination_mapping.items()}
 def download_log(url):
     response = requests.get(url)
     response.raise_for_status()
@@ -60,7 +113,6 @@ def outbound_density(log_path):
     with open(log_path, "r") as f:
         lines = f.readlines()
 
-    outbound_counter = Counter()
 
 
     pattern = re.compile(r"route:\s*(\[[^\]]*\])")
@@ -326,7 +378,7 @@ fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-18 15:40:40,196
 
 # start_time='2025-06-24 08:34:28,000000'
-end_time='2025-07-13 17:37:26,000000'
+end_time='2025-07-15 15:45:44,000000'
 start_time = datetime.strptime(start_time, fmt)
 end_time= datetime.strptime(end_time, fmt)
 dashboard_time=(end_time-start_time)*sim_speed
@@ -334,52 +386,133 @@ dhrs, rem =divmod(dashboard_time.total_seconds(),3600)
 dmins,dsec =divmod(rem,60)
 total_sec=dashboard_time.total_seconds()
 avg_uph = sum(int(v) for v in uph_tracker.values()) / len(uph_tracker)
-# ---------------- Display Dashboard ----------------
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #e6f2ff;  /* Light blue background */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
+
+
+
+chart_dist = alt.Chart(robot_dist_df).mark_bar(size=20).encode(
+    x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
+    y='Distance:Q'
+).properties(width=2000,height=400,
+    title="Robot vs Distance [m]")
+
+chart_botuph = alt.Chart(robot_total_cases_df).mark_bar(size=20).encode(
+    x=alt.X('Cart:N'),
+    y='Total Cases:Q'
+).properties(width=2000, height=400, title="Cart vs Total Cases")
+
+
+
+# Bar chart using Altair
+chart_trips = alt.Chart(robot_trips_df).mark_bar(size=20).encode(
+    x='Robot:N',
+    y='Trips:Q',
+    tooltip=['Robot', 'Trips']
+).properties(
+    width=2000,
+    height=400 , title= 'Robot vs Trips Made'
+)
+chart_full_idle = alt.Chart(cart_full_idle_df).mark_bar(size=20).encode(
+    x='Cart:N',
+    y='Dwell Time:Q',
+    tooltip=['Cart', 'Dwell Time']
+).properties(
+    width=2000,
+    height=400 ,title='Cart vs Dwell Time [min]'
+)
+chart_empty_idle = alt.Chart(cart_empty_idle_df).mark_bar(size=20).encode(
+    x='Cart:N',
+    y='Dwell Time:Q',
+    tooltip=['Cart', 'Dwell Time']
+).properties(
+    width=2000,
+    height=400 ,title='Cart vs Dwell Time [min]'
 )
 
-st.image("destro_logo_black.png", width=400)
-# st.header('')
+chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar(size=20).encode(
+    x='Robot:N',
+    y='Dwell Time:Q',
+    tooltip=['Robot', 'Dwell Time']
+).properties(
+    width=2000,
+    height=400 ,title='Robot vs Dwell Time [min]'
+)
 
-col1,col2=st.columns(2)
+chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar(size=20).encode(
+    x='Inbound ID:N',
+    y='Dwell Time:Q',
+    tooltip=['Inbound ID', 'Dwell Time']
+).properties(
+    width=2000,
+    height=400 ,title='Inbound ID vs Dwell Time [min]'
+)
 
-with col1:
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>Time<br>
-        <span style='font-size:30px;'>{int(dhrs):02d} : {int(dmins):02d} : {int(dsec):02d}</span></div>
-    """, unsafe_allow_html=True)
 
-    total_time = dhrs + dmins / 60
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>Total Cases Picked<br>
-        <span style='font-size:30px;'>{code_101}</span></div>
-    """, unsafe_allow_html=True)
+chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar(size=100).encode(
+    x='Outbound ID:N',
+    y='Dwell Time:Q',
+    tooltip=['Outbound ID', 'Dwell Time']
+).properties(
+    width=2000,
+    height=400 ,title='Outbound ID vs Dwell Time [min]'
+)
 
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>UPH<br>
-        <span style='font-size:30px;'>{int(code_101 / total_time)}</span></div>
-    """, unsafe_allow_html=True)
+chart_outbound_density = alt.Chart(out_density_df).mark_bar(size=20).encode(
+    x=alt.X('Outbound Destination:N', sort='-y'),  # sort by density descending
+    y=alt.Y('Density:Q'),
+    tooltip=['Outbound Destination', 'Density']
+).properties(
+    width=2000,
+    height=400,
+    title='Outbound Destination vs Density'
+)
 
-with col2:
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>Total Robots in Sim<br>
-        <span style='font-size:30px;'>{robot_count}</span></div>
-    """, unsafe_allow_html=True)
+# ---------------- Display Dashboard ----------------
+# st.markdown(
+#     """
+#     <style>
+#     body {
+#         background-color: #e6f2ff;  /* Light blue background */
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>Total Carts in Sim<br>
-        <span style='font-size:30px;'>{cart_count}</span></div>
-    """, unsafe_allow_html=True)
+# st.image("destro_logo_black.png", width=400)
+# # st.header('')
+
+# col1,col2=st.columns(2)
+
+# with col1:
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>Time<br>
+#         <span style='font-size:30px;'>{int(dhrs):02d} : {int(dmins):02d} : {int(dsec):02d}</span></div>
+#     """, unsafe_allow_html=True)
+
+#     
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>Total Cases Picked<br>
+#         <span style='font-size:30px;'>{code_101}</span></div>
+#     """, unsafe_allow_html=True)
+
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>UPH<br>
+#         <span style='font-size:30px;'>{int(code_101 / total_time)}</span></div>
+#     """, unsafe_allow_html=True)
+
+# with col2:
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>Total Robots in Sim<br>
+#         <span style='font-size:30px;'>{robot_count}</span></div>
+#     """, unsafe_allow_html=True)
+
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>Total Carts in Sim<br>
+#         <span style='font-size:30px;'>{cart_count}</span></div>
+#     """, unsafe_allow_html=True)
 
 robot_distance_dict = dict(zip(robot_dist_df["Robot"], total_sec-(robot_dist_df["Distance"]/1.5)))
+total_time = dhrs + dmins / 60
 # print(robot_distance_dict)
 
 
@@ -400,82 +533,6 @@ robot_distance_dict = dict(zip(robot_dist_df["Robot"], total_sec-(robot_dist_df[
 #     x=alt.X('Robot:N', sort='ascending'),
 #     y='Total Cases:Q'
 # ).properties(width=2000, height=400, title="Robot vs Total Cases")
-chart_dist = alt.Chart(robot_dist_df).mark_bar(size=50).encode(
-    x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
-    y='Distance:Q'
-).properties(width=2000,height=400,
-    title="Robot vs Distance [m]")
-
-chart_botuph = alt.Chart(robot_total_cases_df).mark_bar(size=50).encode(
-    x=alt.X('Cart:N'),
-    y='Total Cases:Q'
-).properties(width=2000, height=400, title="Cart vs Total Cases")
-
-
-
-# Bar chart using Altair
-chart_trips = alt.Chart(robot_trips_df).mark_bar(size=50).encode(
-    x='Robot:N',
-    y='Trips:Q',
-    tooltip=['Robot', 'Trips']
-).properties(
-    width=2000,
-    height=400 , title= 'Robot vs Trips Made'
-)
-chart_full_idle = alt.Chart(cart_full_idle_df).mark_bar(size=50).encode(
-    x='Cart:N',
-    y='Dwell Time:Q',
-    tooltip=['Cart', 'Dwell Time']
-).properties(
-    width=2000,
-    height=400 ,title='Cart vs Dwell Time [min]'
-)
-chart_empty_idle = alt.Chart(cart_empty_idle_df).mark_bar(size=50).encode(
-    x='Cart:N',
-    y='Dwell Time:Q',
-    tooltip=['Cart', 'Dwell Time']
-).properties(
-    width=2000,
-    height=400 ,title='Cart vs Dwell Time [min]'
-)
-
-chart_robot_idle = alt.Chart(robot_dwell_df).mark_bar(size=50).encode(
-    x='Robot:N',
-    y='Dwell Time:Q',
-    tooltip=['Robot', 'Dwell Time']
-).properties(
-    width=2000,
-    height=400 ,title='Robot vs Dwell Time [min]'
-)
-
-chart_inbound_idle = alt.Chart(indoor_idle_df).mark_bar(size=50).encode(
-    x='Inbound ID:N',
-    y='Dwell Time:Q',
-    tooltip=['Inbound ID', 'Dwell Time']
-).properties(
-    width=2000,
-    height=400 ,title='Inbound ID vs Dwell Time [min]'
-)
-
-
-chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar(size=100).encode(
-    x='Outbound ID:N',
-    y='Dwell Time:Q',
-    tooltip=['Outbound ID', 'Dwell Time']
-).properties(
-    width=2000,
-    height=400 ,title='Outbound ID vs Dwell Time [min]'
-)
-
-chart_outbound_density = alt.Chart(out_density_df).mark_bar(size=30).encode(
-    x=alt.X('Outbound Destination:N', sort='-y'),  # sort by density descending
-    y=alt.Y('Density:Q'),
-    tooltip=['Outbound Destination', 'Density']
-).properties(
-    width=2000,
-    height=500,
-    title='Outbound Destination vs Density'
-)
 
 
 
@@ -504,69 +561,229 @@ chart_outbound_density = alt.Chart(out_density_df).mark_bar(size=30).encode(
 # # st.dataframe(progress_df, use_container_width=True)
 # st.write("### UPH break down")
 # st.dataframe(uph_tracker_df, use_container_width=True)
-st.header('')
-
-st.title("Distance Travelled by Robot")
-
-st.altair_chart(chart_dist, use_container_width=False)
-st.title("CART Unloading Cases per Hour")
-# st.dataframe(cases_ph_df , use_container_width=True)
-st.altair_chart(chart_botuph, use_container_width=False)
 
 
 
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# st.header('')
+
+# st.title("Distance Travelled by Robot")
+
+# st.altair_chart(chart_dist, use_container_width=False)
+# st.title("CART Unloading Cases per Hour")
+# # st.dataframe(cases_ph_df , use_container_width=True)
+# st.altair_chart(chart_botuph, use_container_width=False)
 
 
-st.header("Outbound Request Density")
-st.altair_chart(chart_outbound_density,use_container_width=False)
 
-# st.metric( value=int(sum(cart_full_idle.values())))
-st.markdown(
-    f"<div style='font-size:40px; font-weight:bold;'>Total Full Cart Dwell Time : {int(sum(cart_full_idle.values()))} mins</div>",
-    unsafe_allow_html=True
-)
-st.header("Full Cart Dwell Time")
-st.altair_chart(chart_full_idle,use_container_width=False)
 
-# st.metric(label="Total Empty Cart Dwell Time [min]", value=int(sum(cart_empty_idle.values())))
 
-st.markdown(
-    f"<div style='font-size:40px; font-weight:bold;'>Total Empty Cart Dwell Time : {int(sum(cart_empty_idle.values()))} mins</div>",
-    unsafe_allow_html=True
-)
-st.header("Empty Cart Dwell Time")
-st.altair_chart(chart_empty_idle,use_container_width=False)
+# st.header("Outbound Request Density")
+# st.altair_chart(chart_outbound_density,use_container_width=False)
 
-# st.metric(label="Total Robot Dwell Time [min]", value=int(sum(robot_dwell.values())))
-st.markdown(
-    f"<div style='font-size:40px; font-weight:bold;'>Total Robot Dwell Time : {int(sum(robot_dwell.values()))} mins</div>",
-    unsafe_allow_html=True
-)
-st.header("Robot Dwell Time")
-st.altair_chart(chart_robot_idle,use_container_width=False)
-# st.metric(label="Total Inbound Door Dwell Time [min]", value=int(sum(indoor_idle.values())))
-st.markdown(
-    f"<div style='font-size:40px; font-weight:bold;'>Total Inbound Door Dwell Time : {int(sum(indoor_idle.values()))} mins</div>",
-    unsafe_allow_html=True
-)
-
-st.header("Inbound Door Dwell Time")
-st.altair_chart(chart_inbound_idle,use_container_width=False)
-# st.metric(label="Total Outbound Door Dwell Time [min]", value=int(sum(outdoor_idle.values())))
+# # st.metric( value=int(sum(cart_full_idle.values())))
 # st.markdown(
-#     f"<div style='font-size:40px; font-weight:bold;'>Total Outbound Door Dwell Time : {int(sum(outdoor_idle.values()))} mins</div>",
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Full Cart Dwell Time : {int(sum(cart_full_idle.values()))} mins</div>",
+#     unsafe_allow_html=True
+# )
+# st.header("Full Cart Dwell Time")
+# st.altair_chart(chart_full_idle,use_container_width=False)
+
+# # st.metric(label="Total Empty Cart Dwell Time [min]", value=int(sum(cart_empty_idle.values())))
+
+# st.markdown(
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Empty Cart Dwell Time : {int(sum(cart_empty_idle.values()))} mins</div>",
+#     unsafe_allow_html=True
+# )
+# st.header("Empty Cart Dwell Time")
+# st.altair_chart(chart_empty_idle,use_container_width=False)
+
+# # st.metric(label="Total Robot Dwell Time [min]", value=int(sum(robot_dwell.values())))
+# st.markdown(
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Robot Dwell Time : {int(sum(robot_dwell.values()))} mins</div>",
+#     unsafe_allow_html=True
+# )
+# st.header("Robot Dwell Time")
+# st.altair_chart(chart_robot_idle,use_container_width=False)
+# # st.metric(label="Total Inbound Door Dwell Time [min]", value=int(sum(indoor_idle.values())))
+# st.markdown(
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Inbound Door Dwell Time : {int(sum(indoor_idle.values()))} mins</div>",
 #     unsafe_allow_html=True
 # )
 
-# st.header("Outbound Door Dwell Time")
-# st.altair_chart(chart_outbound_idle,use_container_width=False)
+# st.header("Inbound Door Dwell Time")
+# st.altair_chart(chart_inbound_idle,use_container_width=False)
+# # st.metric(label="Total Outbound Door Dwell Time [min]", value=int(sum(outdoor_idle.values())))
+# # st.markdown(
+# #     f"<div style='font-size:40px; font-weight:bold;'>Total Outbound Door Dwell Time : {int(sum(outdoor_idle.values()))} mins</div>",
+# #     unsafe_allow_html=True
+# # )
+
+# # st.header("Outbound Door Dwell Time")
+# # st.altair_chart(chart_outbound_idle,use_container_width=False)
 
 
-st.title("Robot Trips")
-st.altair_chart(chart_trips,use_container_width=True)
-# st.title("CART Unloading Status")
-# st.dataframe(df, use_container_width=True)
-# st.write("### Progress over time")
-# st.dataframe(progress_df, use_container_width=True)
-st.title("UPH break down")
-st.dataframe(uph_tracker_df, use_container_width=True)
+# st.title("Robot Trips")
+# st.altair_chart(chart_trips,use_container_width=True)
+# # st.title("CART Unloading Status")
+# # st.dataframe(df, use_container_width=True)
+# # st.write("### Progress over time")
+# # st.dataframe(progress_df, use_container_width=True)
+# st.title("UPH break down")
+# st.dataframe(uph_tracker_df, use_container_width=True)
+import streamlit as st
+import altair as alt
+
+st.set_page_config(page_title="DestroAI Ops Dashboard", layout="wide")
+uph_tracker_df["UPH"] = pd.to_numeric(uph_tracker_df["UPH"], errors='coerce')
+
+# ---------- STYLES ----------
+st.markdown("""
+    <style>
+        html, body, [class*="css"] {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f7fa;
+        }
+        .block-container {
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        .metric-style {
+            background-color: #ffffff;
+            padding: 1.2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        .metric-label {
+            color: #6c757d;
+            font-size: 18px;
+        }
+        .metric-value {
+            color: #212529;
+            font-size: 38px;
+            font-weight: 600;
+        }
+        .main-title {
+            font-size: 40px;
+            color: #0a2540;
+            margin-bottom: 1rem;
+        }
+        header, footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
+
+# ---------- HEADER ----------
+st.image("destro_logo_black.png", width=250)
+st.markdown("<div class='main-title'>📊 DestroAI Operational Insights</div>", unsafe_allow_html=True)
+
+# ---------- METRICS ----------
+metric_col1, metric_col2, metric_col3, metric_col4 = st.columns(4)
+with metric_col1:
+    st.markdown(f"""
+    <div class='metric-style'>
+        <div class='metric-label'>Time Elapsed</div>
+        <div class='metric-value'>{int(dhrs):02d}:{int(dmins):02d}:{int(dsec):02d}</div>
+    </div>
+    """, unsafe_allow_html=True)
+with metric_col2:
+    st.markdown(f"""
+    <div class='metric-style'>
+        <div class='metric-label'>Total Cases Picked</div>
+        <div class='metric-value'>{code_101}</div>
+    </div>
+    """, unsafe_allow_html=True)
+with metric_col3:
+    st.markdown(f"""
+    <div class='metric-style'>
+        <div class='metric-label'>Avg UPH</div>
+        <div class='metric-value'>{round(avg_uph, 2)}</div>
+    </div>
+    """, unsafe_allow_html=True)
+with metric_col4:
+    st.markdown(f"""
+    <div class='metric-style'>
+        <div class='metric-label'>Robots in Simulation</div>
+        <div class='metric-value'>{robot_count}</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+# ---------- TABS ----------
+tabs = st.tabs([
+    "📍 Robot Distance", 
+    "📦 Cart Cases", 
+    "🧭 Outbound Density",
+    "🕒 Dwell Times",
+    "🚚 Robot Trips",
+    "📈 UPH Breakdown"
+])
+
+# ---------- TAB: Robot Distance ----------
+with tabs[0]:
+        colored_chart = alt.Chart(robot_dist_df).mark_bar().encode(
+        x='Robot:N',
+        y='Distance:Q',
+        color=alt.Color('Distance:Q', scale=alt.Scale(scheme='redyellowgreen')),
+        tooltip=['Robot', 'Distance']
+    ).properties(
+        title="Robot Distance with Color Gradient"
+    )
+        st.altair_chart(colored_chart, use_container_width=True)
+    # st.altair_chart(alt.Chart(robot_dist_df).mark_bar(size=20).encode(
+    #     x=alt.X('Robot:N', sort=robot_dist_df["Robot"].tolist()),
+    #     y=alt.Y('Distance:Q', title='Distance (m)'),
+    #     tooltip=['Robot', 'Distance']
+    # ).properties(
+    #     width=1400, height=400, title="Robot Distance Travelled"
+    # ), use_container_width=True)
+
+# ---------- TAB: Cart Cases ----------
+with tabs[1]:
+    st.altair_chart(alt.Chart(robot_total_cases_df).mark_bar(size=20).encode(
+        x='Cart:N', y='Total Cases:Q',
+        tooltip=['Cart', 'Total Cases']
+    ).properties(
+        width=1400, height=400, title="Cart-wise Total Cases Unloaded"
+    ), use_container_width=True)
+
+# ---------- TAB: Outbound Density ----------
+with tabs[2]:
+    st.altair_chart(alt.Chart(out_density_df).mark_bar(size=20).encode(
+        x=alt.X('Outbound Destination:N', sort='-y'),
+        y=alt.Y('Density:Q', title='Requests'),
+        tooltip=['Outbound Destination', 'Density']
+    ).properties(
+        width=1400, height=400, title="Outbound Destination Request Density"
+    ), use_container_width=True)
+
+# ---------- TAB: Dwell Times ----------
+with tabs[3]:
+    st.subheader("Full Cart Dwell Time")
+    st.altair_chart(alt.Chart(cart_full_idle_df).mark_bar(size=20).encode(
+        x='Cart:N', y='Dwell Time:Q', tooltip=['Cart', 'Dwell Time']
+    ).properties(width=1400, height=300), use_container_width=True)
+
+    st.subheader("Empty Cart Dwell Time")
+    st.altair_chart(alt.Chart(cart_empty_idle_df).mark_bar(size=20).encode(
+        x='Cart:N', y='Dwell Time:Q', tooltip=['Cart', 'Dwell Time']
+    ).properties(width=1400, height=300), use_container_width=True)
+
+    st.subheader("Robot Dwell Time")
+    st.altair_chart(alt.Chart(robot_dwell_df).mark_bar(size=20).encode(
+        x='Robot:N', y='Dwell Time:Q', tooltip=['Robot', 'Dwell Time']
+    ).properties(width=1400, height=300), use_container_width=True)
+
+    st.subheader("Inbound Dock Dwell Time")
+    st.altair_chart(alt.Chart(indoor_idle_df).mark_bar(size=20).encode(
+        x='Inbound ID:N', y='Dwell Time:Q', tooltip=['Inbound ID', 'Dwell Time']
+    ).properties(width=1400, height=300), use_container_width=True)
+
+# ---------- TAB: Robot Trips ----------
+with tabs[4]:
+    st.altair_chart(alt.Chart(robot_trips_df).mark_bar(size=20).encode(
+        x='Robot:N', y='Trips:Q', tooltip=['Robot', 'Trips']
+    ).properties(width=1400, height=400, title="Robot Trips Made"), use_container_width=True)
+
+# ---------- TAB: UPH Breakdown ----------
+with tabs[5]:
+    st.dataframe(uph_tracker_df.style.format({"UPH": "{:,.0f}"}), use_container_width=True)
+    st.caption("Hourly breakdown of Unit-per-Hour performance")
