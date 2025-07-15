@@ -5,7 +5,7 @@ import re
 import os
 from collections import defaultdict
 from datetime import datetime
-
+from collections import Counter 
 
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # DESTRO_PATH = os.path.join(BASE_DIR, "yusen", "logs", "inputlog", "yusen_2025-04-10.log")
@@ -46,14 +46,82 @@ cart_empty_idle={}
 cart_full_idle={}
 indoor_idle={}
 outdoor_idle={}
+outbound_counter = Counter()
 # robot_destro_data = defaultdict(lambda: defaultdict(lambda: {"loaded_cases": 0, "total_cases": 0}))
 
 # ---------------- DESTRO Log Parser ----------------
+destination_mapping = {
+    # ── Group 1 ── (positions 1, 5, 9, … in the sorted list)
+    "0555 - Woodland":           "Outbound_11",
+    "0588 - Phoenix":            "Outbound_10",
+    "3803 - Topeka":             "Outbound_9",
+    "0600 - Lacey":              "Outbound_8",
+    "0590 - Cedarfalls":         "Outbound_7",
+    "3811 - Newton":             "Outbound_6",
+    "0579 - New York":           "Outbound_5",
+    "0556 - Tifton":             "Outbound_4",
+    "3680 - NFI CHICAGO":        "Outbound_3",
+    "Dest - Destroy":            "Outbound_2",
+    "3681 - NFI Mount Pocono":   "Outbound_1",
 
+    # ── Group 2 ── (positions 2, 6, 10, …)
+    "0578 - Texas DC":           "Outbound_12",
+    "0593 - Shaffer":            "Outbound_13",
+    "0587 - Galesburg":          "Outbound_14",
+    "3801 - Midlothian":         "Outbound_15",
+    "3842 - DeKalb":             "Outbound_16",
+    "0594 - Lugoff DC":          "Outbound_17",
+    "3804 - West Jefferson":     "Outbound_18",
+    "3865 - Chicago":            "Outbound_19",
+    "3868 - Hampton":            "Outbound_20",
+    "9156 - Burlington":         "Outbound_21",
+    "9253 - Joliet":             "Outbound_22",
+
+    # ── Group 3 ── (positions 3, 7, 11, …)
+    "3806 - Rialto":             "Outbound_23",
+    "3841 - Suffolk":            "Outbound_24",
+    "0554 - Pueblo":             "Outbound_25",
+    "0559 - Indianapolis":       "Outbound_26",
+    "0551 - Minneapolis":        "Outbound_27",
+    "3808 - Midway":             "Outbound_28",
+    "0560 - Stuart's Draft VA":  "Outbound_29",
+    "0580 - Alabama":            "Outbound_30",
+    "OVERAGE":                   "Outbound_31",
+    "9417 Savannah":             "Outbound_32",
+    "9479 Ontario":              "Outbound_33",
+
+    # ── Group 4 ── (positions 4, 8, 12, …)
+    "0558 - Albany OR":          "Outbound_34",
+    "0553 - Los Angeles":        "Outbound_35",
+    "0557 - Oconomowoc":         "Outbound_36",
+    "3840 - Rialto":             "Outbound_37",
+    "3802 - Amsterdam":          "Outbound_38",
+    "0589 - Chambersburg":       "Outbound_39",
+    "3856 - Riverside":          "Outbound_40",
+    "3857 - Logan Township":     "Outbound_41",
+    "Salvage- Longbeach":        "Outbound_42",
+}
+outbound_destinations={v:k for k,v in destination_mapping.items()}
 def download_log(url):
     response = requests.get(url)
     response.raise_for_status()
     return response.text.splitlines()
+def outbound_density(log_path):
+
+    with open(log_path, "r") as f:
+        lines = f.readlines()
+
+    
+
+
+    pattern = re.compile(r"route:\s*(\[[^\]]*\])")
+
+    for line in lines:
+        if "[Coordination] Starting coordination for cart" in line:
+            match = pattern.search(line)
+            if match:
+                route_list = eval(match.group(1))  
+                outbound_counter.update(route_list)
 def parse_destro_log(path):
     if not os.path.exists(path):
         return
@@ -232,10 +300,18 @@ def parse_fms_log(path):
 parse_destro_log(DESTRO_PATH)
 
 parse_fms_log(FMS_PATH)
+
+outbound_density(DESTRO_PATH)
 print(f"{start_time} ------- {type(start_time)}")
 print(f"{end_time} ------- {type(end_time)}")
 
 
+out_density={}
+for k,v in outbound_counter.items():
+    if k in outbound_destinations:
+        out_density[outbound_destinations[k]]=v
+
+print(out_density)
 
 
 
@@ -284,12 +360,13 @@ cart_empty_idle_df=pd.DataFrame(list(cart_empty_idle.items()),columns=['Cart','D
 robot_dwell_df=pd.DataFrame(list(robot_dwell.items()),columns=['Robot','Dwell Time'])
 indoor_idle_df=pd.DataFrame(list(indoor_idle.items()),columns=['Inbound ID','Dwell Time'])
 outdoor_idle_df=pd.DataFrame(list(outdoor_idle.items()),columns=['Outbound ID','Dwell Time'])
+out_density_df=pd.DataFrame(list(out_density.items()),columns=['Outbound Destination','Density'])
 
 # robot_dwell_df=pd.DataFrame(list(robot_distance_dict))
 # robot_dwell_df=pd.DataFrame(list(robot_dwell.items()),columns=['Robot','Time (sec)'])
 # robot_dwell_df["Time (hrs)"] = robot_dwell_df["Time (sec)"] / 3600
 
-
+print(out_density_df)
 fmt = "%Y-%m-%d %H:%M:%S,%f"
 # 2025-06-17 14:29:59,162
 # 2025-06-18 15:40:40,196
@@ -437,6 +514,18 @@ chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar(size=100).encode(
 )
 
 
+chart_outbound_density = alt.Chart(out_density_df).mark_bar(size=30).encode(
+    x=alt.X('Outbound Destination:N', sort='-y'),  # sort by density descending
+    y=alt.Y('Density:Q'),
+    tooltip=['Outbound Destination', 'Density']
+).properties(
+    width=2000,
+    height=500,
+    title='Outbound Destination vs Density'
+)
+
+
+
 
 
 # st.altair_chart(chart_cases, use_container_width=False)
@@ -472,6 +561,12 @@ st.altair_chart(chart_dist, use_container_width=False)
 st.title("CART Unloading Cases per Hour")
 # st.dataframe(cases_ph_df , use_container_width=True)
 st.altair_chart(chart_botuph, use_container_width=False)
+
+
+st.header("Outbound Request Density")
+st.altair_chart(chart_outbound_density,use_container_width=False)
+
+
 
 # st.metric( value=int(sum(cart_full_idle.values())))
 st.markdown(
