@@ -103,6 +103,13 @@ destination_mapping = {
     "Salvage- Longbeach":        "Outbound_42",
 }
 outbound_destinations={v:k for k,v in destination_mapping.items()}
+
+import base64
+
+def get_image_base64(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
 def download_log(url):
     response = requests.get(url)
     response.raise_for_status()
@@ -386,72 +393,9 @@ dhrs, rem =divmod(dashboard_time.total_seconds(),3600)
 dmins,dsec =divmod(rem,60)
 total_sec=dashboard_time.total_seconds()
 avg_uph = sum(int(v) for v in uph_tracker.values()) / len(uph_tracker)
-# ---------------- Display Dashboard ----------------
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #e6f2ff;  /* Light blue background */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-st.image("destro_logo_black.png", width=400)
-# st.header('')
-
-col1,col2=st.columns(2)
-
-with col1:
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>Time<br>
-        <span style='font-size:30px;'>{int(dhrs):02d} : {int(dmins):02d} : {int(dsec):02d}</span></div>
-    """, unsafe_allow_html=True)
-
-    total_time = dhrs + dmins / 60
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>Total Cases Picked<br>
-        <span style='font-size:30px;'>{code_101}</span></div>
-    """, unsafe_allow_html=True)
-
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>UPH<br>
-        <span style='font-size:30px;'>{int(code_101 / total_time)}</span></div>
-    """, unsafe_allow_html=True)
-
-with col2:
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>Total Robots in Sim<br>
-        <span style='font-size:30px;'>{robot_count}</span></div>
-    """, unsafe_allow_html=True)
-
-    st.markdown(f"""
-        <div style='font-size:35px; font-weight:bold;'>Total Carts in Sim<br>
-        <span style='font-size:30px;'>{cart_count}</span></div>
-    """, unsafe_allow_html=True)
 
 robot_distance_dict = dict(zip(robot_dist_df["Robot"], total_sec-(robot_dist_df["Distance"]/1.5)))
-# print(robot_distance_dict)
-
-
-#  robot_dwell_df=pd.DataFrame(list(robot_distance_dict))
-
-
-
-# chart_cases = alt.Chart(robot_cases_df).mark_bar().encode(
-#     x=alt.X('Robot:N', sort='ascending'),
-#     y='Case Num:Q'
-# ).properties(width=2000, height=400, title="Robot vs Cases Unloaded in this Trip")
-
-# chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
-#     x=alt.X('Robot:N', sort='ascending'),
-#     y='Distance:Q'
-# ).properties(width=2000, height=400, title="Robot vs  Distance Travelled")
-# chart_botuph = alt.Chart(robot_total_cases_df).mark_bar().encode(
-#     x=alt.X('Robot:N', sort='ascending'),
-#     y='Total Cases:Q'
-# ).properties(width=2000, height=400, title="Robot vs Total Cases")
+total_time = dhrs + dmins / 60
 chart_dist = alt.Chart(robot_dist_df).mark_bar(size=20).encode(
     x=alt.X('Robot:N',sort=robot_dist_df["Robot"].tolist()),  # Ensure robots are in ascending order
     y='Distance:Q'
@@ -519,110 +463,401 @@ chart_outbound_idle = alt.Chart(outdoor_idle_df).mark_bar(size=100).encode(
     height=400 ,title='Outbound ID vs Dwell Time [min]'
 )
 
-chart_outbound_density = alt.Chart(out_density_df).mark_bar(size=20).encode(
-    x=alt.X('Outbound Destination:N', sort='-y'),  # sort by density descending
+# chart_outbound_density = alt.Chart(out_density_df).mark_bar(size=20).encode(
+#     x=alt.X('Outbound Destination:N', sort='-y'),  # sort by density descending
+#     y=alt.Y('Density:Q'),
+#     tooltip=['Outbound Destination', 'Density']
+# ).properties(
+#     width=2000,
+#     height=400,
+#     title='Outbound Destination vs Density'
+# )
+chart_outbound_density = alt.Chart(out_density_df).mark_bar(
+    size=20,
+    color='white'  # white bars
+).encode(
+    x=alt.X('Outbound Destination:N', sort='-y'),
     y=alt.Y('Density:Q'),
     tooltip=['Outbound Destination', 'Density']
 ).properties(
     width=2000,
     height=400,
     title='Outbound Destination vs Density'
+).configure_view(
+    fill='black'  # chart background
+).configure_axis(
+    labelColor='white',
+    titleColor='white',
+    domainColor='white',
+    gridColor='gray'
+).configure_title(
+    color='white'
 )
+# ---------------- Display Dashboard ----------------
+# st.markdown(
+#     """
+#     <style>
+#     body {
+#         background-color: #e6f2ff;  /* Light blue background */
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
+
+# st.image("destro_logo_black.png", width=400)
+# # st.header('')
+
+# col1,col2=st.columns(2)
+
+# with col1:
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>Time<br>
+#         <span style='font-size:30px;'>{int(dhrs):02d} : {int(dmins):02d} : {int(dsec):02d}</span></div>
+#     """, unsafe_allow_html=True)
+
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>Total Cases Picked<br>
+#         <span style='font-size:30px;'>{code_101}</span></div>
+#     """, unsafe_allow_html=True)
+
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>UPH<br>
+#         <span style='font-size:30px;'>{int(code_101 / total_time)}</span></div>
+#     """, unsafe_allow_html=True)
+
+# with col2:
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>Total Robots in Sim<br>
+#         <span style='font-size:30px;'>{robot_count}</span></div>
+#     """, unsafe_allow_html=True)
+
+#     st.markdown(f"""
+#         <div style='font-size:35px; font-weight:bold;'>Total Carts in Sim<br>
+#         <span style='font-size:30px;'>{cart_count}</span></div>
+#     """, unsafe_allow_html=True)
+
+# # print(robot_distance_dict)
+
+
+# #  robot_dwell_df=pd.DataFrame(list(robot_distance_dict))
 
 
 
-# st.altair_chart(chart_cases, use_container_width=False)
+# # chart_cases = alt.Chart(robot_cases_df).mark_bar().encode(
+# #     x=alt.X('Robot:N', sort='ascending'),
+# #     y='Case Num:Q'
+# # ).properties(width=2000, height=400, title="Robot vs Cases Unloaded in this Trip")
+
+# # chart_dist = alt.Chart(robot_dist_df).mark_bar().encode(
+# #     x=alt.X('Robot:N', sort='ascending'),
+# #     y='Distance:Q'
+# # ).properties(width=2000, height=400, title="Robot vs  Distance Travelled")
+# # chart_botuph = alt.Chart(robot_total_cases_df).mark_bar().encode(
+# #     x=alt.X('Robot:N', sort='ascending'),
+# #     y='Total Cases:Q'
+# # ).properties(width=2000, height=400, title="Robot vs Total Cases")
+
+
+
+# # st.altair_chart(chart_cases, use_container_width=False)
+# # st.altair_chart(chart_dist, use_container_width=False)
+# # st.title("CART Unloading Cases per Hour")
+# # st.dataframe(cases_ph_df , use_container_width=True)
+# # st.altair_chart(chart_botuph, use_container_width=False)
+# # st.title("Full Cart Dwell Time")
+# # st.altair_chart(chart_full_idle,use_container_width=False)
+# # st.title("Empty Cart Dwell Time")
+# # st.altair_chart(chart_empty_idle,use_container_width=False)
+# # st.title("Robot Dwell Time")
+# # st.altair_chart(chart_robot_idle,use_container_width=False)
+# # st.title("Inbound Door Dwell Time")
+# # st.altair_chart(chart_inbound_idle,use_container_width=False)
+# # st.title("Outbound Door Dwell Time")
+# # st.altair_chart(chart_outbound_idle,use_container_width=False)
+
+
+# # st.title("Robot Trips")
+# # st.altair_chart(chart_trips,use_container_width=True)
+# # st.write("### CART Unloading Status")
+# # st.dataframe(df, use_container_width=True)
+# # # st.write("### Progress over time")
+# # # st.dataframe(progress_df, use_container_width=True)
+# # st.write("### UPH break down")
+# # st.dataframe(uph_tracker_df, use_container_width=True)
+
+
+
+# # -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# st.header('')
+
+# st.title("Distance Travelled by Robot")
+
 # st.altair_chart(chart_dist, use_container_width=False)
 # st.title("CART Unloading Cases per Hour")
-# st.dataframe(cases_ph_df , use_container_width=True)
+# # st.dataframe(cases_ph_df , use_container_width=True)
 # st.altair_chart(chart_botuph, use_container_width=False)
-# st.title("Full Cart Dwell Time")
+
+
+
+
+
+# st.header("Outbound Request Density")
+# st.altair_chart(chart_outbound_density,use_container_width=False)
+
+# # st.metric( value=int(sum(cart_full_idle.values())))
+# st.markdown(
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Full Cart Dwell Time : {int(sum(cart_full_idle.values()))} mins</div>",
+#     unsafe_allow_html=True
+# )
+# st.header("Full Cart Dwell Time")
 # st.altair_chart(chart_full_idle,use_container_width=False)
-# st.title("Empty Cart Dwell Time")
+
+# # st.metric(label="Total Empty Cart Dwell Time [min]", value=int(sum(cart_empty_idle.values())))
+
+# st.markdown(
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Empty Cart Dwell Time : {int(sum(cart_empty_idle.values()))} mins</div>",
+#     unsafe_allow_html=True
+# )
+# st.header("Empty Cart Dwell Time")
 # st.altair_chart(chart_empty_idle,use_container_width=False)
-# st.title("Robot Dwell Time")
+
+# # st.metric(label="Total Robot Dwell Time [min]", value=int(sum(robot_dwell.values())))
+# st.markdown(
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Robot Dwell Time : {int(sum(robot_dwell.values()))} mins</div>",
+#     unsafe_allow_html=True
+# )
+# st.header("Robot Dwell Time")
 # st.altair_chart(chart_robot_idle,use_container_width=False)
-# st.title("Inbound Door Dwell Time")
+# # st.metric(label="Total Inbound Door Dwell Time [min]", value=int(sum(indoor_idle.values())))
+# st.markdown(
+#     f"<div style='font-size:40px; font-weight:bold;'>Total Inbound Door Dwell Time : {int(sum(indoor_idle.values()))} mins</div>",
+#     unsafe_allow_html=True
+# )
+
+# st.header("Inbound Door Dwell Time")
 # st.altair_chart(chart_inbound_idle,use_container_width=False)
-# st.title("Outbound Door Dwell Time")
-# st.altair_chart(chart_outbound_idle,use_container_width=False)
+# # st.metric(label="Total Outbound Door Dwell Time [min]", value=int(sum(outdoor_idle.values())))
+# # st.markdown(
+# #     f"<div style='font-size:40px; font-weight:bold;'>Total Outbound Door Dwell Time : {int(sum(outdoor_idle.values()))} mins</div>",
+# #     unsafe_allow_html=True
+# # )
+
+# # st.header("Outbound Door Dwell Time")
+# # st.altair_chart(chart_outbound_idle,use_container_width=False)
 
 
 # st.title("Robot Trips")
 # st.altair_chart(chart_trips,use_container_width=True)
-# st.write("### CART Unloading Status")
-# st.dataframe(df, use_container_width=True)
+# # st.title("CART Unloading Status")
+# # st.dataframe(df, use_container_width=True)
 # # st.write("### Progress over time")
 # # st.dataframe(progress_df, use_container_width=True)
-# st.write("### UPH break down")
+# st.title("UPH break down")
 # st.dataframe(uph_tracker_df, use_container_width=True)
+destro_base64 = get_image_base64("destro_logo.jpg")
+yusen_base64= get_image_base64("yusen_logo.png")
 
 
+# st.markdown("""
+#     <style>
+#     .tile {
+#         background-color: black;
+#         color: white;
+#         border-radius: 20px;
+#         padding: 20px;
+#         text-align: left;
+#         height: 400px;
+#         box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+#     }
+#     .tile img {
+#         max-height: 80px;
+#         width: auto;
+#     }
+#     .tile h1 {
+#         font-size: 30px;
+#         margin-bottom: 10px;
+#     }
+#     .tile p {
+#         font-size: 60px;
+#         font-weight: normal;
+#         margin: 0;
+#     }
+#     .chart-title {
+#         font-size: 20px;
+#         font-weight: bold;
+#         color: white;
+#         margin-bottom: 10px;
+#     }
+#     .chart-tile-wrapper {
+#         background-color: black;
+#         border-radius: 20px;
+#         padding: 25px;
+#         margin-bottom: 30px;
+#         box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+#     } 
+#     }
+#     </style>
+# """, unsafe_allow_html=True)
 
-# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-st.header('')
+# col1, col2, col3, col4, col5 = st.columns([1, 1, 1,1,1])  # Adjust ratios as needed
 
-st.title("Distance Travelled by Robot")
+# # with col1:
+# #    st.image("destro_logo_black.png", width=400)
+# with col1:
+#     st.markdown(f"""
+#         <div class='tile'>
+#             <img src='data:image/png;base64,{destro_base64}' alt='Destro Logo' style='max-height: 80px; margin-bottom: 25px;'><br>
+#             <img src='data:image/png;base64,{yusen_base64}' alt='Yusen Logo' style='max-height: 200px;'>
+#         </div>
+#     """, unsafe_allow_html=True)
 
-st.altair_chart(chart_dist, use_container_width=False)
-st.title("CART Unloading Cases per Hour")
-# st.dataframe(cases_ph_df , use_container_width=True)
-st.altair_chart(chart_botuph, use_container_width=False)
+# with col2:
+#     st.markdown(f"""
+#         <div class='tile'>
+#             <h1>UPH</h1>
+#             <p>{int(code_101 / total_time)}</p>
+#         </div>
+#     """, unsafe_allow_html=True)
 
+# with col3:
+#     st.markdown(f"""
+#         <div class='tile'>
+#             <h1>Total Cases Picked</h1>
+#             <p>{code_101}</p>
+#         </div>
+#     """, unsafe_allow_html=True)
+# with col4:
+#     st.markdown(f"""
+#         <div class='tile'>
+#             <h1>Time</h1>
+#             <p>{int(dhrs):02d} : {int(dmins):02d} : {int(dsec):02d}</p>
+#         </div>
+#     """, unsafe_allow_html=True)
 
+# with col5:
+#    st.markdown(f"""
+#     <div class='tile'>
+#         <h1>Active Robots</h1>
+#         <p>{robot_count}</p>
+#         <div style='height: 20px;'></div>
+#         <h1>Active Carts</h1>
+#         <p>{cart_count}</p>
+#     </div>
+# """, unsafe_allow_html=True)
 
-
-
-st.header("Outbound Request Density")
-st.altair_chart(chart_outbound_density,use_container_width=False)
-
-# st.metric( value=int(sum(cart_full_idle.values())))
-st.markdown(
-    f"<div style='font-size:40px; font-weight:bold;'>Total Full Cart Dwell Time : {int(sum(cart_full_idle.values()))} mins</div>",
-    unsafe_allow_html=True
-)
-st.header("Full Cart Dwell Time")
-st.altair_chart(chart_full_idle,use_container_width=False)
-
-# st.metric(label="Total Empty Cart Dwell Time [min]", value=int(sum(cart_empty_idle.values())))
-
-st.markdown(
-    f"<div style='font-size:40px; font-weight:bold;'>Total Empty Cart Dwell Time : {int(sum(cart_empty_idle.values()))} mins</div>",
-    unsafe_allow_html=True
-)
-st.header("Empty Cart Dwell Time")
-st.altair_chart(chart_empty_idle,use_container_width=False)
-
-# st.metric(label="Total Robot Dwell Time [min]", value=int(sum(robot_dwell.values())))
-st.markdown(
-    f"<div style='font-size:40px; font-weight:bold;'>Total Robot Dwell Time : {int(sum(robot_dwell.values()))} mins</div>",
-    unsafe_allow_html=True
-)
-st.header("Robot Dwell Time")
-st.altair_chart(chart_robot_idle,use_container_width=False)
-# st.metric(label="Total Inbound Door Dwell Time [min]", value=int(sum(indoor_idle.values())))
-st.markdown(
-    f"<div style='font-size:40px; font-weight:bold;'>Total Inbound Door Dwell Time : {int(sum(indoor_idle.values()))} mins</div>",
-    unsafe_allow_html=True
-)
-
-st.header("Inbound Door Dwell Time")
-st.altair_chart(chart_inbound_idle,use_container_width=False)
-# st.metric(label="Total Outbound Door Dwell Time [min]", value=int(sum(outdoor_idle.values())))
-# st.markdown(
-#     f"<div style='font-size:40px; font-weight:bold;'>Total Outbound Door Dwell Time : {int(sum(outdoor_idle.values()))} mins</div>",
-#     unsafe_allow_html=True
-# )
-
-# st.header("Outbound Door Dwell Time")
-# st.altair_chart(chart_outbound_idle,use_container_width=False)
+# tab1, tab2, tab3 = st.tabs(["Outbound Density", "Trips", "Robot Distance"])
 
 
-st.title("Robot Trips")
-st.altair_chart(chart_trips,use_container_width=True)
-# st.title("CART Unloading Status")
-# st.dataframe(df, use_container_width=True)
-# st.write("### Progress over time")
-# st.dataframe(progress_df, use_container_width=True)
-st.title("UPH break down")
-st.dataframe(uph_tracker_df, use_container_width=True)
+# st.header("Outbound Request Density")
+# st.altair_chart(chart_outbound_density,use_container_width=False)
+# ---- Insert after st.set_page_config ----
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: black;
+        color: white;
+    }
+    .tile {
+        background-color: #111;
+        color: white;
+        border-radius: 20px;
+        padding: 25px;
+        text-align: center;
+        height: 200px;
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+    .tile h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .tile p {
+        font-size: 32px;
+        margin: 0;
+        color: white;
+    }
+    .chart-container {
+        background-color: #111;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# ---- Metrics Section ----
+col1, col2, col3, col4, col5 = st.columns(5)
+
+with col1:
+    st.markdown(f"<div class='tile'><h1>UPH</h1><p>{int(code_101 / total_time)}</p></div>", unsafe_allow_html=True)
+
+with col2:
+    st.markdown(f"<div class='tile'><h1>Cases Picked</h1><p>{code_101}</p></div>", unsafe_allow_html=True)
+
+with col3:
+    st.markdown(f"<div class='tile'><h1>Total Time</h1><p>{int(dhrs):02d}:{int(dmins):02d}:{int(dsec):02d}</p></div>", unsafe_allow_html=True)
+
+with col4:
+    st.markdown(f"<div class='tile'><h1>Robots</h1><p>{robot_count}</p></div>", unsafe_allow_html=True)
+
+with col5:
+    st.markdown(f"<div class='tile'><h1>Carts</h1><p>{cart_count}</p></div>", unsafe_allow_html=True)
+
+# ---- Dark-themed Charts (configure all Altair charts like this) ----
+def style_chart(chart):
+    return chart.configure_view(
+        fill='black'
+    ).configure_axis(
+        labelColor='white',
+        titleColor='white',
+        domainColor='white',
+        gridColor='gray'
+    ).configure_title(
+        color='white'
+    )
+
+# Example: chart_outbound_density = style_chart(chart_outbound_density)
+chart_dist = style_chart(chart_dist)
+chart_botuph = style_chart(chart_botuph)
+chart_trips = style_chart(chart_trips)
+chart_full_idle = style_chart(chart_full_idle)
+chart_empty_idle = style_chart(chart_empty_idle)
+chart_robot_idle = style_chart(chart_robot_idle)
+
+# ---- Tabs and Charts in 2-Column Layout ----
+tab1, tab2, tab3 = st.tabs(["Distance & UPH", "Trips & Full Idle", "Empty Idle & Robot Idle"])
+
+with tab1:
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+        st.altair_chart(chart_dist, use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+    with col2:
+        st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+        st.altair_chart(chart_botuph, use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+
+with tab2:
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+        st.altair_chart(chart_trips, use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+    with col2:
+        st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+        st.altair_chart(chart_full_idle, use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+
+with tab3:
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+        st.altair_chart(chart_empty_idle, use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+    with col2:
+        st.markdown("<div class='chart-container'>", unsafe_allow_html=True)
+        st.altair_chart(chart_robot_idle, use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
