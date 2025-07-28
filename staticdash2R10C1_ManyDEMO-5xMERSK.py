@@ -314,8 +314,9 @@ outbound_density(DESTRO_PATH)
 
 out_density={}
 for k,v in outbound_counter.items():
-    if k in outbound_destinations:
-        out_density[outbound_destinations[k]]=v
+    out_density[k]=v
+    # if k in outbound_destinations:
+    #     out_density[outbound_destinations[k]]=v
 
 print(out_density)
 
