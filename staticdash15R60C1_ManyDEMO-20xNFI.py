@@ -288,7 +288,8 @@ def parse_fms_log(path):
                     # print(match)
                     if match:
                         hour,uph=match.groups()
-                        uph_tracker[hour]=uph
+                        # uph_tracker[hour]=uph
+                        uph_tracker[hour]=str(int(uph)/pallet_conversion)
             elif "CODE 000" in line :
                 match = re.search(r'^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})', line)
                 if match:
@@ -365,7 +366,9 @@ robot_dist_df["Robot_Num"] = robot_dist_df["Robot"].str.extract(r'(\d+)').astype
 robot_dist_df = robot_dist_df.sort_values(by="Robot_Num")
 
 progress_df=pd.DataFrame(list(progress.items()), columns=["Hour", "Cases"])
-uph_tracker_df=pd.DataFrame(list(uph_tracker.items()), columns=["Hour", "UPH"])
+uph_tracker_df=pd.DataFrame(list(uph_tracker.items()), columns=["Hour", "PPH"])
+
+
 
 robot_total_cases_df=pd.DataFrame(list(robot_total_cases.items()), columns=["Cart", "Total Cases"])
 # robot_total_cases_df["Robot_Num"] = robot_total_cases_df["Robot"].str.extract(r'(\d+)').astype(int)
@@ -813,7 +816,7 @@ if st.session_state.current_page == 'Overview':
                         domain=False
                     )
                 ),
-                y=alt.Y('UPH:Q',
+                y=alt.Y('PPH:Q',
                     axis=alt.Axis(
                         labelFontSize=12, 
                         titleFontSize=14,
